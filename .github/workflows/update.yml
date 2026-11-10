@@ -1,0 +1,72 @@
+name: Sprawdź nowe odcinki
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # GitHub odpala to z opóźnieniem 5–20 min, ale wystarczy
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Ile starszych filmów dodatkowo przetworzyć (0 = tylko nowe)"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # sekretów nie da się sprawdzać w `if:` kroku, więc flagi liczymy tutaj
+    env:
+      HAS_YT_COOKIES: ${{ secrets.YT_COOKIES != '' }}
+      HAS_SUPABASE: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY != '' && vars.SUPABASE_URL != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install --upgrade yt-dlp
+      - run: npm ci
+
+      # Opcjonalnie: cookies z YouTube, jeśli YouTube zacznie blokować pobieranie napisów z serwerów GitHuba
+      - name: Cookies YouTube
+        if: env.HAS_YT_COOKIES == 'true'
+        env:
+          YT_COOKIES: ${{ secrets.YT_COOKIES }}
+        run: printf '%s' "$YT_COOKIES" > "$RUNNER_TEMP/cookies.txt" && echo "YT_COOKIES_FILE=$RUNNER_TEMP/cookies.txt" >> "$GITHUB_ENV"
+
+      - name: Sprawdź kanał i dopisz lokale
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.backfill || '0' }}" != "0" ]; then
+            node scripts/update.mjs --backfill "${{ github.event.inputs.backfill }}"
+          else
+            node scripts/update.mjs
+          fi
+
+      # Część społecznościowa: baza musi znać lokale, żeby sprawdzać odhaczenia
+      - name: Wyślij lokale do Supabase
+        if: env.HAS_SUPABASE == 'true'
+        env:
+          SUPABASE_URL: ${{ vars.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/sync-places.mjs
+
+      - name: Zapisz zmiany
+        run: |
+          git config user.name "ksiapulo-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || (git commit -m "Aktualizacja danych: $(date -u +'%Y-%m-%d %H:%M') UTC" && git push)

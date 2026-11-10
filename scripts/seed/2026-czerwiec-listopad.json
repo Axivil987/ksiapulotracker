@@ -1,0 +1,112 @@
+{
+ "2gDf8XkwDmI": { "places": [
+  { "name": "Sztüka Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "plus", "dishes": ["kebab gemüse w bułce"], "note": "Świeży lokal, bułka z lokalnej piekarni i mięso robione wg ich receptury — dobre mięso, dobra buła.", "start_seconds": 0 },
+  { "name": "Chilli Chill Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse"], "note": "Powrót po aferze z mięsem — zmienili dostawcę i wprowadzili gemüse.", "start_seconds": 255 },
+  { "name": "Haris Kebab", "city": "Gdańsk", "district": "Hala Targowa", "category": "kebab", "verdict": "nieznany", "dishes": ["kebab z kurczakiem"], "start_seconds": 590 },
+  { "name": "Aa Kebab Gdańsk", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "dishes": ["bułka gemüse ze wszystkimi sosami"], "note": "Weryfikacja nowego lokalu kebaba, który w Sopocie dostał MUALA.", "start_seconds": 1002 },
+  { "name": "Kebab Meister", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 1412 },
+  { "name": "Kebab Line", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 1707 },
+  { "name": "Drwal Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 2014 },
+  { "name": "Gurme Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 2640 },
+  { "name": "Yolo Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 2849 },
+  { "name": "MIM Kebab", "city": "Gdańsk", "category": "kebab", "verdict": "nieznany", "start_seconds": 3415 }
+ ]},
+ "_PQBE0W7b-A": { "is_food_review": false, "places": [] },
+ "PzFbnwEq95U": { "places": [
+  { "name": "Obiady Domowe", "city": "Warszawa", "district": "Tarchomin", "category": "obiad", "verdict": "plus", "dishes": ["zestaw ze schabowym", "pierogi"], "price_pln": 32, "note": "Gigantyczne porcje za ok. 32 zł — bardzo tanio i dobrze jak na Warszawę.", "start_seconds": 0 }
+ ]},
+ "E5mSwrJjg0g": { "places": [
+  { "name": "Più Ristorante", "city": "Wrocław", "category": "pizza", "verdict": "nieznany", "dishes": ["pizza", "zupa"], "note": "Lokal znany z ostrych odpowiedzi właściciela na opinie klientów.", "start_seconds": 0 }
+ ]},
+ "qiuy06L-vno": { "places": [
+  { "name": "Golden Gemuse Kebab", "city": "Radom", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse"], "start_seconds": 120 },
+  { "name": "Marsimo Kebab", "city": "Radom", "category": "kebab", "verdict": "nieznany", "note": "Po rozstaniu wspólników powstały dwa lokale: Marsimo i Simo." },
+  { "name": "Simo Kebab", "city": "Radom", "category": "kebab", "verdict": "nieznany" }
+ ]},
+ "XQkR3IQJ8BE": { "places": [
+  { "name": "Marzyciele", "city": "Gdańsk", "district": "Hala Targowa", "category": "inne", "verdict": "minus", "dishes": ["pizza", "stek"], "note": "Nowa knajpa Kuby Wojewódzkiego — wolałby zjeść w Stołówce Gdańskiej.", "start_seconds": 0 }
+ ]},
+ "Vjy-X6yAqlA": { "places": [
+  { "name": "Na Kepsa", "city": "Grójec", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse w lawaszu"], "note": "Zabrakło bułek, więc gemüse tylko w lawaszu z dopłatą.", "start_seconds": 0 }
+ ]},
+ "scPdQ0nXq9g": { "places": [
+  { "name": "Messi Smash Burger", "city": "Warszawa", "category": "burger", "verdict": "nieznany", "dishes": ["smash burger"], "note": "Lokal Jessiego od Foxa, test dzień po otwarciu.", "start_seconds": 0 },
+  { "name": "Kenzy", "city": "Kraków", "category": "burger", "verdict": "nieznany", "dishes": ["smash burger", "kurczak"], "note": "Smash burgery i kurczaki Poczciwego Krzycha." }
+ ]},
+ "py56h3srrLE": { "places": [
+  { "name": "Zapiekankarnia", "city": "Zielona Góra", "category": "kebab", "verdict": "muala", "dishes": ["kebab gemüse"], "note": "Jedno z najlepszych gemüse w Polsce — gdyby miał kasę, zainwestowałby.", "start_seconds": 0 }
+ ]},
+ "s3lK985Pq4I": { "places": [
+  { "name": "Simba Kebab", "city": "Warszawa", "category": "kebab", "verdict": "plus", "note": "Jak na warszawskie standardy dobry kebab.", "start_seconds": 703 }
+ ]},
+ "yBdQ8EaBo-8": { "places": [
+  { "name": "Hotel Arłamów", "city": "Arłamów", "category": "inne", "verdict": "minus", "note": "Apartament prezydencki za ponad 5 tys. zł, a jedzenie słabe.", "start_seconds": 0 }
+ ]},
+ "0BKN4D6DsKc": { "places": [
+  { "name": "Restauracja Natura Magda Gessler", "city": "Kluszkowce", "category": "obiad", "verdict": "muala", "note": "Pierwsze w historii MUALA dla restauracji Magdy Gessler.", "start_seconds": 0 }
+ ]},
+ "RV7Fcn3FzBc": { "places": [
+  { "name": "Viral Kebab", "city": "Katowice", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse z sosem mango"], "note": "Nowe gemüse w kebabie Friza.", "start_seconds": 0 },
+  { "name": "Kiosk Döner", "city": "Katowice", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse"] }
+ ]},
+ "S6I5RnfvskU": { "places": [
+  { "name": "Trattoria Aurora", "city": "Gdańsk", "category": "inne", "verdict": "minus", "dishes": ["łosoś z sałatą", "lazania"], "note": "Dawne Amare Gusto po zmianie nazwy — nadal niezatwierdzone.", "start_seconds": 0 }
+ ]},
+ "paD1h89HVws": { "places": [
+  { "name": "Baba", "city": "Wrocław", "category": "obiad", "verdict": "nieznany", "dishes": ["mielony", "kwiat cukinii"], "note": "Restauracja Beaty Śniechowskiej z gwiazdką Michelin — karta zamiast degustacji.", "start_seconds": 0 }
+ ]},
+ "LnT3Hwizf9A": { "places": [
+  { "name": "Gastronomia w ZOO Wrocław", "city": "Wrocław", "street": "Wróblewskiego 1", "category": "fastfood", "verdict": "minus", "note": "Najgorzej oceniane jedzenie w mieście — Karczma u Lwa zamknięta, reszta słaba.", "start_seconds": 0 }
+ ]},
+ "tRs9UswCijc": { "places": [
+  { "name": "Panorama Morska", "city": "Jarosławiec", "category": "inne", "verdict": "nieznany", "note": "Resort all inclusive nad morzem.", "start_seconds": 0 }
+ ]},
+ "0gtzdFMy0d0": { "places": [
+  { "name": "Prosto z Patelni", "city": "Sarbinowo", "category": "obiad", "verdict": "minus", "dishes": ["dorsz", "naleśnik za 25 zł"], "note": "Lokal często zmieniający nazwę po aferze z paragonem; zamknięta toaleta.", "start_seconds": 0 }
+ ]},
+ "FQ4ScFKXgTE": { "places": [
+  { "name": "Restauracja Harnaś", "city": "Kościelisko", "category": "obiad", "verdict": "minus", "note": "Bramki, płatne WC i chamskie odpowiedzi właściciela na opinie.", "start_seconds": 0 }
+ ]},
+ "8hiuZV9CHvM": { "places": [
+  { "name": "Hotel Linea Mare", "city": "Pobierowo", "category": "inne", "verdict": "nieznany", "note": "Tańsza pięciogwiazdkowa konkurencja Gołębiewskiego.", "start_seconds": 0 }
+ ]},
+ "AfLUwMCCBGU": { "places": [
+  { "name": "Sklep Karolinka", "city": "Lemierzyce", "category": "obiad", "verdict": "nieznany", "dishes": ["bułki z pieczarkami", "pierogi z jagodami"], "note": "Wiralowy sklep z garmażerką i drożdżówkami.", "start_seconds": 0 }
+ ]},
+ "rBhvGkLCux0": { "places": [
+  { "name": "Stołówka Gdańska", "city": "Gdańsk", "category": "obiad", "verdict": "muala", "dishes": ["schabowy", "zupa"], "price_pln": 28, "note": "Pierwsze podwójne MUALA — duże, babcine porcje za grosze w centrum Gdańska.", "start_seconds": 0 }
+ ]},
+ "zMowx68Ta-I": { "places": [
+  { "name": "La Strada del Pomodoro", "city": "Łódź", "category": "pizza", "verdict": "nieznany", "dishes": ["pizza", "makaron"], "note": "Test w trakcie Kuchennych Rewolucji, dawniej Pomodoro.", "start_seconds": 0 }
+ ]},
+ "cfUl6dfiqyY": { "places": [
+  { "name": "Kebab Store", "city": "Łódź", "category": "kebab", "verdict": "srednio", "dishes": ["Bułka Berlin"], "note": "Drugie podejście do „berlińskiego” gemüse — bez MUALA.", "start_seconds": 0 }
+ ]},
+ "pQrILbrmbTo": { "places": [
+  { "name": "Bycraft Kebab", "city": "Warszawa", "category": "kebab", "verdict": "nieznany", "start_seconds": 221 },
+  { "name": "Ross Kebab", "city": "Warszawa", "category": "kebab", "verdict": "nieznany", "dishes": ["gemüse"], "start_seconds": 2310 }
+ ]},
+ "1YA2ku1Y96U": { "places": [
+  { "name": "Burgermeister", "city": "Łódź", "category": "burger", "verdict": "plus", "note": "Berlińskie burgery w Polsce, po obniżce cen — bardzo dobre.", "start_seconds": 0 }
+ ]},
+ "JZL9ddTF4LY": { "places": [
+  { "name": "Aa Kebab", "city": "Sopot", "category": "kebab", "verdict": "muala", "dishes": ["gemüse"], "price_pln": 29, "note": "Gemüse jak w najlepszych kebabach Berlina, za 29 zł — totalne MUALA.", "start_seconds": 0 }
+ ]},
+ "8IAi1ViLGjw": { "places": [
+  { "name": "Ogień i Mięso", "city": "Łódź", "category": "kebab", "verdict": "nieznany", "dishes": ["lawasz z tandooru"], "start_seconds": 0 },
+  { "name": "Kebab Store", "city": "Łódź", "category": "kebab", "verdict": "nieznany", "dishes": ["bułka gemüse"], "note": "Pierwsza wizyta — zamówiona stara wersja gemüse." }
+ ]},
+ "ee6qdCcxSAA": { "places": [
+  { "name": "Ewa Zaprasza", "city": "Stilo", "category": "obiad", "verdict": "muala", "dishes": ["śledzie", "schabowy"], "note": "Najlepsza restauracja, w jakiej był — zaszczyt nakleić tu MUALA.", "start_seconds": 0 }
+ ]},
+ "9a1-oBhttqo": { "places": [
+  { "name": "Hotel Gołębiewski Pobierowo", "city": "Pobierowo", "category": "inne", "verdict": "minus", "note": "Gorąco w pokoju, słabe jedzenie i reklamacja z wymeldowaniem.", "start_seconds": 0 }
+ ]},
+ "dYWO_FJyGwE": { "places": [
+  { "name": "Blacha", "city": "Warszawa", "category": "slodkie", "verdict": "nieznany", "dishes": ["drożdżówka z poziomkami"], "start_seconds": 0 },
+  { "name": "Ursh Cakes", "city": "Warszawa", "category": "slodkie", "verdict": "nieznany", "dishes": ["poziomka"], "note": "Najdroższe drożdżówki w Warszawie." }
+ ]},
+ "dmrU6iSq4uI": { "places": [
+  { "name": "Flaming", "city": "Warszawa", "category": "inne", "verdict": "nieznany", "dishes": ["carpaccio wołowe", "lody z poziomkami"], "note": "Bardzo droga restauracja dla celebrytów.", "start_seconds": 0 }
+ ]}
+}

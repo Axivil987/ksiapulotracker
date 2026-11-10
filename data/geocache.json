@@ -1,0 +1,4445 @@
+{
+ "Sztüka Kebab, Gdańsk": {
+  "lat": 54.409042,
+  "lng": 18.587468,
+  "name": "Sztüka Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Tadeusza Bora-Komorowskiego"
+ },
+ "Chilli Chill Kebab, Gdańsk": null,
+ "Gdańsk": {
+  "lat": 54.348291,
+  "lng": 18.654023,
+  "name": "Gdańsk",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Haris Kebab, Hala Targowa, Gdańsk": null,
+ "Haris Kebab, Gdańsk": null,
+ "Hala Targowa, Gdańsk": {
+  "lat": 54.352766,
+  "lng": 18.652032,
+  "name": "Гандлёвая гала",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Plac Dominikański 1/2"
+ },
+ "Aa Kebab Gdańsk, Gdańsk": null,
+ "Kebab Meister, Gdańsk": {
+  "lat": 54.35014,
+  "lng": 18.646958,
+  "name": "Kebab Meister",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Targ Węglowy"
+ },
+ "Kebab Line, Gdańsk": null,
+ "Drwal Kebab, Gdańsk": {
+  "lat": 54.32794,
+  "lng": 18.614934,
+  "name": "Kebab Drwal",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Augusta Emila Fieldorfa"
+ },
+ "Gurme Kebab, Gdańsk": null,
+ "Yolo Kebab, Gdańsk": {
+  "lat": 54.392898,
+  "lng": 18.617902,
+  "name": "Yolo Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bolesława Chrobrego 79A"
+ },
+ "MIM Kebab, Gdańsk": {
+  "lat": 54.401331,
+  "lng": 18.66207,
+  "name": "Mim Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wolności 21A"
+ },
+ "Obiady Domowe, Tarchomin, Warszawa": null,
+ "Obiady Domowe, Warszawa": {
+  "lat": 52.22666,
+  "lng": 20.911844,
+  "name": "Obiady Domowe",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Majora Henryka Sucharskiego 7"
+ },
+ "Più Ristorante, Wrocław": {
+  "lat": 51.040907,
+  "lng": 16.968857,
+  "name": "Pizza Pasta Piu",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ogrodowa"
+ },
+ "Wrocław": {
+  "lat": 51.126311,
+  "lng": 16.978196,
+  "name": "Wrocław",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Golden Gemuse Kebab, Radom": null,
+ "Radom": {
+  "lat": 51.402256,
+  "lng": 21.154155,
+  "name": "Radom",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Marsimo Kebab, Radom": null,
+ "Simo Kebab, Radom": null,
+ "Marzyciele, Hala Targowa, Gdańsk": null,
+ "Marzyciele, Gdańsk": null,
+ "Na Kepsa, Grójec": null,
+ "Grójec": {
+  "lat": 51.865513,
+  "lng": 20.867502,
+  "name": "Grójec",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Messi Smash Burger, Warszawa": null,
+ "Warszawa": {
+  "lat": 52.233374,
+  "lng": 21.071149,
+  "name": "Warszawa",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kenzy, Kraków": null,
+ "Kraków": {
+  "lat": 50.046943,
+  "lng": 19.997153,
+  "name": "Kraków",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Zapiekankarnia, Zielona Góra": {
+  "lat": 51.937714,
+  "lng": 15.502657,
+  "name": "Zapiekankarnia",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jedności 16"
+ },
+ "Simba Kebab, Warszawa": null,
+ "Hotel Arłamów, Arłamów": null,
+ "Arłamów": {
+  "lat": 49.653819,
+  "lng": 22.516828,
+  "name": "Lotnisko Arłamów",
+  "category": "aeroway",
+  "type": "aeroway",
+  "address": "Graniczna"
+ },
+ "Restauracja Natura Magda Gessler, Kluszkowce": null,
+ "Kluszkowce": {
+  "lat": 49.450965,
+  "lng": 20.301466,
+  "name": "Kluszkowce",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Viral Kebab, Katowice": null,
+ "Katowice": {
+  "lat": 50.259899,
+  "lng": 19.021585,
+  "name": "Katowice",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Kiosk Döner, Katowice": {
+  "lat": 50.223128,
+  "lng": 18.969928,
+  "name": "Kiosk. DÖNER",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Słupska 2"
+ },
+ "Trattoria Aurora, Gdańsk": null,
+ "Baba, Wrocław": {
+  "lat": 51.112729,
+  "lng": 17.031977,
+  "name": "Baba",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nożownicza 1d"
+ },
+ "Gastronomia w ZOO Wrocław, Wróblewskiego 1, Wrocław": null,
+ "Gastronomia w ZOO Wrocław, Wrocław": null,
+ "Wróblewskiego 1, Wrocław": {
+  "lat": 51.104255,
+  "lng": 17.074849,
+  "name": "ZOO Wrocław",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Zygmunta Wróblewskiego 1-5"
+ },
+ "Panorama Morska, Jarosławiec": {
+  "lat": 54.538322,
+  "lng": 16.549128,
+  "name": "Panorama Morska",
+  "category": "leisure",
+  "type": "leisure",
+  "address": "Letniskowa"
+ },
+ "Prosto z Patelni, Sarbinowo": null,
+ "Sarbinowo": {
+  "lat": 52.65755,
+  "lng": 14.67533,
+  "name": "Sarbinowo",
+  "category": "place",
+  "type": "village",
+  "address": null
+ },
+ "Restauracja Harnaś, Kościelisko": {
+  "lat": 49.275289,
+  "lng": 19.868309,
+  "name": "Gospoda \"Harnaś\"",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Dolina Kościeliska 1"
+ },
+ "Hotel Linea Mare, Pobierowo": {
+  "lat": 54.055143,
+  "lng": 14.918446,
+  "name": "Linea Mare",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Karola Borka 6"
+ },
+ "Sklep Karolinka, Lemierzyce": null,
+ "Lemierzyce": {
+  "lat": 52.566741,
+  "lng": 14.914086,
+  "name": "Lemierzyce",
+  "category": "place",
+  "type": "village",
+  "address": null
+ },
+ "Stołówka Gdańska, Gdańsk": {
+  "lat": 54.348186,
+  "lng": 18.66573,
+  "name": "Stołówka Gdańska",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Długie Ogrody 27"
+ },
+ "La Strada del Pomodoro, Łódź": null,
+ "Łódź": {
+  "lat": 51.772824,
+  "lng": 19.478486,
+  "name": "Łódź",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kebab Store, Łódź": null,
+ "Bycraft Kebab, Warszawa": null,
+ "Ross Kebab, Warszawa": null,
+ "Burgermeister, Łódź": null,
+ "Aa Kebab, Sopot": null,
+ "Sopot": {
+  "lat": 54.444792,
+  "lng": 18.56849,
+  "name": "Sopot",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Ogień i Mięso, Łódź": null,
+ "Ewa Zaprasza, Stilo": null,
+ "Stilo": {
+  "lat": 54.78139,
+  "lng": 17.740001,
+  "name": "Osetnik",
+  "category": "place",
+  "type": "village",
+  "address": null
+ },
+ "Hotel Gołębiewski Pobierowo, Pobierowo": {
+  "lat": 54.052487,
+  "lng": 14.903555,
+  "name": "Hotel Gołębiewski",
+  "category": "landuse",
+  "type": "commercial",
+  "address": null
+ },
+ "Pobierowo": {
+  "lat": 54.057081,
+  "lng": 14.933255,
+  "name": "Pobierowo",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Blacha, Warszawa": {
+  "lat": 52.247238,
+  "lng": 21.01627,
+  "name": "Pałac Pod Blachą",
+  "category": "building",
+  "type": "building",
+  "address": "Plac Zamkowy 2"
+ },
+ "Ursh Cakes, Warszawa": null,
+ "Flaming, Warszawa": {
+  "lat": 52.192773,
+  "lng": 20.962649,
+  "name": "Flaming",
+  "category": "shop",
+  "type": "shop",
+  "address": "Lechicka 18"
+ },
+ "Tarchomin, Warszawa": {
+  "lat": 52.31857,
+  "lng": 20.952303,
+  "name": "Tarchomin",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Media House Kebab, Jana Pawła II, Warszawa": null,
+ "Media House Kebab, Warszawa": null,
+ "Jana Pawła II, Warszawa": {
+  "lat": 52.217354,
+  "lng": 21.22489,
+  "name": "Jana Pawła II",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Jana Pawła II"
+ },
+ "Miss Doner, Jana Pawła II, Warszawa": null,
+ "Miss Doner, Warszawa": {
+  "lat": 52.235232,
+  "lng": 21.018731,
+  "name": "Miss Döner",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nowy Świat 54/56"
+ },
+ "Tandur Kebab, Jana Pawła II, Warszawa": null,
+ "Tandur Kebab, Warszawa": null,
+ "Craft Kebab, Krupówki, Zakopane": null,
+ "Craft Kebab, Zakopane": null,
+ "Krupówki, Zakopane": {
+  "lat": 49.292931,
+  "lng": 19.956337,
+  "name": "Krupówki",
+  "category": "highway",
+  "type": "pedestrian",
+  "address": "Krupówki"
+ },
+ "Wołowiec i Kura, Krupówki, Zakopane": null,
+ "Wołowiec i Kura, Zakopane": null,
+ "Zara Kebab, Zakopane": null,
+ "Zakopane": {
+  "lat": 49.275793,
+  "lng": 19.969281,
+  "name": "Zakopane",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Craftowy Kebab z Ogródka, Zakopane": null,
+ "Kebab Snack, Zakopane": null,
+ "Bar Hanoi (Pan Hanoi), Wrzeszcz, Gdańsk": null,
+ "Wrzeszcz, Gdańsk": {
+  "lat": 54.386469,
+  "lng": 18.630651,
+  "name": "Wrzeszcz",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Jana Kochanowskiego"
+ },
+ "Hard Rock Cafe, Złote Tarasy, Warszawa": null,
+ "Hard Rock Cafe, Śródmieście, Warszawa": {
+  "lat": 52.246609,
+  "lng": 21.013217,
+  "name": "Hard Rock Cafe",
+  "category": "shop",
+  "type": "shop",
+  "address": "Krakowskie Przedmieście 83"
+ },
+ "Złote Tarasy, Warszawa": {
+  "lat": 52.230071,
+  "lng": 21.002445,
+  "name": "Złote Tarasy",
+  "category": "shop",
+  "type": "shop",
+  "address": "Złota 59"
+ },
+ "Bar Waga (u pani Grażyny), Obozowa, Warszawa": null,
+ "Bar Waga (u pani Grażyny), Warszawa": null,
+ "Obozowa, Warszawa": {
+  "lat": 52.247383,
+  "lng": 20.959263,
+  "name": "Obozowa",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Obozowa"
+ },
+ "Kebab craftowy z megafonem (Mielno), Mielno": null,
+ "Mielno": {
+  "lat": 54.256077,
+  "lng": 16.052059,
+  "name": "Mielno",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Istanbul Kebab, Mielno": null,
+ "Salsa Kebab, Mielno": null,
+ "Harem Kebab, Mielno": null,
+ "Efes Kebab, Stare Miasto, Kraków": null,
+ "Stare Miasto, Kraków": {
+  "lat": 50.061409,
+  "lng": 19.935679,
+  "name": "Stare Miasto",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Kebab i Burger U Buły, Kraków": null,
+ "Kebaber, Kraków": {
+  "lat": 50.031208,
+  "lng": 19.921374,
+  "name": "Kebaber",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Stefana Grota-Roweckiego 7"
+ },
+ "Kebab Pod 13, Kraków": {
+  "lat": 50.048291,
+  "lng": 19.94401,
+  "name": "Kebab pod 13",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Wolnica 13"
+ },
+ "Bar Tylko u nas, u Dziadka, Kościelna, Poznań": null,
+ "Bar Tylko u nas, u Dziadka, Poznań": null,
+ "Kościelna, Poznań": {
+  "lat": 52.417383,
+  "lng": 16.906562,
+  "name": "Kościelna",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Kościelna"
+ },
+ "Schaboszczak od Dziadka, Poznań": {
+  "lat": 52.406716,
+  "lng": 16.932174,
+  "name": "Schaboszczak od dziadka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Szkolna 7"
+ },
+ "El Popo, Senatorska, Warszawa": {
+  "lat": 52.243559,
+  "lng": 21.007342,
+  "name": "El Popo",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Senatorska 29"
+ },
+ "De Mexican, Warszawa": null,
+ "Señor Lucas, Poznańska, Warszawa": {
+  "lat": 52.226794,
+  "lng": 21.011234,
+  "name": "Señor Lucas",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Poznańska 26"
+ },
+ "La Sirena, Warszawa": {
+  "lat": 52.249788,
+  "lng": 21.012174,
+  "name": "Syrenka Warszawska",
+  "category": "historic",
+  "type": "historic",
+  "address": "Rynek Starego Miasta"
+ },
+ "Frida, Nowy Świat, Warszawa": {
+  "lat": 52.233733,
+  "lng": 21.019431,
+  "name": "Frida",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nowy Świat 34"
+ },
+ "Zapiekanki z Kaliskiej, Kaliska, Włocławek": null,
+ "Zapiekanki z Kaliskiej, Włocławek": null,
+ "Kaliska, Włocławek": {
+  "lat": 52.641522,
+  "lng": 19.052038,
+  "name": "Kaliska",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Kaliska"
+ },
+ "Alex Kebab, Włocławek": null,
+ "Włocławek": {
+  "lat": 52.665564,
+  "lng": 19.09613,
+  "name": "Włocławek",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Pierogarnia we Włocławku, Włocławek": null,
+ "Pizzeria Wojciecha Madysia, Częstochowa": null,
+ "Częstochowa": {
+  "lat": 50.812047,
+  "lng": 19.113213,
+  "name": "Częstochowa",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Kato Pizza, Katowice": {
+  "lat": 50.251134,
+  "lng": 19.013927,
+  "name": "Kato Pizza",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Tadeusza Kościuszki"
+ },
+ "Zapiekanki Classic (gofry), Władysławowo": null,
+ "Władysławowo": {
+  "lat": 54.790132,
+  "lng": 18.408734,
+  "name": "Władysławowo",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Gofry XXL (budka naprzeciwko), Władysławowo": null,
+ "Restauracja Formuła 1 (Energylandia), Zator": null,
+ "Zator": {
+  "lat": 49.996305,
+  "lng": 19.437678,
+  "name": "Zator",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Zapiekanka w Energylandii, Zator": null,
+ "Doner King (Energylandia), Zator": null,
+ "Kebab Bajka, Warszawa": {
+  "lat": 52.23578,
+  "lng": 21.008721,
+  "name": "Kebab Bajka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marszałkowska 138"
+ },
+ "Kebab Alibaba, Warszawa": {
+  "lat": 52.235742,
+  "lng": 21.008744,
+  "name": "Alibaba Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marszałkowska 138"
+ },
+ "Gorą Kebab, Tuszyńska, Łódź": null,
+ "Gorą Kebab, Łódź": null,
+ "Tuszyńska, Łódź": {
+  "lat": 51.727878,
+  "lng": 19.470824,
+  "name": "Tuszyńska",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Tuszyńska"
+ },
+ "Tab Kebab, Łódź": {
+  "lat": 51.74395,
+  "lng": 19.494817,
+  "name": "Tab Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Tatrzańska 78"
+ },
+ "Wrapiarnia, Łódź": {
+  "lat": 51.792935,
+  "lng": 19.465671,
+  "name": "Wrapiarnia",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marysińska"
+ },
+ "Kebab Spot, Łódź": null,
+ "Kebab Drive (Pabianice), Pabianice": null,
+ "Pabianice": {
+  "lat": 51.663986,
+  "lng": 19.353502,
+  "name": "Pabianice",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Saraj, Warszawa": null,
+ "Grillo Bar, Warszawa": null,
+ "Hataj, Warszawa": null,
+ "Boho Kebab, Warszawa": {
+  "lat": 52.237156,
+  "lng": 21.119181,
+  "name": "Boho Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jubilerska 10"
+ },
+ "Trattoria Verde, Częstochowa": {
+  "lat": 50.783528,
+  "lng": 19.128773,
+  "name": "Restauracja Trattoria Verde",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Władysława Orkana 157"
+ },
+ "Terror Kebab, Kielce": null,
+ "Kielce": {
+  "lat": 50.854028,
+  "lng": 20.609916,
+  "name": "Kielce",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Astana Kebab, Kielce": {
+  "lat": 50.87297,
+  "lng": 20.624529,
+  "name": "Astana Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ignacego Paderewskiego"
+ },
+ "Kebab 76200, Słupsk": {
+  "lat": 54.466121,
+  "lng": 17.022421,
+  "name": "SABA KEBAB & GRILL BAR",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza 9"
+ },
+ "Słupsk": {
+  "lat": 54.464933,
+  "lng": 17.028073,
+  "name": "Słupsk",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Bistro Pauza, Łódź": {
+  "lat": 51.773119,
+  "lng": 19.456012,
+  "name": "Bistro Pauza",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Piotrkowska 30/32"
+ },
+ "Bistro Gyros Jadwiga, Łódź": null,
+ "Mała Gastronomia (ul. Rogozińskiego), Rogozińskiego, Łódź": null,
+ "Mała Gastronomia (ul. Rogozińskiego), Łódź": null,
+ "Rogozińskiego, Łódź": {
+  "lat": 51.732349,
+  "lng": 19.451078,
+  "name": "Stefana Rogozińskiego",
+  "category": "highway",
+  "type": "residential",
+  "address": "Stefana Rogozińskiego"
+ },
+ "Najwyżej oceniany bar mleczny w Krakowie (nazwa nie pada w napisach), Kraków": null,
+ "Kebab Pan, Warszawa": null,
+ "Kepsik Craft Kebab, Warszawa": null,
+ "Aktor Kebab, Warszawa": null,
+ "Let's Eat Kebab, Ząbkowska, Warszawa": {
+  "lat": 52.252367,
+  "lng": 21.038247,
+  "name": "Let's Eat Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ząbkowska 2"
+ },
+ "Kebab u Ali, Hel": {
+  "lat": 54.604226,
+  "lng": 18.803458,
+  "name": "Kebab u Ali",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wiejska"
+ },
+ "Max Doner Kebab, port, molo, Hel": null,
+ "Max Doner Kebab, Hel": {
+  "lat": 54.604518,
+  "lng": 18.801894,
+  "name": "Max Doner Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Profesora Kazimierza Demela"
+ },
+ "Helski Burger, Hel": null,
+ "Hel": {
+  "lat": 54.623709,
+  "lng": 18.727501,
+  "name": "Hel",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Brooklyn Pizza, Gdynia": {
+  "lat": 54.522899,
+  "lng": 18.543424,
+  "name": "Brooklyn Pizza",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Kaszubski"
+ },
+ "American Bar, Gdynia": null,
+ "Gdynia": {
+  "lat": 54.516498,
+  "lng": 18.540274,
+  "name": "Gdynia",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Pizza Banda, Gdańsk": null,
+ "Pub Sławomira Mentzena, Stare Miasto, Toruń": null,
+ "Stare Miasto, Toruń": {
+  "lat": 53.01163,
+  "lng": 18.609316,
+  "name": "Stare Miasto",
+  "category": "boundary",
+  "type": "city_district",
+  "address": null
+ },
+ "Kura Warzywa, Jarosława Dąbrowskiego, Warszawa": null,
+ "Kura Warzywa, Stary Mokotów, Warszawa": null,
+ "Jarosława Dąbrowskiego, Warszawa": {
+  "lat": 52.199215,
+  "lng": 21.003812,
+  "name": "Jarosława Dąbrowskiego",
+  "category": "highway",
+  "type": "residential",
+  "address": "Jarosława Dąbrowskiego"
+ },
+ "Starzynianka Kebab, Warszawa": null,
+ "Kebab Express & Grill (Dworzec Wileński), Praga, Warszawa": null,
+ "Praga, Warszawa": {
+  "lat": 52.255278,
+  "lng": 21.046667,
+  "name": "Praga",
+  "category": "place",
+  "type": "neighbourhood",
+  "address": null
+ },
+ "Kebab przy ul. Radzymińskiej (rolo lawasz), Radzymińska, Warszawa": null,
+ "Kebab przy ul. Radzymińskiej (rolo lawasz), Warszawa": null,
+ "Radzymińska, Warszawa": {
+  "lat": 52.293294,
+  "lng": 21.080481,
+  "name": "Radzymińska",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Radzymińska"
+ },
+ "Big Daddy Kebab, Poznań": null,
+ "Poznań": {
+  "lat": 52.400663,
+  "lng": 16.919733,
+  "name": "Poznań",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Big Chef Kebab, Kondratowicza, Warszawa": null,
+ "Big Chef Kebab, Bródno, Warszawa": null,
+ "Kondratowicza, Warszawa": {
+  "lat": 52.292085,
+  "lng": 21.048689,
+  "name": "Kondratowicza",
+  "category": "railway",
+  "type": "railway",
+  "address": "Ludwika Kondratowicza"
+ },
+ "Erbil Kebab, Głębocka (Atrium Targówek), Warszawa": null,
+ "Erbil Kebab, Targówek, Warszawa": null,
+ "Głębocka (Atrium Targówek), Warszawa": null,
+ "Targówek, Warszawa": {
+  "lat": 52.275192,
+  "lng": 21.058085,
+  "name": "Targówek",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Zapiekanki Kebab Lody, Stare Miasto, Warszawa": null,
+ "Stare Miasto, Warszawa": {
+  "lat": 52.249515,
+  "lng": 21.012244,
+  "name": "Stare Miasto",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Fenicja (Francuska 31), Francuska 31, Warszawa": null,
+ "Fenicja (Francuska 31), Praga-Południe, Warszawa": {
+  "lat": 52.235176,
+  "lng": 21.053285,
+  "name": "Fenicja",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Francuska 31"
+ },
+ "Francuska 31, Warszawa": {
+  "lat": 52.235177,
+  "lng": 21.05321,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Francuska 31"
+ },
+ "Fenicja (Francuska 41), Francuska 41, Warszawa": null,
+ "Fenicja (Francuska 41), Praga-Południe, Warszawa": {
+  "lat": 52.236217,
+  "lng": 21.052635,
+  "name": "Fenicja",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Francuska 41"
+ },
+ "Francuska 41, Warszawa": {
+  "lat": 52.236223,
+  "lng": 21.052559,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Francuska 41"
+ },
+ "Stary Dom (restauracja Piotra Adamczyka), Puławska, Warszawa": null,
+ "Stary Dom (restauracja Piotra Adamczyka), Mokotów, Warszawa": null,
+ "Puławska, Warszawa": {
+  "lat": 52.164249,
+  "lng": 21.017596,
+  "name": "Puławska",
+  "category": "highway",
+  "type": "primary",
+  "address": "Puławska"
+ },
+ "Kebab Toro, Zawóz": null,
+ "Zawóz": {
+  "lat": 49.33621,
+  "lng": 22.44447,
+  "name": "Zawóz",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Petra Kebab, Rymanów": {
+  "lat": 49.574129,
+  "lng": 21.866945,
+  "name": "Petra Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Józefa Piłsudskiego"
+ },
+ "Aroma Kebab, Rymanów": null,
+ "Rymanów": {
+  "lat": 49.576131,
+  "lng": 21.867643,
+  "name": "Rymanów",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Hrabia Kebab, Rymanów": null,
+ "Warszawski Wałek, Łódzka, Warszawa": null,
+ "Warszawski Wałek, Warszawa": {
+  "lat": 52.230304,
+  "lng": 20.988052,
+  "name": "Wałek Warszawski",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Pańska 99"
+ },
+ "Dziki Żer, Ostrołęka": null,
+ "Ostrołęka": {
+  "lat": 53.077964,
+  "lng": 21.574843,
+  "name": "Ostrołęka",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Nokaut, Ostrołęka": {
+  "lat": 53.080918,
+  "lng": 21.571386,
+  "name": "Nokaut Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Mikołaja Kopernika 15"
+ },
+ "Mister Chicken and Beef, Ostrołęka": null,
+ "Szamka Kebab i Zapieksy, Ostrołęka": null,
+ "Pasibus (Galeria Młociny), Bielany, Warszawa": null,
+ "Bielany, Warszawa": {
+  "lat": 52.277613,
+  "lng": 20.947205,
+  "name": "Bielany",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Tawerna Portowa, Mikołajki": {
+  "lat": 53.799605,
+  "lng": 21.571548,
+  "name": "Tawerna Portowa",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Kasztanowa 6"
+ },
+ "Szanto, Warszawa": null,
+ "Kebab Szam, Zamieniecka, Warszawa": null,
+ "Kebab Szam, Warszawa": null,
+ "Zamieniecka, Warszawa": {
+  "lat": 52.240364,
+  "lng": 21.100886,
+  "name": "Zamieniecka",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Zamieniecka"
+ },
+ "Chili Kebab and Grill, Towarowa 35, Warszawa": null,
+ "Chili Kebab and Grill, Warszawa": null,
+ "Towarowa 35, Warszawa": {
+  "lat": 52.235022,
+  "lng": 20.980252,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Towarowa 35"
+ },
+ "Cian Kebab, Warszawa": null,
+ "Efo Kebab, Aleje Jerozolimskie 60b, Warszawa": null,
+ "Efo Kebab, Warszawa": null,
+ "Aleje Jerozolimskie 60b, Warszawa": {
+  "lat": 52.225393,
+  "lng": 20.989448,
+  "name": null,
+  "category": "place",
+  "type": "place",
+  "address": "Aleje Jerozolimskie 60B"
+ },
+ "Restauracja na Kasprowym Wierchu, Kasprowy Wierch, Zakopane": null,
+ "Kasprowy Wierch, Zakopane": {
+  "lat": 49.231801,
+  "lng": 19.981561,
+  "name": "Kasprowy Wierch",
+  "category": "natural",
+  "type": "peak",
+  "address": null
+ },
+ "Cukiernia Wadowice, Wadowice": {
+  "lat": 49.882678,
+  "lng": 19.492086,
+  "name": "Cukiernia Wadowice",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Kościuszki 21"
+ },
+ "Słodki Jeż, Wadowice": null,
+ "Wadowice": {
+  "lat": 49.883448,
+  "lng": 19.492535,
+  "name": "Wadowice",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Cukiernia U Leni (za kościołem), Wadowice": null,
+ "Cukiernia Galicja, Kościelna, Wadowice": null,
+ "Cukiernia Galicja, Wadowice": null,
+ "Kościelna, Wadowice": {
+  "lat": 49.883347,
+  "lng": 19.494067,
+  "name": "Kościelna",
+  "category": "highway",
+  "type": "pedestrian",
+  "address": "Kościelna"
+ },
+ "Zapiekanki przy parkingu (działa od 1984), Wadowice": null,
+ "Bar mleczny Poranek, Słupsk": {
+  "lat": 54.467081,
+  "lng": 17.023949,
+  "name": "Bar mleczny Poranek",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wojska Polskiego"
+ },
+ "Najstarsza pizza w Polsce (przy barze Poranek), Słupsk": null,
+ "Bar Krokiecik, Rzeszów": {
+  "lat": 50.022842,
+  "lng": 21.985539,
+  "name": "Bar Krokiecik",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Jarosława Dąbrowskiego 85"
+ },
+ "Zapiekanki u Sławka, Limanowa": null,
+ "Limanowa": {
+  "lat": 49.714992,
+  "lng": 20.423074,
+  "name": "Limanowa",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Primo Zapiekanki, Limanowa": null,
+ "Budka z zapiekankami skawińskimi (reklamowana Książulem), Limanowa": null,
+ "Bar Witek, Wita Stwosza, Wrocław": {
+  "lat": 51.110172,
+  "lng": 17.035888,
+  "name": "Bar Witek",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wita Stwosza 40"
+ },
+ "Efes Kebab, Rzeszów": null,
+ "Rzeszów": {
+  "lat": 50.037453,
+  "lng": 22.004717,
+  "name": "Rzeszów",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Davis Kebab, Rzeszów": null,
+ "Kebabowe Love, Rzeszów": {
+  "lat": 50.237209,
+  "lng": 22.118732,
+  "name": "Kebabowe Love",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Pileckich 9"
+ },
+ "Mevlana Kebab, Rynek, Rzeszów": null,
+ "Mevlana Kebab, Rzeszów": {
+  "lat": 50.002639,
+  "lng": 22.013929,
+  "name": "Mevlana Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Strażacka 25D"
+ },
+ "Piccolo Spaghetti Bar, Poznań": {
+  "lat": 52.392714,
+  "lng": 17.015463,
+  "name": "Spaghetti Bar Piccolo",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Arcybiskupa Walentego Dymka 304"
+ },
+ "Karpat Kebab, Rzeszów": null,
+ "Japro Kebab (Yaprak), Rzeszów": null,
+ "Dara Kebab, Matejki, Rzeszów": null,
+ "Dara Kebab, Rzeszów": {
+  "lat": 50.039524,
+  "lng": 22.002813,
+  "name": "Dara Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Grunwaldzka 24"
+ },
+ "Kebab u Chuja, Dąbrowa Górnicza": null,
+ "Dąbrowa Górnicza": {
+  "lat": 50.330869,
+  "lng": 19.207892,
+  "name": "Dąbrowa Górnicza",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Sfinks (M1 Marki), Marki": null,
+ "Marki": {
+  "lat": 52.325461,
+  "lng": 21.105469,
+  "name": "Marki",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Zapiekanki przy ul. Matki Boskiej (najstarsza budka w Limanowej), Matki Boskiej, Limanowa": null,
+ "Zapiekanki przy ul. Matki Boskiej (najstarsza budka w Limanowej), Limanowa": null,
+ "Matki Boskiej, Limanowa": {
+  "lat": 49.706527,
+  "lng": 20.420415,
+  "name": "Kościół pw. Matki Boskiej Bolesnej w Limanowej",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jana Pawła II 1"
+ },
+ "Budka z zapiekankami (działa ok. 50 lat), Bochnia": null,
+ "Bochnia": {
+  "lat": 49.969356,
+  "lng": 20.430541,
+  "name": "Bochnia",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Lisia Łapka, Myślenice": null,
+ "Myślenice": {
+  "lat": 49.834608,
+  "lng": 19.938428,
+  "name": "Myślenice",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Super King, Białystok": {
+  "lat": 53.141098,
+  "lng": 23.171254,
+  "name": "Super King",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Henryka Sienkiewicza"
+ },
+ "Inna Liga, Białystok": null,
+ "Białystok": {
+  "lat": 53.127505,
+  "lng": 23.147051,
+  "name": "Białystok",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Red Chili Kebab, Białystok": {
+  "lat": 53.131,
+  "lng": 23.139231,
+  "name": "Red Chili Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Kardynała Stefana Wyszyńskiego 2"
+ },
+ "Alisa Kebab Turecki, Białystok": null,
+ "Good Boy, Białystok": null,
+ "Wood Fire, Białystok": {
+  "lat": 53.10896,
+  "lng": 23.13136,
+  "name": "Wood Fire Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Stefana Żeromskiego 9"
+ },
+ "Ogniomistrz, Białystok": null,
+ "Król Kebab, Rynek, Białystok": {
+  "lat": 53.132789,
+  "lng": 23.157749,
+  "name": "Król Kebab Kraftowy",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Kościuszki 32"
+ },
+ "Kolos Kebab, Białystok": {
+  "lat": 53.133261,
+  "lng": 23.156283,
+  "name": "Kolos Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Icchoka Malmeda 2"
+ },
+ "Amare Gusto, Gdańsk": null,
+ "Cukiernia Rumienka (rodzina Sołtysików, od 1961), Wrocław": null,
+ "Neobab, Mikołaja Reja 47, Wrocław": null,
+ "Neobab, Wrocław": null,
+ "Mikołaja Reja 47, Wrocław": {
+  "lat": 51.118408,
+  "lng": 17.058872,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Mikołaja Reja 47"
+ },
+ "Bar Panda, Toruń": {
+  "lat": 53.011494,
+  "lng": 18.594423,
+  "name": "Bar Panda",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza"
+ },
+ "Nan Kebab, Warszawa": null,
+ "Baba Craft Doner, Warszawa": null,
+ "Harry Doner, Ursynów, Warszawa": null,
+ "Ursynów, Warszawa": {
+  "lat": 52.141039,
+  "lng": 21.032321,
+  "name": "Ursynów",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Gemüse House Kebab, Warszawa": null,
+ "Kebab u Groszka, Jastarnia": null,
+ "Jastarnia": {
+  "lat": 54.702764,
+  "lng": 18.671289,
+  "name": "Jastarnia",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Najedzony, Jastarnia": null,
+ "Bar Ara, Jastarnia": {
+  "lat": 54.700553,
+  "lng": 18.676461,
+  "name": "Bar Ara",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Księdza Bernarda Sychty"
+ },
+ "Gyros Bar, Jastarnia": null,
+ "Dzikowisko, Bydgoszcz": {
+  "lat": 53.132502,
+  "lng": 17.994979,
+  "name": "Dzikowisko",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleksandra Fredry 1A"
+ },
+ "Pizzeria Jolanta, Bydgoszcz": null,
+ "Bydgoszcz": {
+  "lat": 53.129713,
+  "lng": 18.029449,
+  "name": "Bydgoszcz",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Zapiecek (polskie pierogi), Stare Miasto, Warszawa": {
+  "lat": 52.248497,
+  "lng": 21.013187,
+  "name": "Zapiecek",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Świętojańska 13"
+ },
+ "Gościniec (polska pierogarnia), Stare Miasto, Warszawa": null,
+ "Cukiernia pana Józefa, Warszawa": null,
+ "Domo Bake, Dobra, Warszawa": {
+  "lat": 52.238599,
+  "lng": 21.028178,
+  "name": "Domo Bake",
+  "category": "shop",
+  "type": "shop",
+  "address": "Dobra 26"
+ },
+ "Cukiernia Magdy Gessler (Mokotowska), Mokotowska, Warszawa": null,
+ "Cukiernia Magdy Gessler (Mokotowska), Warszawa": null,
+ "Mokotowska, Warszawa": {
+  "lat": 52.222382,
+  "lng": 21.019598,
+  "name": "Mokotowska",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Mokotowska"
+ },
+ "Cukiernia Zagoździński, Warszawa": {
+  "lat": 52.236618,
+  "lng": 20.967379,
+  "name": "Zagoździński",
+  "category": "shop",
+  "type": "shop",
+  "address": "Górczewska 15"
+ },
+ "Republika Burgera, galeria handlowa, Elbląg": null,
+ "Republika Burgera, Elbląg": null,
+ "galeria handlowa, Elbląg": null,
+ "Elbląg": {
+  "lat": 54.155871,
+  "lng": 19.404458,
+  "name": "Elbląg",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Homus Kebab, Wrocław": null,
+ "Nano Kebab, Wrocław": {
+  "lat": 51.089864,
+  "lng": 17.045727,
+  "name": "Nano Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Prudnicka 4a"
+ },
+ "Zanzibar (bar na pętli autobusowej), Żerań, Warszawa": null,
+ "Żerań, Warszawa": {
+  "lat": 52.303553,
+  "lng": 20.98927,
+  "name": "Żerań",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Kebab Turecki i Restauracja Indyjska, Elbląg": null,
+ "Szejk Kebab, Elbląg": null,
+ "Ragazzi (pizzeria po Kuchennych Rewolucjach, dawniej Pizzownia), Warszawa": null,
+ "Gastromachina, Łódź": {
+  "lat": 51.737351,
+  "lng": 19.48775,
+  "name": "GastroMachina",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Jarosława Dąbrowskiego 59/61"
+ },
+ "Gruby Benek, Łódź": {
+  "lat": 51.758933,
+  "lng": 19.46061,
+  "name": "Gruby Benek",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Marszałka Józefa Piłsudskiego"
+ },
+ "Kebab turecki na Wernyhory, Wernyhory, Szczecin": null,
+ "Kebab turecki na Wernyhory, Szczecin": null,
+ "Wernyhory, Szczecin": {
+  "lat": 53.44492,
+  "lng": 14.497849,
+  "name": "Wernyhory",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Wernyhory"
+ },
+ "Takeout 365 Kebab, Rapackiego, Szczecin": null,
+ "Takeout 365 Kebab, Szczecin": null,
+ "Rapackiego, Szczecin": {
+  "lat": 53.450479,
+  "lng": 14.545956,
+  "name": "Mariana Rapackiego",
+  "category": "highway",
+  "type": "residential",
+  "address": "Mariana Rapackiego"
+ },
+ "Kebaby (food truck craftowy), Szczecin": null,
+ "Szczecin": {
+  "lat": 53.429811,
+  "lng": 14.592868,
+  "name": "Szczecin",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "King Kebab Grill, Księdza Kardynała Stefana Wyszyńskiego, Szczecin": null,
+ "King Kebab Grill, Szczecin": null,
+ "Księdza Kardynała Stefana Wyszyńskiego, Szczecin": {
+  "lat": 53.424997,
+  "lng": 14.551601,
+  "name": "Księdza kardynała Stefana Wyszyńskiego",
+  "category": "highway",
+  "type": "primary",
+  "address": "Księdza kardynała Stefana Wyszyńskiego"
+ },
+ "Kepsik, Nowy Targ": null,
+ "Nowy Targ": {
+  "lat": 49.489209,
+  "lng": 20.026341,
+  "name": "Nowy Targ",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Hepsi Kebab, Nowy Targ": null,
+ "Tasty Flying Kebab, Nowy Targ": null,
+ "Hosen Kebab, Nowy Targ": null,
+ "Uki Uki, Warszawa": {
+  "lat": 52.227309,
+  "lng": 21.017636,
+  "name": "Uki Uki",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Krucza 23/31"
+ },
+ "Pizza Grotex, Zamość": null,
+ "Zamość": {
+  "lat": 50.721245,
+  "lng": 23.25958,
+  "name": "Zamość",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Big Buffalo (rożek kebab), Zamość": null,
+ "Zapiekanki pani Ani, Gniezno": null,
+ "Gniezno": {
+  "lat": 52.52465,
+  "lng": 17.598152,
+  "name": "Gniezno",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Zakopiański Bar, Zakopane": {
+  "lat": 49.299374,
+  "lng": 19.961343,
+  "name": "Zakopiański Bar",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Tadeusza Kościuszki 22"
+ },
+ "Regionalny Bar Mleczny, Zakopane": {
+  "lat": 49.290537,
+  "lng": 19.962431,
+  "name": "Regionalny Bar Mleczny",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Władysława Zamoyskiego 5"
+ },
+ "Tatrzański Bar Mleczny, Zakopane": {
+  "lat": 49.284561,
+  "lng": 19.974544,
+  "name": "Tatrzański Bar Mleczny",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Droga na Bystre 2a"
+ },
+ "Manekin, Warszawa": {
+  "lat": 52.237778,
+  "lng": 21.007508,
+  "name": "Manekin",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marszałkowska 140"
+ },
+ "Friends Kebab, Krasnystaw": null,
+ "Krasnystaw": {
+  "lat": 50.982996,
+  "lng": 23.169793,
+  "name": "Krasnystaw",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Kebab Oryginalny, Krasnystaw": null,
+ "Ramil Kebab, Szczecin": null,
+ "Pizza Kebab Mix, Szczecin": null,
+ "Bar mleczny Krówka, Żory": {
+  "lat": 50.046683,
+  "lng": 18.696727,
+  "name": "Bar Mleczny \"Krówka\"",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Stanisława Szeptyckiego 14/1"
+ },
+ "Akademia (restauracja Borysa Szyca), Różana, Warszawa": null,
+ "Akademia (restauracja Borysa Szyca), Stary Mokotów, Warszawa": null,
+ "Różana, Warszawa": {
+  "lat": 52.252027,
+  "lng": 21.226061,
+  "name": "Różana",
+  "category": "highway",
+  "type": "living_street",
+  "address": "Różana"
+ },
+ "Doprawiony Pancio, Łódź": null,
+ "Zakopane Kebaby że hej, Zakopane": null,
+ "Kebab Pizza Pod Gubałówką, Zakopane": {
+  "lat": 49.296901,
+  "lng": 19.947922,
+  "name": "Kebab Pizza Pod Gubałówką",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Na Gubałówkę 2a"
+ },
+ "Dan Kebab, Zakopane": null,
+ "Hosen Kebab, Zakopane": null,
+ "Kebab Relax (Alibaba Król Kebaba), Radzymin": null,
+ "Radzymin": {
+  "lat": 52.417635,
+  "lng": 21.180784,
+  "name": "Radzymin",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Karczma Harnaś, Jaworzyna Krynicka, Krynica-Zdrój": null,
+ "Jaworzyna Krynicka, Krynica-Zdrój": {
+  "lat": 49.417236,
+  "lng": 20.908583,
+  "name": "Jaworzyna Krynicka",
+  "category": "landuse",
+  "type": "winter_sports",
+  "address": null
+ },
+ "Gospoda na Jaworzynie, Jaworzyna Krynicka, Krynica-Zdrój": null,
+ "Karczma u Golca, Jaworzyna Krynicka, Krynica-Zdrój": null,
+ "Restauracja Muzealna, Aleje Jerozolimskie (Muzeum Narodowe), Warszawa": null,
+ "Restauracja Muzealna, Śródmieście, Warszawa": null,
+ "Aleje Jerozolimskie (Muzeum Narodowe), Warszawa": null,
+ "Śródmieście, Warszawa": {
+  "lat": 52.23281,
+  "lng": 21.019067,
+  "name": "Śródmieście",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Kebab Granders, Radzionków": null,
+ "Radzionków": {
+  "lat": 50.401507,
+  "lng": 18.903302,
+  "name": "Radzionków",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kebab King Royal, Radzionków": {
+  "lat": 50.396861,
+  "lng": 18.895337,
+  "name": "Kebab King Royal",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Unii Europejskiej 1C"
+ },
+ "Kebab Gigant XXL (budka w Radzionkowie), Radzionków": null,
+ "Bottiglieria 1881, Kraków": {
+  "lat": 50.048672,
+  "lng": 19.946234,
+  "name": "Bottiglieria 1881",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bocheńska 5"
+ },
+ "Zapiekanki z pieca Classic, Władysławowo": null,
+ "Projekt Zapiekanka, Władysławowo": null,
+ "Niewinni Czarodzieje 3.0, Gdynia": {
+  "lat": 54.516716,
+  "lng": 18.543119,
+  "name": "Niewinni Czarodzieje TrzyZero",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Grunwaldzki 2"
+ },
+ "Bar w przychodni, Kraków": {
+  "lat": 50.079119,
+  "lng": 19.983581,
+  "name": "Bar w Przychodni",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ułanów 29a"
+ },
+ "United Chicken, Grochów, Warszawa": {
+  "lat": 52.23939,
+  "lng": 21.08353,
+  "name": "United Chicken",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Grenadierów 25/27"
+ },
+ "Kurczaki Wings, Grochów, Warszawa": {
+  "lat": 52.243173,
+  "lng": 21.099855,
+  "name": "Kurczaki Wings",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Grochowska 144"
+ },
+ "Buffalo Wings, Warszawa": null,
+ "Kura, Warszawa": {
+  "lat": 52.229522,
+  "lng": 20.974331,
+  "name": "Kura",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marcina Kasprzaka 6"
+ },
+ "Kur Zapiał, Warszawa": null,
+ "Gospoda Kwaśnica, Częstochowa": null,
+ "Karczma Bida, koło Lublina, Bogucin": null,
+ "koło Lublina, Bogucin": null,
+ "Bogucin": {
+  "lat": 52.741922,
+  "lng": 20.073936,
+  "name": "Bogucin",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Bar Przystań Palenica, Palenica, Szczawnica": null,
+ "Palenica, Szczawnica": {
+  "lat": 49.418694,
+  "lng": 20.476806,
+  "name": "Palenica",
+  "category": "natural",
+  "type": "peak",
+  "address": null
+ },
+ "Restauracja pod Kolejką Palenica, Palenica, Szczawnica": null,
+ "Prawilny Kepson, Częstochowa": null,
+ "Kepson Częstochowa, Częstochowa": null,
+ "Tandori Craft Kebab, Żoliborz, Warszawa": null,
+ "Żoliborz, Warszawa": {
+  "lat": 52.267594,
+  "lng": 20.979698,
+  "name": "Żoliborz",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Mieszany Mieszany, Rembielska, Warszawa": null,
+ "Mieszany Mieszany, Bródno, Warszawa": {
+  "lat": 52.288063,
+  "lng": 21.031513,
+  "name": "Kebab Mieszany Mieszany",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rembielińska 18"
+ },
+ "Hadda Kebab, Marki": {
+  "lat": 52.321181,
+  "lng": 21.087276,
+  "name": "Hadda Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Butrymów"
+ },
+ "Orion Kebab, Władysławowo": {
+  "lat": 54.786505,
+  "lng": 18.391076,
+  "name": "ORION KEBAB - kraftowe mięso",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Droga Swarzewska 1A"
+ },
+ "Syta Buła, Kielce": {
+  "lat": 50.885007,
+  "lng": 20.637054,
+  "name": "Syta Buła",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marszałkowska 35"
+ },
+ "Antalya Kebab, Kielce": null,
+ "Galata Kebab, Kielce": {
+  "lat": 50.867136,
+  "lng": 20.634809,
+  "name": "Galata Kebab & Tantuni",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Wolności 6"
+ },
+ "Ryby u Grubego, Międzyzdroje": {
+  "lat": 53.929111,
+  "lng": 14.442564,
+  "name": "Ryby smażone i wędzone \"U Grubego\"",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza 21"
+ },
+ "Polkowickie Zapiekanki, 3 Maja, Polkowice": null,
+ "Polkowickie Zapiekanki, Polkowice": null,
+ "3 Maja, Polkowice": {
+  "lat": 51.509825,
+  "lng": 16.072064,
+  "name": "3 Maja",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "3 Maja"
+ },
+ "Pizzeria Dolce Vita, Polkowice": null,
+ "Polkowice": {
+  "lat": 51.503929,
+  "lng": 16.071337,
+  "name": "Polkowice",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Woło Kebab, Katowice": {
+  "lat": 50.25536,
+  "lng": 19.031302,
+  "name": "Woło! Kebab!",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Zygmunta Krasińskiego"
+ },
+ "Pasza Gemüse Kebab, przy dworcu PKP, Katowice": null,
+ "Pasza Gemüse Kebab, Katowice": null,
+ "przy dworcu PKP, Katowice": null,
+ "Kebab u Pajdy, Katowice": null,
+ "Alibaba Kebab, Katowice": null,
+ "Amir Kebab Express, Katowice": {
+  "lat": 50.260925,
+  "lng": 19.018587,
+  "name": "Amir Kebab Express",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza 22"
+ },
+ "Praski Kebab, Praga, Warszawa": {
+  "lat": 52.247214,
+  "lng": 21.057217,
+  "name": "Praski Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Mińska 7"
+ },
+ "Baran Donercraft, Warszawa": null,
+ "Doner House, Żoliborz, Warszawa": null,
+ "Corner Gem Lebanese Cuisine, Warszawa": null,
+ "Must Kebab, Piotrków Kujawski": null,
+ "Piotrków Kujawski": {
+  "lat": 52.55057,
+  "lng": 18.49872,
+  "name": "Piotrków Kujawski",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Ala Kebab, Piotrków Kujawski": null,
+ "Zamil Kebab, Izbica Kujawska": null,
+ "Izbica Kujawska": {
+  "lat": 52.41925,
+  "lng": 18.76435,
+  "name": "Izbica Kujawska",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Hada Kebab, Marki": null,
+ "Zahir Kebab, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.241479,
+  "lng": 20.99462,
+  "name": "Zahir Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II"
+ },
+ "Super King Kebab, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.240434,
+  "lng": 20.994202,
+  "name": "Kebab Super King",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II 33A"
+ },
+ "Habiba Kebab, Bielany, Warszawa": {
+  "lat": 52.267342,
+  "lng": 20.947371,
+  "name": "Kebab Habiba",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Klemensa Stanisława Rudnickiego 10"
+ },
+ "Yum Yum Kebab, Chomiczówka, Warszawa": {
+  "lat": 52.275818,
+  "lng": 20.92255,
+  "name": "Yum Yum kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Josepha Conrada 15"
+ },
+ "Tawerna Clipper, Władysławowo": null,
+ "Smażalnia ryb przy plaży we Władysławowie, Władysławowo": null,
+ "Noworolski, Sukiennice, Kraków": null,
+ "Noworolski, Rynek Główny, Kraków": {
+  "lat": 50.061546,
+  "lng": 19.937468,
+  "name": "Noworolski",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Główny 1"
+ },
+ "Top Drive, Lubartów": {
+  "lat": 51.451868,
+  "lng": 22.61289,
+  "name": "Top Drive",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "1 Maja"
+ },
+ "Grill Bar pod Skocznią (Cafe Bar), pod Wielką Krokwią, Zakopane": null,
+ "Grill Bar pod Skocznią (Cafe Bar), Zakopane": null,
+ "pod Wielką Krokwią, Zakopane": {
+  "lat": 49.284233,
+  "lng": 19.96374,
+  "name": "Parking Pod Wielką Krokwią",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Józefa Piłsudskiego"
+ },
+ "Arabia Kebab, Stary Kleparz, Kraków": null,
+ "Stary Kleparz, Kraków": {
+  "lat": 50.067384,
+  "lng": 19.941086,
+  "name": "Stary Kleparz",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Kleparski 20"
+ },
+ "Polenes, Kraków": null,
+ "Shaerma Clubhouse, Kraków": null,
+ "Lussi (Lucy), pod Pałacem Kultury, Warszawa": null,
+ "Lussi (Lucy), Śródmieście, Warszawa": null,
+ "pod Pałacem Kultury, Warszawa": null,
+ "Mała Gastronomia, Matki Bolesnej, Limanowa": null,
+ "Mała Gastronomia, Limanowa": null,
+ "Matki Bolesnej, Limanowa": {
+  "lat": 49.704399,
+  "lng": 20.429641,
+  "name": "Limanowa, M.B. Bolesnej I",
+  "category": "highway",
+  "type": "highway",
+  "address": "Matki Boskiej Bolesnej"
+ },
+ "Primo, Limanowa": {
+  "lat": 49.704815,
+  "lng": 20.419367,
+  "name": "Primo Zapiekanka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Józefa Marka 17"
+ },
+ "Ricky z Ameryki, Toruń": null,
+ "Toruń": {
+  "lat": 53.010272,
+  "lng": 18.604809,
+  "name": "Toruń",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Siemka Kebab, Toruń": null,
+ "Szamanko, Toruń": null,
+ "Lamaa Kebab, Marki": null,
+ "Kasap Kebab, Bemowo, Warszawa": null,
+ "Bemowo, Warszawa": {
+  "lat": 52.242109,
+  "lng": 20.912557,
+  "name": "Bemowo",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Sułtan Kebab, Karola Dickensa, Warszawa": {
+  "lat": 52.206297,
+  "lng": 20.971162,
+  "name": "Sultan Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Karola Dickensa 14"
+ },
+ "Kebab Lab, Puławska, Warszawa": null,
+ "Kebab Lab, Warszawa": null,
+ "Zapiekanki w Biłgoraju (słynna budka z zapiekankami), Biłgoraj": null,
+ "Biłgoraj": {
+  "lat": 50.542485,
+  "lng": 22.720933,
+  "name": "Biłgoraj",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Stambuł Kebab, Szczebrzeszyn": null,
+ "Szczebrzeszyn": {
+  "lat": 50.694697,
+  "lng": 22.978675,
+  "name": "Szczebrzeszyn",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Mufasa Gemüse Kebab, Srebrna, Warszawa": null,
+ "Mufasa Gemüse Kebab, Warszawa": null,
+ "Srebrna, Warszawa": {
+  "lat": 52.227352,
+  "lng": 20.989263,
+  "name": "Srebrna",
+  "category": "highway",
+  "type": "residential",
+  "address": "Srebrna"
+ },
+ "Mitmax, Warszawa": null,
+ "Shawarma Mafia (Szaur Mafia), Warszawa": null,
+ "Twoja Stacja, Warszawa": {
+  "lat": 52.157581,
+  "lng": 21.03361,
+  "name": "Twoja Stacja",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Komisji Edukacji Narodowej 88"
+ },
+ "Farina Napoletano Vero Pizza, Białystok": null,
+ "Vitallo, Białystok": null,
+ "Dom Smaków, Warszawa": null,
+ "Bar Europa, Katowice": {
+  "lat": 50.260148,
+  "lng": 19.020367,
+  "name": "Bar Mleczny Europa",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza 8"
+ },
+ "Bistro Pod Siódemką, Katowice": null,
+ "Bar Kukuryku, Katowice": {
+  "lat": 50.25538,
+  "lng": 19.010114,
+  "name": "Kukuryku Bar Mleczny",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Maksymiliana Wilimowskiego 6"
+ },
+ "Żurownia, Katowice": {
+  "lat": 50.253498,
+  "lng": 19.019048,
+  "name": "Żurownia",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Juliusza Ligonia"
+ },
+ "Ifri Kebab, Żyrardów": null,
+ "Żyrardów": {
+  "lat": 52.054331,
+  "lng": 20.443501,
+  "name": "Żyrardów",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Ali Kebab, Żyrardów": null,
+ "Alif Kebab, Żyrardów": null,
+ "Marrakesz Kebab, Żyrardów": null,
+ "Zizi Kebab, Żyrardów": null,
+ "Mahal Kebab, Żyrardów": null,
+ "Lachor Kebab, Żyrardów": null,
+ "Bar w Ratuszu Targówek, Targówek, Warszawa": null,
+ "Bar i Bistro Polana Włosienica, Polana Włosienica, Zakopane": null,
+ "Polana Włosienica, Zakopane": null,
+ "Schronisko nad Morskim Okiem, Morskie Oko, Zakopane": null,
+ "Morskie Oko, Zakopane": {
+  "lat": 49.201405,
+  "lng": 20.07126,
+  "name": "Schronisko PTTK Morskie Oko",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Droga Oswalda Balzera"
+ },
+ "Kura Warzyw, Żoliborz, Warszawa": {
+  "lat": 52.258041,
+  "lng": 20.970518,
+  "name": "Kura Warzyw",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Duchnicka 3"
+ },
+ "Kebab Land, Praga Północ, Warszawa": null,
+ "Praga Północ, Warszawa": {
+  "lat": 52.264884,
+  "lng": 21.027344,
+  "name": "Praga-Północ",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Kebab House, Wielbark": null,
+ "Wielbark": {
+  "lat": 53.398424,
+  "lng": 20.946272,
+  "name": "Wielbark",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Czebureki przy ZOO, Praga-Północ, Warszawa": null,
+ "Praga-Północ, Warszawa": {
+  "lat": 52.264884,
+  "lng": 21.027344,
+  "name": "Praga-Północ",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Bary i budki w ZOO (zapiekanka, burger, stripsy), Praga-Północ, Warszawa": null,
+ "Restauracja Tembo (ZOO Warszawa), Praga-Północ, Warszawa": null,
+ "Dos Tacos, Warszawa": null,
+ "Rico, Warszawa": {
+  "lat": 52.229946,
+  "lng": 20.975659,
+  "name": "Rico",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Giełdowa 5"
+ },
+ "Blue Cactus, Fabryka Norblina, Warszawa": null,
+ "Blue Cactus, Wola, Warszawa": {
+  "lat": 52.232193,
+  "lng": 20.991575,
+  "name": "Blue Cactus",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Żelazna 51/53"
+ },
+ "Gringo Bar, Mokotów, Warszawa": null,
+ "Mokotów, Warszawa": {
+  "lat": 52.193672,
+  "lng": 21.044428,
+  "name": "Mokotów",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Spoko Loco, Francuska, Warszawa": null,
+ "Spoko Loco, Śródmieście, Warszawa": null,
+ "Francuska, Warszawa": {
+  "lat": 52.234643,
+  "lng": 21.053913,
+  "name": "Francuska",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Francuska"
+ },
+ "Dersim Kebab, Rynek, Rzeszów": null,
+ "Dersim Kebab, Rzeszów": null,
+ "Rynek, Rzeszów": {
+  "lat": 50.037488,
+  "lng": 22.004961,
+  "name": "Rynek",
+  "category": "place",
+  "type": "square",
+  "address": null
+ },
+ "Dara Kebab, Rynek, Rzeszów": {
+  "lat": 50.037694,
+  "lng": 22.005376,
+  "name": "Dara Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek 18"
+ },
+ "Kebab z pomarańczowej budki, Rzeszów": null,
+ "Książulu Kebab (dawniej Amal), Bemowo, Warszawa": null,
+ "Habanero Kebab, Poznań": null,
+ "Turecka Szama, Poznań": {
+  "lat": 52.392271,
+  "lng": 16.896947,
+  "name": "Turecka Szama",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Floriana Stablewskiego"
+ },
+ "Świstak Kebab, Poznań": {
+  "lat": 52.512123,
+  "lng": 16.747038,
+  "name": "Świstak kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Szamotulska 12F"
+ },
+ "Mięsna Buła, Poznań": null,
+ "Tonir Ormiańska Uczta, Poznań": null,
+ "Fast Kebab, Murowana Goślina": {
+  "lat": 52.567852,
+  "lng": 16.994863,
+  "name": "Fast Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nowy Rynek 1"
+ },
+ "Leo Kebab, Murowana Goślina": null,
+ "Murowana Goślina": {
+  "lat": 52.575846,
+  "lng": 17.009791,
+  "name": "Murowana Goślina",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Montownia Pizzy, Murowana Goślina": {
+  "lat": 52.575052,
+  "lng": 17.009555,
+  "name": "Montownia Pizzy",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Poznańska"
+ },
+ "Księstwo Góralskie, Krupówki, Zakopane": null,
+ "Księstwo Góralskie, Zakopane": null,
+ "Ork Kebab, Olsztyn": {
+  "lat": 53.773424,
+  "lng": 20.474921,
+  "name": "Olsztyński Rzemieślniczy Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Maurycego Mochnackiego"
+ },
+ "Olsztyn": {
+  "lat": 53.776434,
+  "lng": 20.47768,
+  "name": "Olsztyn",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Babu Kebab, Olsztyn": {
+  "lat": 53.778129,
+  "lng": 20.479049,
+  "name": "Babu kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "11 Listopada 4"
+ },
+ "Na Sztyce, Olsztyn": null,
+ "Raz na Raz, Olsztyn": null,
+ "Summer Club Bistro, Olsztyn": null,
+ "Osiedlowy Kebab, Olsztyn": null,
+ "Gigabuła (Isamu), Rzeszów": null,
+ "Czarny Wilk, Rzeszów": null,
+ "Capital Pizza, Rzeszów": {
+  "lat": 50.036251,
+  "lng": 22.020886,
+  "name": "Capital pizza",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Monte Cassino"
+ },
+ "Kebab i Frytki Belgijskie, Broniewskiego 74a, Warszawa": null,
+ "Kebab i Frytki Belgijskie, Bielany, Warszawa": null,
+ "Broniewskiego 74a, Warszawa": {
+  "lat": 52.275103,
+  "lng": 20.939225,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Władysława Broniewskiego 74A"
+ },
+ "Tashkent City Kebab, Wiertnicza, Warszawa": {
+  "lat": 52.175202,
+  "lng": 21.07726,
+  "name": "Tashkent City Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wiertnicza 115"
+ },
+ "Kebab w Kobyłce (budka z kebabem z pieczarkami), Kobyłka": null,
+ "Kobyłka": {
+  "lat": 52.339971,
+  "lng": 21.190544,
+  "name": "Kobyłka",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Ćma by Mateusz Gessler, Hala Koszyki, Warszawa": null,
+ "Ćma by Mateusz Gessler, Śródmieście, Warszawa": {
+  "lat": 52.222425,
+  "lng": 21.011433,
+  "name": "Ćma",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Koszykowa 63"
+ },
+ "Hala Koszyki, Warszawa": {
+  "lat": 52.222224,
+  "lng": 21.011017,
+  "name": "Hala Koszyki",
+  "category": "building",
+  "type": "building",
+  "address": "Koszykowa 63"
+ },
+ "Kebab Station, Warszawa": null,
+ "W Bułce, Warszawa": null,
+ "Savub Kebab, Warszawa": null,
+ "Kebab Plant, Raszyn": null,
+ "Raszyn": {
+  "lat": 52.158333,
+  "lng": 20.924167,
+  "name": "Raszyn",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Pizzeria Sycyliana, Katowice": {
+  "lat": 50.224456,
+  "lng": 19.063002,
+  "name": "Pizzeria Sycyliana",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Batalionów Chłopskich"
+ },
+ "Bar Mleczny Tęczowy, Gdynia": {
+  "lat": 54.545669,
+  "lng": 18.461282,
+  "name": "Bar Mleczny Tęczowy",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Dworcowy"
+ },
+ "Sapko Kebab, Jana Pawła II, Warszawa": null,
+ "Sapko Kebab, Warszawa": null,
+ "Esnaf Kebab, Jana Pawła II, Warszawa": null,
+ "Esnaf Kebab, Warszawa": null,
+ "Kos Doner, Jana Pawła II, Warszawa": null,
+ "Kos Doner, Warszawa": null,
+ "Cukrem i Solą, Toruń": null,
+ "Giga Buła Isamu (Galeria Poznań), Galeria Poznań, Poznań": null,
+ "Giga Buła Isamu (Galeria Poznań), Poznań": null,
+ "Galeria Poznań, Poznań": {
+  "lat": 52.477654,
+  "lng": 16.782181,
+  "name": "Galeria Kiekrz",
+  "category": "landuse",
+  "type": "retail",
+  "address": null
+ },
+ "Bafra Kebab, Galeria nad Jeziorem, Konin": null,
+ "Bafra Kebab, Konin": {
+  "lat": 52.230934,
+  "lng": 18.251304,
+  "name": "Bafra Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rondo Witolda Friemanna"
+ },
+ "Szamka Kebab, Września": {
+  "lat": 52.324443,
+  "lng": 17.564976,
+  "name": "Szamka | Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Adama Mickiewicza 1"
+ },
+ "Bar Przystań, Sopot": {
+  "lat": 54.437078,
+  "lng": 18.580194,
+  "name": "Bar Przystań",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Wojska Polskiego 11"
+ },
+ "Zapiekanki Adamus, Skawina": null,
+ "Skawina": {
+  "lat": 49.974751,
+  "lng": 19.82657,
+  "name": "Skawina",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Kiełbaski z niebieskiej Nysy, Kraków": null,
+ "Golden Dragon, Stare Miasto, Olsztyn": null,
+ "Stare Miasto, Olsztyn": {
+  "lat": 53.776499,
+  "lng": 20.475604,
+  "name": "Stare Miasto",
+  "category": "highway",
+  "type": "pedestrian",
+  "address": "Stare Miasto"
+ },
+ "Centralka, Stare Miasto, Zamość": {
+  "lat": 50.717394,
+  "lng": 23.251814,
+  "name": "Centralka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Wielki"
+ },
+ "Budka z burgerami przy ul. Traugutta (Radom), Romualda Traugutta, Radom": null,
+ "Budka z burgerami przy ul. Traugutta (Radom), Radom": null,
+ "Romualda Traugutta, Radom": {
+  "lat": 51.397192,
+  "lng": 21.152103,
+  "name": "Romualda Traugutta",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Romualda Traugutta"
+ },
+ "Zapiekanki przy ul. Moniuszki (Radom), Moniuszki, Radom": null,
+ "Zapiekanki przy ul. Moniuszki (Radom), Radom": null,
+ "Moniuszki, Radom": {
+  "lat": 51.397319,
+  "lng": 21.15372,
+  "name": "Stanisława Moniuszki",
+  "category": "highway",
+  "type": "residential",
+  "address": "Stanisława Moniuszki"
+ },
+ "Prymus (stołówka LO im. Balzera), Słoneczna, Zakopane": null,
+ "Prymus (stołówka LO im. Balzera), Zakopane": null,
+ "Słoneczna, Zakopane": {
+  "lat": 49.299178,
+  "lng": 19.955696,
+  "name": "Słoneczna",
+  "category": "highway",
+  "type": "residential",
+  "address": "Słoneczna"
+ },
+ "Restaurant Gond, Kościelisko": null,
+ "Kościelisko": {
+  "lat": 49.290718,
+  "lng": 19.888573,
+  "name": "Kościelisko",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "M Chicken, Bydgoszcz": null,
+ "Pub Mentzena, Toruń": null,
+ "Stołówka Szkoły Podstawowej nr 129, Kraków": null,
+ "Amrit Kebab, Kondratowicza, Warszawa": null,
+ "Amrit Kebab, Bródno, Warszawa": null,
+ "Doj Doj Kebab, Kondratowicza, Warszawa": null,
+ "Doj Doj Kebab, Bródno, Warszawa": null,
+ "Kebab Guru, Chodecka 11, Warszawa": null,
+ "Kebab Guru, Targówek, Warszawa": {
+  "lat": 52.295763,
+  "lng": 21.04193,
+  "name": "Guru kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Łojewska"
+ },
+ "Lajla Kebab, Bazyliańska, Warszawa": null,
+ "Lajla Kebab, Targówek, Warszawa": null,
+ "Bazyliańska, Warszawa": {
+  "lat": 52.292616,
+  "lng": 21.023296,
+  "name": "Bazyliańska",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Bazyliańska"
+ },
+ "Kebab Mix, Targówek, Warszawa": null,
+ "Chata Wariata, Targówek, Warszawa": null,
+ "Elegans Kebab, Wola, Warszawa": null,
+ "Wola, Warszawa": {
+  "lat": 52.236238,
+  "lng": 20.954781,
+  "name": "Wola",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Tantuni, Wolska, Warszawa": {
+  "lat": 52.234405,
+  "lng": 20.969782,
+  "name": "Tantuni",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wolska 50A"
+ },
+ "Kebab Craftowy (Wolumen), Bemowo, Warszawa": null,
+ "Box Kebab, Warszawa": null,
+ "Bar Orientalny, Łódź": {
+  "lat": 51.741665,
+  "lng": 19.569049,
+  "name": "Bar Orientalny Quang-Ngoc",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Henryka Brodatego 2a"
+ },
+ "Sztos Kebab, Tuchola": null,
+ "Tuchola": {
+  "lat": 53.58809,
+  "lng": 17.859041,
+  "name": "Tuchola",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Delta Kebab, Tuchola": null,
+ "Kebab Center, Tuchola": null,
+ "Kebab Queen, Tuchola": null,
+ "Silver Dragon, Radom": {
+  "lat": 51.381468,
+  "lng": 21.170616,
+  "name": "Silver Dragon",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Józefa Grzecznarowskiego"
+ },
+ "Burger ze skwerka (budki naprzeciw liceum Czachowskiego), skwerek przy liceum Czachowskiego, Radom": null,
+ "Burger ze skwerka (budki naprzeciw liceum Czachowskiego), Radom": null,
+ "skwerek przy liceum Czachowskiego, Radom": null,
+ "Bar fastfood na Gubałówce, Gubałówka, Zakopane": null,
+ "Gubałówka, Zakopane": {
+  "lat": 49.303722,
+  "lng": 19.919656,
+  "name": "Gubałówka",
+  "category": "natural",
+  "type": "peak",
+  "address": null
+ },
+ "Domo Bake, Warszawa": {
+  "lat": 52.238599,
+  "lng": 21.028178,
+  "name": "Domo Bake",
+  "category": "shop",
+  "type": "shop",
+  "address": "Dobra 26"
+ },
+ "Perełka, Śródmieście, Warszawa": {
+  "lat": 52.238793,
+  "lng": 21.002906,
+  "name": "Perełka",
+  "category": "shop",
+  "type": "shop",
+  "address": "Graniczna 4"
+ },
+ "Holy Bread, Hala Mirowska, Warszawa": null,
+ "Holy Bread, Śródmieście, Warszawa": null,
+ "Hala Mirowska, Warszawa": {
+  "lat": 52.238837,
+  "lng": 20.99737,
+  "name": "Hala Mirowska",
+  "category": "historic",
+  "type": "historic",
+  "address": "Plac Mirowski 1"
+ },
+ "Bacon, Warszawa": null,
+ "Słodki Słony Magdy Gessler, Warszawa": null,
+ "Ciastko z Dziurką, Wilcza 26, Warszawa": null,
+ "Ciastko z Dziurką, Śródmieście, Warszawa": {
+  "lat": 52.225415,
+  "lng": 21.017594,
+  "name": "Ciastko z Dziurką",
+  "category": "shop",
+  "type": "shop",
+  "address": "Wilcza 26"
+ },
+ "Chleboteka, Bemowo, Warszawa": null,
+ "Day (cukiernia na Bielanach), Bielany, Warszawa": null,
+ "Cała w mące, Warszawa": {
+  "lat": 52.245398,
+  "lng": 20.966565,
+  "name": "Cała w Mące",
+  "category": "shop",
+  "type": "shop",
+  "address": "Jana Ostroroga 21"
+ },
+ "Mors, Mielno": {
+  "lat": 54.262118,
+  "lng": 16.051848,
+  "name": "Mors",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Tadeusza Kościuszki"
+ },
+ "Gościniec, Wojska Polskiego 4a, Mielno": null,
+ "Gościniec, Mielno": null,
+ "Wojska Polskiego 4a, Mielno": {
+  "lat": 54.260796,
+  "lng": 16.054646,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Wojska Polskiego 4a"
+ },
+ "Piekarnia Grzybki, Malownicza, Warszawa": {
+  "lat": 52.177671,
+  "lng": 20.938083,
+  "name": "Grzybki",
+  "category": "shop",
+  "type": "shop",
+  "address": "Malownicza"
+ },
+ "Piekarnia Grzybki, Włochy, Warszawa": {
+  "lat": 52.177671,
+  "lng": 20.938083,
+  "name": "Grzybki",
+  "category": "shop",
+  "type": "shop",
+  "address": "Malownicza"
+ },
+ "Malownicza, Warszawa": {
+  "lat": 52.177432,
+  "lng": 20.941012,
+  "name": "Malownicza",
+  "category": "highway",
+  "type": "residential",
+  "address": "Malownicza"
+ },
+ "Sklep firmowy SPC (piekarnia), Warszawa": null,
+ "Kebab Arturito (kebab z TikToka), Elbląg": null,
+ "Tandir Kebab, Elbląg": null,
+ "Strefa 77, Warszawa": {
+  "lat": 52.264726,
+  "lng": 21.043142,
+  "name": "Bohema - Strefa Praga",
+  "category": "landuse",
+  "type": "residential",
+  "address": null
+ },
+ "Al Hindi, Częstochowa": null,
+ "Bollywood Kebab, Częstochowa": {
+  "lat": 50.864415,
+  "lng": 19.224554,
+  "name": "Bollywood Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wolności"
+ },
+ "Kurt Kebab, Częstochowa": null,
+ "Kebab House Yalla Habibi, Częstochowa": null,
+ "Pierwszy kebab w Częstochowie (od 1997), Częstochowa": null,
+ "Macho Kebab, Wrocław": null,
+ "Cheesy Kebab (Tomek Olejnik), Wrocław": null,
+ "Plackarnia, Wrocław": {
+  "lat": 51.083546,
+  "lng": 17.036968,
+  "name": "Plackarnia",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "aleja Armii Krajowej 2a/1"
+ },
+ "Peri Peri Wadowice, Wadowice": {
+  "lat": 49.881493,
+  "lng": 19.492287,
+  "name": "Peri Peri",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Kościuszki 9"
+ },
+ "Eas Kebab, Wadowice": null,
+ "Pamukale Kebab, Wadowice": null,
+ "Diamond Kebab, Wadowice": {
+  "lat": 49.886111,
+  "lng": 19.491463,
+  "name": "Diamond Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Obrońców Westerplatte 1"
+ },
+ "Gęba w Niebie, Białystok": {
+  "lat": 53.124317,
+  "lng": 23.16549,
+  "name": "Gęba w Niebie",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Świętojańska 21"
+ },
+ "Szklanki i Talerze, Białystok": {
+  "lat": 53.132803,
+  "lng": 23.157549,
+  "name": "Szklanki i Talerze",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Kościuszki 32"
+ },
+ "Sushi and Bowl, Białystok": null,
+ "XL Kebab, Giszowiec, Katowice": {
+  "lat": 50.224046,
+  "lng": 19.062927,
+  "name": "XL Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Mysłowicka 24"
+ },
+ "Kebab u Pameli, Czeladź": null,
+ "Czeladź": {
+  "lat": 50.319142,
+  "lng": 19.07842,
+  "name": "Czeladź",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kebab Kapadokia, Sosnowiec": null,
+ "Sosnowiec": {
+  "lat": 50.27124,
+  "lng": 19.215563,
+  "name": "Sosnowiec",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "U Fukiera, Stare Miasto, Warszawa": {
+  "lat": 52.249661,
+  "lng": 21.011546,
+  "name": "U Fukiera",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rynek Starego Miasta 27"
+ },
+ "Aju Kebab, Toruń": null,
+ "Amin's Kebab, Stare Miasto, Toruń": null,
+ "Jaśmin Kebab, Stare Miasto, Toruń": {
+  "lat": 53.009728,
+  "lng": 18.603055,
+  "name": "Jasmin kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ducha Świętego"
+ },
+ "Welt Kebab, Toruń": null,
+ "Kebab na Szewskiej, Szewska, Toruń": null,
+ "Kebab na Szewskiej, Stare Miasto, Toruń": null,
+ "Szewska, Toruń": {
+  "lat": 53.011249,
+  "lng": 18.604993,
+  "name": "Szewska",
+  "category": "highway",
+  "type": "living_street",
+  "address": "Szewska"
+ },
+ "Taxim Kebab, Świętokrzyska, Warszawa": null,
+ "Taxim Kebab, Śródmieście, Warszawa": null,
+ "Świętokrzyska, Warszawa": {
+  "lat": 52.235095,
+  "lng": 21.007899,
+  "name": "Świętokrzyska",
+  "category": "railway",
+  "type": "railway",
+  "address": "Świętokrzyska"
+ },
+ "Aha Kebab, Warszawa": null,
+ "Mister Kapsalon, Warszawa": null,
+ "Gorani Craft Kebab Tandoor, Ząbki": null,
+ "Ząbki": {
+  "lat": 52.293496,
+  "lng": 21.115741,
+  "name": "Ząbki",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Sefcio Kebab, Rybnik": null,
+ "Rybnik": {
+  "lat": 50.110569,
+  "lng": 18.553187,
+  "name": "Rybnik",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Pizzeria Zielona Górka, Pabianice": null,
+ "Ale Gloria, plac Trzech Krzyży, Warszawa": null,
+ "Ale Gloria, Śródmieście, Warszawa": null,
+ "plac Trzech Krzyży, Warszawa": {
+  "lat": 52.228698,
+  "lng": 21.022549,
+  "name": "Plac Trzech Krzyży",
+  "category": "place",
+  "type": "square",
+  "address": null
+ },
+ "Pomidor Cud Malina, Elbląg": {
+  "lat": 54.187187,
+  "lng": 19.402407,
+  "name": "Bar Pomidor Cud-Malina",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Odrodzenia"
+ },
+ "Popularny bar na Gubałówce (nazwa nie pada w napisach), Gubałówka, Zakopane": null,
+ "Jadłodajnia Obiady Domowe (Marta Flis), Kraśnik": null,
+ "Kraśnik": {
+  "lat": 50.943493,
+  "lng": 22.208358,
+  "name": "Kraśnik",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Shahi Kebab, Kondratowicza, Warszawa": {
+  "lat": 52.292669,
+  "lng": 21.04431,
+  "name": "Shahi Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ludwika Kondratowicza 37"
+ },
+ "Zaib Kebab, Warszawa": {
+  "lat": 52.26159,
+  "lng": 21.031109,
+  "name": "Zaib Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Dąbrowszczaków 10C"
+ },
+ "Jazin Kebab, Nowogrodzka, Warszawa": null,
+ "Jazin Kebab, Śródmieście, Warszawa": null,
+ "Nowogrodzka, Warszawa": {
+  "lat": 52.22982,
+  "lng": 21.017204,
+  "name": "Nowogrodzka",
+  "category": "highway",
+  "type": "residential",
+  "address": "Nowogrodzka"
+ },
+ "Harbi Kebab, Ochota, Warszawa": null,
+ "Ochota, Warszawa": {
+  "lat": 52.212225,
+  "lng": 20.97263,
+  "name": "Ochota",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Carat Kebab, Magdzińskiego, Bydgoszcz": null,
+ "Carat Kebab, Stare Miasto, Bydgoszcz": null,
+ "Magdzińskiego, Bydgoszcz": {
+  "lat": 53.121315,
+  "lng": 18.003291,
+  "name": "Magdzińskiego 13",
+  "category": "landuse",
+  "type": "construction",
+  "address": null
+ },
+ "Odi Kebab, Bydgoszcz": null,
+ "Maestro Street, Bydgoszcz": null,
+ "Sułtan Doner Kebab, Bydgoszcz": null,
+ "Syta Pita, Bydgoszcz": {
+  "lat": 53.134258,
+  "lng": 17.992274,
+  "name": "Syta Pita",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Dworcowa 89"
+ },
+ "Pizza Factory, Olsztyn": null,
+ "Bistro Pizza Bzik, Katowice": null,
+ "Street Kebab, Poznań": null,
+ "Tureckie Smaki, Poznań": null,
+ "Pan Murat Sycący Döner, Poznań": null,
+ "Bar Zbyszko, Wrocław": {
+  "lat": 51.138803,
+  "lng": 17.032549,
+  "name": "Bar Zbyszko",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bałtycka 21"
+ },
+ "Cukiernia u Dziadka (Zygmunt Pańszczyk), Kielce": null,
+ "Kebab For All, Elbląg": {
+  "lat": 54.170498,
+  "lng": 19.403415,
+  "name": "Kebab Elbląg For All",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Brzozowa 6"
+ },
+ "Super Unique, Elbląg": null,
+ "Robiul Kebab, 12 Lutego, Elbląg": null,
+ "Robiul Kebab, Elbląg": null,
+ "12 Lutego, Elbląg": {
+  "lat": 54.163703,
+  "lng": 19.405076,
+  "name": "12 Lutego",
+  "category": "highway",
+  "type": "secondary",
+  "address": "12 Lutego"
+ },
+ "Szaik Kebab, Elbląg": null,
+ "Habibi Kebab, Elbląg": null,
+ "Gyros Hamburger Bar (dworzec PKS), dworzec PKS, Elbląg": null,
+ "Gyros Hamburger Bar (dworzec PKS), Elbląg": null,
+ "dworzec PKS, Elbląg": {
+  "lat": 54.152223,
+  "lng": 19.415181,
+  "name": "Dworzec Autobusowy PKS Elbląg",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Dworcowy 4"
+ },
+ "Zapiekanka z pieczarkami (Luna Park), Warszawa": null,
+ "Owca (Luna Park), Warszawa": null,
+ "U Wujcia (Luna Park), Warszawa": null,
+ "Pizza neapolitańska (Luna Park), Warszawa": null,
+ "Gofry (Luna Park), Warszawa": null,
+ "Fazir Kebab, Józefosław": null,
+ "Józefosław": {
+  "lat": 52.100618,
+  "lng": 21.046876,
+  "name": "Józefosław",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Trattoria da Tadeusz, Bielsko-Biała": null,
+ "Bielsko-Biała": {
+  "lat": 49.812078,
+  "lng": 19.029199,
+  "name": "Bielsko-Biała",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Bar Smakuś, Częstochowa": null,
+ "Frykas, Częstochowa": {
+  "lat": 50.816254,
+  "lng": 19.035538,
+  "name": "Frykas",
+  "category": "shop",
+  "type": "shop",
+  "address": "Łomżyńska"
+ },
+ "Rebernia Ribs & Craft Beer, Manufaktura, Łódź": null,
+ "Manufaktura, Łódź": {
+  "lat": 51.779462,
+  "lng": 19.444461,
+  "name": "Manufaktura",
+  "category": "landuse",
+  "type": "retail",
+  "address": null
+ },
+ "Jala, Szczecin": null,
+ "Kebab Zdrojowy, Szczecin": {
+  "lat": 53.382174,
+  "lng": 14.634415,
+  "name": "Kebab zdrojowy",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Walecznych"
+ },
+ "Kapitan Burger, Szczecin": null,
+ "Fox Burger, Sulejów": {
+  "lat": 51.361479,
+  "lng": 19.864249,
+  "name": "Fox Burger",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Błonie"
+ },
+ "Halo Kebab, Jelenia Góra": null,
+ "Jelenia Góra": {
+  "lat": 50.903103,
+  "lng": 15.734431,
+  "name": "Jelenia Góra",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Halo Kebab, Karkonowska, Łomnica": null,
+ "Halo Kebab, Łomnica": null,
+ "Karkonowska, Łomnica": null,
+ "Łomnica": {
+  "lat": 50.825833,
+  "lng": 18.528611,
+  "name": "Łomnica",
+  "category": "place",
+  "type": "village",
+  "address": null
+ },
+ "Halo Kebab, Karpacz": null,
+ "Karpacz": {
+  "lat": 50.763998,
+  "lng": 15.745198,
+  "name": "Karpacz",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kurczak z rożna na Dolnej, Dolna, Warszawa": null,
+ "Kurczak z rożna na Dolnej, Mokotów, Warszawa": null,
+ "Dolna, Warszawa": {
+  "lat": 52.201522,
+  "lng": 21.033675,
+  "name": "Dolna",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Dolna"
+ },
+ "Bar Rap, Szczecin": null,
+ "Mak Kwak, Szczecin": {
+  "lat": 53.42714,
+  "lng": 14.538618,
+  "name": "Mak Kwak",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bolesława Krzywoustego 19"
+ },
+ "Pychotka, Konin": null,
+ "Konin": {
+  "lat": 52.230193,
+  "lng": 18.252111,
+  "name": "Konin",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Masha Kebab, Górczewska, Warszawa": {
+  "lat": 52.238746,
+  "lng": 20.904469,
+  "name": "Kebab Masha",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Górczewska 231"
+ },
+ "Max Kebab, Czumy, Warszawa": {
+  "lat": 52.236936,
+  "lng": 20.913134,
+  "name": "Max Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Waleriana Czumy 1A"
+ },
+ "Mavi Kebab, Ochota, Warszawa": {
+  "lat": 52.217339,
+  "lng": 20.978905,
+  "name": "Mavi Restaurant Kebab & Grill",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Kopińska 10B"
+ },
+ "Kebab z kurczakiem na Marywilskiej, Marywilska, Warszawa": null,
+ "Kebab z kurczakiem na Marywilskiej, Warszawa": null,
+ "Marywilska, Warszawa": {
+  "lat": 52.309947,
+  "lng": 21.004527,
+  "name": "Marywilska",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Marywilska"
+ },
+ "Zapiekanki u Lucy, Warszawa": null,
+ "Mak Kwak (Makak), Warszawa": null,
+ "Zapieksy Luksusowe, Warszawa": null,
+ "Warszawska Bagieta, Śródmieście, Warszawa": null,
+ "Budka z zapiekankami przy sklepie alkoholowym na Brudnie, Brudno, Warszawa": null,
+ "Brudno, Warszawa": null,
+ "Bar Akademicki, Gdańsk": {
+  "lat": 54.376436,
+  "lng": 18.613388,
+  "name": "Bar Akademicki",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Grunwaldzka 35"
+ },
+ "Bar Syrena, Gdańsk": {
+  "lat": 54.377819,
+  "lng": 18.609174,
+  "name": "Bar mleczny Syrena",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marii Konopnickiej"
+ },
+ "Bar Mleczny Jaros, Długie Ogrody, Gdańsk": null,
+ "Bar Mleczny Jaros, Gdańsk": {
+  "lat": 54.413096,
+  "lng": 18.598464,
+  "name": "Bar Mleczny Jaros",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jagiellońska"
+ },
+ "Gryfny Kebab, Zabrze": {
+  "lat": 50.308704,
+  "lng": 18.787717,
+  "name": "Gryfny Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Piastowska"
+ },
+ "Mangal Doner Łukasza Podolskiego, Zabrze": null,
+ "Zabrze": {
+  "lat": 50.314281,
+  "lng": 18.781576,
+  "name": "Zabrze",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Arabian King Kebab, Franciszkańska, Zabrze": null,
+ "Arabian King Kebab, Zabrze": null,
+ "Franciszkańska, Zabrze": {
+  "lat": 50.316196,
+  "lng": 18.767187,
+  "name": "Franciszkańska",
+  "category": "highway",
+  "type": "living_street",
+  "address": "Franciszkańska"
+ },
+ "Ada Kebab, Zabrze": {
+  "lat": 50.296742,
+  "lng": 18.776437,
+  "name": "Ada Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Franklina Roosevelta 45a"
+ },
+ "Papa Kebab, przy stadionie Górnika, Zabrze": null,
+ "Papa Kebab, Zabrze": {
+  "lat": 50.2949,
+  "lng": 18.768346,
+  "name": "Papa Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Franklina Roosevelta 81"
+ },
+ "Komediowa (restauracja Rafała Pacześ), Łódź": null,
+ "Classiker Gemüse Kebab, Legionowo": null,
+ "Legionowo": {
+  "lat": 52.404893,
+  "lng": 20.93311,
+  "name": "Legionowo",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Klas Gemüse Kebab, Wawer, Warszawa": null,
+ "Wawer, Warszawa": {
+  "lat": 52.220358,
+  "lng": 21.137083,
+  "name": "Wawer",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Dom z Trawy, Kielce": null,
+ "Sirin Bodrum Döner Kebab, Rondo ONZ, Warszawa": null,
+ "Sirin Bodrum Döner Kebab, Śródmieście, Warszawa": null,
+ "Rondo ONZ, Warszawa": {
+  "lat": 52.233074,
+  "lng": 20.998102,
+  "name": "Rondo ONZ",
+  "category": "railway",
+  "type": "railway",
+  "address": "Rondo ONZ"
+ },
+ "Kura Warzyw, Warszawa": {
+  "lat": 52.202229,
+  "lng": 21.020444,
+  "name": "Kura Warzyw",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jarosława Dąbrowskiego 15A"
+ },
+ "Kebab u Karima, Jadźwingów / Gotarda, Warszawa": null,
+ "Kebab u Karima, Służewiec, Warszawa": null,
+ "Jadźwingów / Gotarda, Warszawa": {
+  "lat": 52.170524,
+  "lng": 21.003432,
+  "name": "Jadźwingów 02",
+  "category": "highway",
+  "type": "highway",
+  "address": "Gotarda"
+ },
+ "Piri Piri, Ursynów, Warszawa": null,
+ "Chińczyk na Estrady, Estrady, Warszawa": {
+  "lat": 52.288756,
+  "lng": 20.876223,
+  "name": "Chińczyk na Estrady",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Estrady 13D"
+ },
+ "Chińczyk w Łomiankach, Łomianki": null,
+ "Łomianki": {
+  "lat": 52.335527,
+  "lng": 20.895012,
+  "name": "Łomianki",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Kebab Efo, Warszawa": null,
+ "Śniadaniownia na giełdzie (jajecznica z kebabem), Białystok": null,
+ "Stoisko z pączkami na giełdzie, Białystok": null,
+ "Stoisko z kiszką ziemniaczaną na giełdzie, Białystok": null,
+ "Budka z pielmieniami na giełdzie, Białystok": null,
+ "Gorąca Kiełbasiarnia, Łódź": {
+  "lat": 51.788555,
+  "lng": 19.471263,
+  "name": "Gorąca Kiełbasiarnia",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wojciecha Głowackiego 5/5A"
+ },
+ "Karczma na stoku (Szczyrk Mountain Resort), Szczyrk": null,
+ "Szczyrk": {
+  "lat": 49.716598,
+  "lng": 19.025461,
+  "name": "Szczyrk",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Chill (Szczyrk Mountain Resort), Szczyrk": null,
+ "Ring Club and Restaurant, Gdynia": null,
+ "Viral Kebab, Karmelicka, Kraków": null,
+ "Viral Kebab, Kraków": null,
+ "Karmelicka, Kraków": {
+  "lat": 50.068515,
+  "lng": 19.927164,
+  "name": "Karmelicka",
+  "category": "highway",
+  "type": "residential",
+  "address": "Karmelicka"
+ },
+ "Restauracja Kolorowa, Zakopane": null,
+ "Gdynianka, Gdynia": {
+  "lat": 54.513858,
+  "lng": 18.54031,
+  "name": "Pizzeria Gdynianka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Świętojańska"
+ },
+ "Polska Kiełbasa Szymona Czerwińskiego, przy molo, Sopot": null,
+ "Polska Kiełbasa Szymona Czerwińskiego, Sopot": null,
+ "przy molo, Sopot": null,
+ "Bar Jelczanin, Jelcz-Laskowice": {
+  "lat": 51.03108,
+  "lng": 17.308913,
+  "name": "Bar Jelczanin",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Inżynierska"
+ },
+ "Karczma Obrochtówka, Zakopane": null,
+ "Bar Prasowy, Marszałkowska, Warszawa": {
+  "lat": 52.215796,
+  "lng": 21.020592,
+  "name": "Bar Mleczny Prasowy",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Marszałkowska 10/16"
+ },
+ "City Kebab, Bartoszyce": null,
+ "Bartoszyce": {
+  "lat": 54.253434,
+  "lng": 20.808393,
+  "name": "Bartoszyce",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "BD Kebab, Bartoszyce": {
+  "lat": 54.250314,
+  "lng": 20.809283,
+  "name": "BD Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Konstytucji 3 Maja 17"
+ },
+ "Express Pizza (chlebek pita), Bartoszyce": null,
+ "Chilis Kebab, Bartoszyce": null,
+ "Platinium Kebab, Korsze": null,
+ "Korsze": {
+  "lat": 54.17067,
+  "lng": 21.144185,
+  "name": "Korsze",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Między Bułkami, Warszawa": {
+  "lat": 52.230489,
+  "lng": 21.015944,
+  "name": "Między Bułkami",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleje Jerozolimskie 23"
+ },
+ "War Burger, Warszawa": null,
+ "Bydło i Powidło, Wola, Warszawa": {
+  "lat": 52.226393,
+  "lng": 20.983468,
+  "name": "Bydło i Powidło",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Kolejowa 47"
+ },
+ "Barn Burger, Warszawa": {
+  "lat": 52.232721,
+  "lng": 21.011528,
+  "name": "Barn Burger",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Złota 9"
+ },
+ "Bobby Burger, Warszawa": {
+  "lat": 52.288839,
+  "lng": 21.031128,
+  "name": "Bobby Burger",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Rembielińska 20"
+ },
+ "Dobra Opcja, Strzelce Opolskie": {
+  "lat": 50.511366,
+  "lng": 18.303159,
+  "name": "Pizza Dobra Opcja",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Plac Stefana Żeromskiego"
+ },
+ "Tibet To Go, Strzelce Opolskie": null,
+ "Strzelce Opolskie": {
+  "lat": 50.510903,
+  "lng": 18.300455,
+  "name": "Strzelce Opolskie",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Pizzeria Pawełek, Strzelce Opolskie": null,
+ "Bella Italia, Strzelce Opolskie": null,
+ "Bar Mleczny Warszawski (dawniej Bar Koperkowy), Warszawa": null,
+ "Kebab w sklepie ogólnospożywczym (mięso od Szybkiego), Gdańsk": null,
+ "Chili and Chill Kebab, Gdańsk": null,
+ "Źródło Kofeiny, Mokotów, Warszawa": null,
+ "About Matcha, Chmielna, Warszawa": null,
+ "About Matcha, Warszawa": {
+  "lat": 52.236698,
+  "lng": 21.018232,
+  "name": "About Mátcha",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nowy Świat 66"
+ },
+ "Number 46, Krucza 46, Warszawa": null,
+ "Number 46, Warszawa": null,
+ "Krucza 46, Warszawa": {
+  "lat": 52.230286,
+  "lng": 21.01699,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Krucza 46"
+ },
+ "Ciao Antonio, Długosza / Kasprzaka, Łódź": null,
+ "Ciao Antonio, Łódź": null,
+ "Długosza / Kasprzaka, Łódź": null,
+ "Piri Piri, Lublin": {
+  "lat": 51.248398,
+  "lng": 22.507804,
+  "name": "Kebab Piri-Piri",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wojciechowska 9a"
+ },
+ "Zer Kebab, Lublin": null,
+ "Lublin": {
+  "lat": 51.218195,
+  "lng": 22.554678,
+  "name": "Lublin",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Bistro Polskie, Centrum handlowe Auchan Komorniki, Komorniki": null,
+ "Bistro Polskie, Komorniki": null,
+ "Centrum handlowe Auchan Komorniki, Komorniki": null,
+ "Komorniki": {
+  "lat": 51.976659,
+  "lng": 20.849967,
+  "name": "Komorniki",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Złota Świnka, Kamionki, Poznań": null,
+ "Kamionki, Poznań": {
+  "lat": 52.28553,
+  "lng": 16.99438,
+  "name": "Kamionki",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Knajpa z flakami przy ul. Brzeskiej, Brzeska, Warszawa": null,
+ "Knajpa z flakami przy ul. Brzeskiej, Praga, Warszawa": null,
+ "Brzeska, Warszawa": {
+  "lat": 52.250599,
+  "lng": 21.044898,
+  "name": "Brzeska",
+  "category": "highway",
+  "type": "residential",
+  "address": "Brzeska"
+ },
+ "Bangla Kebab, Zwycięstwa, Koszalin": null,
+ "Bangla Kebab, Koszalin": null,
+ "Zwycięstwa, Koszalin": {
+  "lat": 54.187054,
+  "lng": 16.239253,
+  "name": "Zwycięstwa",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Zwycięstwa"
+ },
+ "Kurczaczek, Zwycięstwa, Koszalin": {
+  "lat": 54.190522,
+  "lng": 16.209815,
+  "name": "Kurczaczek & Doner Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Zwycięstwa 200"
+ },
+ "Hasan Kebab and Grill, Zwycięstwa, Koszalin": null,
+ "Hasan Kebab and Grill, Koszalin": null,
+ "Star Kebab, Zwycięstwa, Koszalin": null,
+ "Star Kebab, Koszalin": null,
+ "Hajat Kebab, Zwycięstwa, Koszalin": null,
+ "Hajat Kebab, Koszalin": null,
+ "CTG Kebab, Zwycięstwa, Koszalin": null,
+ "CTG Kebab, Koszalin": null,
+ "Iskender, Zwycięstwa, Koszalin": null,
+ "Iskender, Koszalin": null,
+ "Orient Kebab, Zwycięstwa, Koszalin": null,
+ "Orient Kebab, Koszalin": null,
+ "Kartel Alkoholowy, Pabianice": null,
+ "Abdul Cuda na Kiju, Lublin": {
+  "lat": 51.248016,
+  "lng": 22.535448,
+  "name": "Abdul Cuda na kiju",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Cypriana Godebskiego"
+ },
+ "Dostana Kebab, Lublin": {
+  "lat": 51.238678,
+  "lng": 22.551666,
+  "name": "Dostana Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nadbystrzycka 7"
+ },
+ "Kebab Turecki, Lublin": {
+  "lat": 51.249253,
+  "lng": 22.519769,
+  "name": "Kebab Turecki",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nałęczowska 15"
+ },
+ "Doner Kebab, Giżycko": null,
+ "Giżycko": {
+  "lat": 54.036135,
+  "lng": 21.766133,
+  "name": "Giżycko",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Zara Kebab, Giżycko": {
+  "lat": 54.04075,
+  "lng": 21.790741,
+  "name": "ZARA Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Przemysłowa"
+ },
+ "King Amon, Giżycko": null,
+ "Persian Kebab, Giżycko": null,
+ "Dubaj Kebab, Giżycko": null,
+ "Bed King Kebab, Giżycko": null,
+ "Bar „To i to i jeszcze to” (po Kuchennych rewolucjach Magdy Gessler), Wrocław": null,
+ "Budka z burgerami dworcowymi w Radomiu (ulubiona), Radom": null,
+ "Zapieckanki, Kielce": {
+  "lat": 50.871703,
+  "lng": 20.632789,
+  "name": "zapieCKanki",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bodzentyńska"
+ },
+ "Lumberjack, Nowy Sącz": null,
+ "Nowy Sącz": {
+  "lat": 49.624917,
+  "lng": 20.691346,
+  "name": "Nowy Sącz",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Pizza Jolanta, Bydgoszcz": null,
+ "Kebilla, Radzionków": null,
+ "Bar Mleczny Zodiak, Białystok": null,
+ "Hassan Kebab, Rynek, Łowicz": null,
+ "Hassan Kebab, Łowicz": null,
+ "Rynek, Łowicz": {
+  "lat": 52.107929,
+  "lng": 19.945751,
+  "name": "Plac Stary Rynek",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Plac Stary Rynek"
+ },
+ "Dream Kebab and Pizza, Rynek, Łowicz": null,
+ "Dream Kebab and Pizza, Łowicz": null,
+ "Sahara Kebab, Rynek, Łowicz": null,
+ "Sahara Kebab, Łowicz": {
+  "lat": 52.10091,
+  "lng": 19.937354,
+  "name": "Sahara Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Generała Władysława Sikorskiego 3a"
+ },
+ "Bilas Kebab, Rynek, Łowicz": null,
+ "Bilas Kebab, Łowicz": null,
+ "Tomas Burger Kebab (gigant), Radzionków": null,
+ "Schronisko w Dolinie Pięciu Stawów Polskich, Tatry, Dolina Pięciu Stawów, Zakopane": null,
+ "Tatry, Dolina Pięciu Stawów, Zakopane": null,
+ "Zenon, Poznań": {
+  "lat": 52.416175,
+  "lng": 16.87004,
+  "name": "Kpt. Zenon Duszyński",
+  "category": "historic",
+  "type": "historic",
+  "address": "Polska"
+ },
+ "Bar STS, dworzec, Rzeszów": null,
+ "Bar STS, Rzeszów": null,
+ "dworzec, Rzeszów": {
+  "lat": 50.042451,
+  "lng": 22.006645,
+  "name": "Dworzec Główny PKP 03",
+  "category": "highway",
+  "type": "highway",
+  "address": "Artura Grottgera"
+ },
+ "Zapiekanki Piecyk (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Piecyk (Okrąglak), Kazimierz, Kraków": null,
+ "Plac Nowy (Okrąglak), Kraków": null,
+ "Kazimierz, Kraków": {
+  "lat": 50.051855,
+  "lng": 19.944947,
+  "name": "Kazimierz",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Zapiekanki Endzior (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Endzior (Okrąglak), Kazimierz, Kraków": null,
+ "Zapiekanki Lajkonik (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Lajkonik (Okrąglak), Kazimierz, Kraków": null,
+ "Zapiekanki Zapieksy (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Zapieksy (Okrąglak), Kazimierz, Kraków": null,
+ "Zapiekanki Na Maksa (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Na Maksa (Okrąglak), Kazimierz, Kraków": null,
+ "Mister Zapiekanka (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Mister Zapiekanka (Okrąglak), Kazimierz, Kraków": null,
+ "Zapiekanki Elemele (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Elemele (Okrąglak), Kazimierz, Kraków": null,
+ "Zapiekanki Królewskie (Okrąglak), Plac Nowy (Okrąglak), Kraków": null,
+ "Zapiekanki Królewskie (Okrąglak), Kazimierz, Kraków": null,
+ "Sklep monopolowy 24h z burgerami i zapiekankami (Łodygowa), Łodygowa, Warszawa": null,
+ "Sklep monopolowy 24h z burgerami i zapiekankami (Łodygowa), Targówek, Warszawa": null,
+ "Łodygowa, Warszawa": {
+  "lat": 52.28649,
+  "lng": 21.088292,
+  "name": "Łodygowa",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Łodygowa"
+ },
+ "Szałowy Kebab and Fast Food, Karpacz": null,
+ "Mak Kwak (sklep monopolowy z jedzeniem), Plac Zawiszy, Warszawa": null,
+ "Mak Kwak (sklep monopolowy z jedzeniem), Ochota, Warszawa": null,
+ "Plac Zawiszy, Warszawa": {
+  "lat": 52.224789,
+  "lng": 20.988696,
+  "name": "Plac Zawiszy",
+  "category": "place",
+  "type": "square",
+  "address": null
+ },
+ "Royal Kebab and Grill, Olsztyn": null,
+ "Terkis Spicy Kebab, Olsztyn": null,
+ "Obora Bistro Bar (U Bacy na Cacy), Chorzów": null,
+ "Chorzów": {
+  "lat": 50.297879,
+  "lng": 18.954447,
+  "name": "Chorzów",
+  "category": "boundary",
+  "type": "city",
+  "address": null
+ },
+ "Yumi Kebab, Warszawa": null,
+ "Zapiekanki Tymek, przy molo, Sopot": null,
+ "Zapiekanki Tymek, Sopot": null,
+ "Bar Kropka, przy molo, Sopot": null,
+ "Bar Kropka, Sopot": {
+  "lat": 54.445381,
+  "lng": 18.570539,
+  "name": "Kropka Bar",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Skwer Kuracyjny"
+ },
+ "Taverna Bar, przy molo, Sopot": null,
+ "Taverna Bar, Sopot": {
+  "lat": 54.444449,
+  "lng": 18.56861,
+  "name": "Coyote Bar",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bohaterów Monte Cassino 60"
+ },
+ "Crisper, przy plaży, Sopot": null,
+ "Crisper, Sopot": null,
+ "przy plaży, Sopot": {
+  "lat": 54.440999,
+  "lng": 18.571861,
+  "name": "Pokoje przy plaży Sopot",
+  "category": "tourism",
+  "type": "tourism",
+  "address": "Grunwaldzka"
+ },
+ "Smash and Chicks (Piri Piri), Wojciechowska 9a, Lublin": null,
+ "Smash and Chicks (Piri Piri), Lublin": null,
+ "Wojciechowska 9a, Lublin": {
+  "lat": 51.248398,
+  "lng": 22.507804,
+  "name": "Kebab Piri-Piri",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wojciechowska 9a"
+ },
+ "Pizzeria Bombola, Gliwice": {
+  "lat": 50.307621,
+  "lng": 18.688237,
+  "name": "Pizzeria Bombola",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleksandra Skowrońskiego 26"
+ },
+ "Burgery Haps (lokal youtubera Chrisa), Gliwice": null,
+ "Gliwice": {
+  "lat": 50.301131,
+  "lng": 18.662347,
+  "name": "Gliwice",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Orange Hot Pot, Gliwice": null,
+ "Bar Pielgrzyma, Jasna Góra, Częstochowa": null,
+ "Jasna Góra, Częstochowa": {
+  "lat": 50.812763,
+  "lng": 19.097121,
+  "name": "Jasna Góra",
+  "category": "historic",
+  "type": "historic",
+  "address": "Pasaż Biskupa Stefana Bareły"
+ },
+ "Niku Craft Kebab, Bemowo, Warszawa": null,
+ "Craftowy kebab w Jabłonnej (promocja z TikToka), Jabłonna": null,
+ "Jabłonna": {
+  "lat": 52.376676,
+  "lng": 20.917794,
+  "name": "Jabłonna",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Tadim Doner, Bemowo, Warszawa": null,
+ "Budka z zapiekankami przy surf campie, Jastarnia": null,
+ "Zapiekanki u Marcina, Jastarnia": null,
+ "Kebab u Szybkiego, Biesiekierz": {
+  "lat": 54.133267,
+  "lng": 16.039404,
+  "name": "Kebab u Szybkiego",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "112"
+ },
+ "Mim Kebab, Gdańsk": {
+  "lat": 54.401331,
+  "lng": 18.66207,
+  "name": "Mim Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wolności 21A"
+ },
+ "Nokta Kebab, Gdańsk": null,
+ "Kult Kebab by Queen, Gdańsk": null,
+ "YOLO Kebab, Gdańsk": {
+  "lat": 54.392898,
+  "lng": 18.617902,
+  "name": "Yolo Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bolesława Chrobrego 79A"
+ },
+ "Kebab Drwal, Gdańsk": {
+  "lat": 54.35722,
+  "lng": 18.584946,
+  "name": "Kebab Drwal",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Warneńska 8C"
+ },
+ "Pastrami Summer, Leszno": {
+  "lat": 51.844287,
+  "lng": 16.58062,
+  "name": "Pastrami Summer",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Prochownia"
+ },
+ "Bar Sajgonek u Jarka, Piaseczno": null,
+ "Piaseczno": {
+  "lat": 52.074738,
+  "lng": 21.027089,
+  "name": "Piaseczno",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Bar Sajgonek (pani Bogumiła), Piaseczno": null,
+ "Casa di Paolo (pizza wujka Paolo), Reda": null,
+ "Reda": {
+  "lat": 54.621015,
+  "lng": 18.321709,
+  "name": "Reda",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Salumeria Casa di Paolo, Reda": {
+  "lat": 54.602696,
+  "lng": 18.35785,
+  "name": "Salumeria Casa di Paolo",
+  "category": "shop",
+  "type": "shop",
+  "address": "Łąkowa 58"
+ },
+ "Pizzeria u Dziadka Nocą, Bemowo, Warszawa": null,
+ "Pizza Night, Bemowo, Warszawa": null,
+ "Mechanizm Kręcenia Pizza Nocą, Wola, Warszawa": {
+  "lat": 52.235247,
+  "lng": 20.958946,
+  "name": "Mechanizm Kręcenia Pizza Nocą",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Sokołowska"
+ },
+ "City Pizza Nocną Porą, Targówek, Warszawa": null,
+ "Pizza po Zachodzie, Targówek, Warszawa": null,
+ "Bar U Grochowej, Piątkowska, Poznań": {
+  "lat": 52.426797,
+  "lng": 16.916987,
+  "name": "Bar u Grochowej",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Piątkowska 65A"
+ },
+ "Food truck z burgerami (Wolna Wola), Solidarności / Okopowa, Warszawa": null,
+ "Food truck z burgerami (Wolna Wola), Wola, Warszawa": null,
+ "Solidarności / Okopowa, Warszawa": null,
+ "Burritos Locos (Wolna Wola), Solidarności / Okopowa, Warszawa": null,
+ "Burritos Locos (Wolna Wola), Wola, Warszawa": null,
+ "Koreański food truck (Wolna Wola), Solidarności / Okopowa, Warszawa": null,
+ "Koreański food truck (Wolna Wola), Wola, Warszawa": null,
+ "Veg Polka (Wolna Wola), Solidarności / Okopowa, Warszawa": null,
+ "Veg Polka (Wolna Wola), Wola, Warszawa": null,
+ "Kebab Am Am, Warszawa": {
+  "lat": 52.233265,
+  "lng": 21.084721,
+  "name": "Am Am Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Poligonowa 16"
+ },
+ "Roboszef, Toruńska, Włocławek": null,
+ "Roboszef, Włocławek": null,
+ "Toruńska, Włocławek": {
+  "lat": 52.672008,
+  "lng": 19.035567,
+  "name": "Toruńska",
+  "category": "highway",
+  "type": "primary",
+  "address": "Toruńska"
+ },
+ "Karczma pod Wielką Solą, Wieliczka": {
+  "lat": 49.993166,
+  "lng": 20.078096,
+  "name": "Karczma Pod Wielką Solą",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Grunwaldzka 46"
+ },
+ "Schronisko Bukowina, Bukowina Tatrzańska": {
+  "lat": 49.339416,
+  "lng": 20.10149,
+  "name": "Schronisko Bukowina",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Tadeusza Kościuszki 94"
+ },
+ "Bar Małgośka, Toruń": {
+  "lat": 53.011046,
+  "lng": 18.606186,
+  "name": "Małgośka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Szczytna 10/12"
+ },
+ "Bar Pod Arkadami, Stare Miasto, Toruń": null,
+ "Bistro Pod Pulpetem, Gagarina, Toruń": null,
+ "Bistro Pod Pulpetem, Toruń": null,
+ "Gagarina, Toruń": {
+  "lat": 53.017493,
+  "lng": 18.570657,
+  "name": "Jurija Gagarina",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Jurija Gagarina"
+ },
+ "Bar Mleczny Turysta, Szczecin": null,
+ "Pasztecik Szczeciński (Wojska Polskiego), Wojska Polskiego, Szczecin": null,
+ "Pasztecik Szczeciński (Wojska Polskiego), Szczecin": null,
+ "Wojska Polskiego, Szczecin": {
+  "lat": 53.672766,
+  "lng": 15.110472,
+  "name": "Wojewódzka Stacja Pogotowia Ratunkowego w Szczecinie Filia Nowogard",
+  "category": "emergency",
+  "type": "emergency",
+  "address": "Wojska Polskiego 7"
+ },
+ "Pho (Bakalarska), Bakalarska, Warszawa": {
+  "lat": 52.193468,
+  "lng": 20.957978,
+  "name": "Pho Mai Hien",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bakalarska"
+ },
+ "Pho (Bakalarska), Warszawa": {
+  "lat": 52.193468,
+  "lng": 20.957978,
+  "name": "Pho Mai Hien",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bakalarska"
+ },
+ "Bakalarska, Warszawa": {
+  "lat": 52.193572,
+  "lng": 20.958588,
+  "name": "Bakalarska",
+  "category": "highway",
+  "type": "residential",
+  "address": "Bakalarska"
+ },
+ "Korean House Barbecue, Bakalarska, Warszawa": null,
+ "Korean House Barbecue, Warszawa": null,
+ "Fenicja, Francuska, Warszawa": {
+  "lat": 52.235176,
+  "lng": 21.053285,
+  "name": "Fenicja",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Francuska 31"
+ },
+ "Efes, Francuska, Warszawa": {
+  "lat": 52.231675,
+  "lng": 21.055551,
+  "name": "Efes",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Francuska 1"
+ },
+ "Sapko Kebab, Aleja Jana Pawła II, Warszawa": null,
+ "Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.258878,
+  "lng": 20.980975,
+  "name": "Aleja Jana Pawła II",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Aleja Jana Pawła II"
+ },
+ "Esnaf Kebab, Aleja Jana Pawła II, Warszawa": null,
+ "Oklahoma Smash Burger Joint, Kraków": null,
+ "Mats, Kraków": null,
+ "Krakowska Burgers, Kraków": null,
+ "Filti, Kraków": null,
+ "Angelino Pasta i Wino, Białystok": null,
+ "U Greka, Białystok": {
+  "lat": 53.133278,
+  "lng": 23.156371,
+  "name": "Bar u Greka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Icchoka Malmeda 2"
+ },
+ "Muga, Poznań": {
+  "lat": 52.403999,
+  "lng": 16.929165,
+  "name": "Muga",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bolesława Krysiewicza"
+ },
+ "Pauza Włoska, Ząbkowska, Warszawa": null,
+ "Pauza Włoska, Praga Północ, Warszawa": null,
+ "Ząbkowska, Warszawa": {
+  "lat": 52.25515,
+  "lng": 21.048491,
+  "name": "Ząbkowska",
+  "category": "highway",
+  "type": "tertiary",
+  "address": "Ząbkowska"
+ },
+ "Piri Piri, Wojciechowskiej, Lublin": null,
+ "PRL Bar (dawniej Prawdziwy kebab u prawdziwego Polaka), Lublin": null,
+ "Tendur, Lublin": {
+  "lat": 51.24774,
+  "lng": 22.564143,
+  "name": "Tendur Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Krakowskie Przedmieście 9"
+ },
+ "Pizza by the Slice, Nowy Świat, Warszawa": {
+  "lat": 52.233888,
+  "lng": 21.019329,
+  "name": "Pizza by the Slice",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Nowy Świat 36"
+ },
+ "Lubaszka, Chmielna, Warszawa": null,
+ "Lubaszka, Warszawa": {
+  "lat": 52.239188,
+  "lng": 21.017566,
+  "name": "Galeria Wypieków Lubaszka",
+  "category": "shop",
+  "type": "shop",
+  "address": "Krakowskie Przedmieście 16/18"
+ },
+ "Chmielna, Warszawa": {
+  "lat": 52.23273,
+  "lng": 21.01667,
+  "name": "Chmielna",
+  "category": "highway",
+  "type": "pedestrian",
+  "address": "Chmielna"
+ },
+ "Luka, Chmielna, Warszawa": null,
+ "Luka, Warszawa": {
+  "lat": 52.259051,
+  "lng": 20.972088,
+  "name": "Luka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ludwika Rydygiera 18"
+ },
+ "Wabene, Warszawa": null,
+ "Super Slice, rondo Waszyngtona, Warszawa": null,
+ "Super Slice, Warszawa": {
+  "lat": 52.237639,
+  "lng": 21.050795,
+  "name": "Super Slice",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Francuska 49"
+ },
+ "Pizzeria Chicago deep dish przy Krochmalnej (nazwa nie pada w napisach), Krochmalna, Warszawa": null,
+ "Pizzeria Chicago deep dish przy Krochmalnej (nazwa nie pada w napisach), Wola, Warszawa": null,
+ "Krochmalna, Warszawa": {
+  "lat": 52.235591,
+  "lng": 20.986843,
+  "name": "Krochmalna",
+  "category": "highway",
+  "type": "residential",
+  "address": "Krochmalna"
+ },
+ "Bayerland House Szynk, Katowice": null,
+ "Arizona (Suntago), Wręcza": null,
+ "Wręcza": {
+  "lat": 51.996099,
+  "lng": 20.44959,
+  "name": "Wręcza",
+  "category": "boundary",
+  "type": "village",
+  "address": null
+ },
+ "Bene Italia (Suntago), Wręcza": null,
+ "Poleczki (Suntago), Wręcza": null,
+ "Anonimus Burger, Radzymińska, Warszawa": {
+  "lat": 52.286181,
+  "lng": 21.07378,
+  "name": "Anonimus Club & Burger",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Radzymińska 243"
+ },
+ "Zajazd Bufet Country, Kobiór": {
+  "lat": 50.054843,
+  "lng": 18.950861,
+  "name": "Zajazd Bufet Country",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Beskidzka 9"
+ },
+ "Chińczyk z Okopowej (dawniej z Senatorskiej), Okopowa, Warszawa": null,
+ "Chińczyk z Okopowej (dawniej z Senatorskiej), Warszawa": null,
+ "Okopowa, Warszawa": {
+  "lat": 52.236681,
+  "lng": 20.980479,
+  "name": "Okopowa",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Okopowa"
+ },
+ "Hamin, Warszawa": null,
+ "Hong Kong (Kondratowicza), Kondratowicza, Warszawa": null,
+ "Hong Kong (Kondratowicza), Bródno, Warszawa": null,
+ "Chińczyk na bazarku (Bródno), Bródno, Warszawa": null,
+ "Bródno, Warszawa": {
+  "lat": 52.292276,
+  "lng": 21.032256,
+  "name": "Bródno",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Sewa Kebab, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.242962,
+  "lng": 20.993229,
+  "name": "Tendur",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II"
+ },
+ "Sewa Kebab, Warszawa": {
+  "lat": 52.242962,
+  "lng": 20.993229,
+  "name": "Tendur",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II"
+ },
+ "Kebabowski, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.24261,
+  "lng": 20.992369,
+  "name": "Kebabowski",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II 41A"
+ },
+ "Kebab King, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.242893,
+  "lng": 20.992133,
+  "name": "Kebab King",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II 41A"
+ },
+ "Kafra Kebab, Aleja Jana Pawła II, Warszawa": null,
+ "Kafra Kebab, Warszawa": null,
+ "Bar Hanoi (pierwszy punkt, Marywilska 44), Marywilska 44, Warszawa": null,
+ "Bar Hanoi (pierwszy punkt, Marywilska 44), Warszawa": null,
+ "Marywilska 44, Warszawa": {
+  "lat": 52.319989,
+  "lng": 21.007052,
+  "name": "Park Handlowy Marywilska 44",
+  "category": "shop",
+  "type": "shop",
+  "address": "Marywilska 44"
+ },
+ "Chiński bar obok pierwszego (Marywilska 44), Marywilska 44, Warszawa": null,
+ "Chiński bar obok pierwszego (Marywilska 44), Warszawa": null,
+ "Bar Sajgon (Marywilska 44), Marywilska 44, Warszawa": null,
+ "Bar Sajgon (Marywilska 44), Warszawa": null,
+ "Bar Hanoi (zielone neony, Marywilska 44), Marywilska 44, Warszawa": null,
+ "Bar Hanoi (zielone neony, Marywilska 44), Warszawa": null,
+ "Bar Bufet (w przychodni), Ułanów, Kraków": null,
+ "Bar Bufet (w przychodni), Kraków": null,
+ "Ułanów, Kraków": {
+  "lat": 50.073525,
+  "lng": 19.985761,
+  "name": "Ułanów",
+  "category": "highway",
+  "type": "residential",
+  "address": "Ułanów"
+ },
+ "Kebab u Aliego, Kazimierz, Kraków": null,
+ "Kebab u Rudego, Kraków": {
+  "lat": 50.049942,
+  "lng": 19.926758,
+  "name": "Kebab u Rudego",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Konfederacka"
+ },
+ "Jamra Kebab, Kraków": null,
+ "Najstarsza restauracja z kebabem w Polsce (ponad 50 lat, nazwa nie pada w napisach), Sopot": null,
+ "Kebab Nemrut, Mysłowice": {
+  "lat": 50.189763,
+  "lng": 19.103166,
+  "name": "Nemrut Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Pocztowa 1"
+ },
+ "Kebab Istanbul, Mysłowice": null,
+ "Mysłowice": {
+  "lat": 50.209621,
+  "lng": 19.132166,
+  "name": "Mysłowice",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Kebab Elif, Mysłowice": null,
+ "Kebab u Alika, Mysłowice": {
+  "lat": 50.2334,
+  "lng": 19.121079,
+  "name": "Kebab u Alika",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Stokrotek 1"
+ },
+ "Restauracja Górski Diament Mountain Resort, Zakopane": null,
+ "Tania restauracja ze schabowym za 20 zł (Pobierowo), Pobierowo": null,
+ "Hello Kebab, Centrum, Warszawa": null,
+ "Centrum, Warszawa": {
+  "lat": 52.231007,
+  "lng": 21.010186,
+  "name": "Centrum",
+  "category": "railway",
+  "type": "railway",
+  "address": "Patelnia"
+ },
+ "Ali Kebab, Centrum, Warszawa": null,
+ "Kamik, Kraków": null,
+ "Budka z kurczakiem z rożna (viral z TikToka, czynna całą dobę), Kraków": null,
+ "Europejski Grill (Raffles Europejski), Warszawa": null,
+ "Gospoda u Krakowiaka, Krynica-Zdrój": null,
+ "Krynica-Zdrój": {
+  "lat": 49.420614,
+  "lng": 20.959418,
+  "name": "Krynica-Zdrój",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Bar za Rogiem, Krynica-Zdrój": {
+  "lat": 49.412278,
+  "lng": 20.955233,
+  "name": "Bar za rogiem",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Polna"
+ },
+ "Bar Promyk, Białystok": {
+  "lat": 53.11003,
+  "lng": 23.192336,
+  "name": "Bar Promyk",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wiewiórcza 64"
+ },
+ "To i Owo, Legnica": null,
+ "Legnica": {
+  "lat": 51.204769,
+  "lng": 16.174675,
+  "name": "Legnica",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Rustico Kebab, Toruń": {
+  "lat": 53.038515,
+  "lng": 18.645952,
+  "name": "Rustico Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Polna"
+ },
+ "Kebab Max, Toruń": null,
+ "Planeta Kebab, Lewobrzeże, Toruń": null,
+ "Lewobrzeże, Toruń": {
+  "lat": 52.998235,
+  "lng": 18.622127,
+  "name": "Planeta Lewobrzeże",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Łódzka 20"
+ },
+ "Anadolu Kebab, Radom": null,
+ "Aroma Kebab, Radom": null,
+ "Marimo Kebab, Radom": null,
+ "Kebab u Samiry, Radom": null,
+ "Budka z burgerami (legendarny cheeseburger za 6-10 zł), Radom": null,
+ "Zapiekanki u Bogasa, Pyskowice": null,
+ "Pyskowice": {
+  "lat": 50.391627,
+  "lng": 18.610882,
+  "name": "Pyskowice",
+  "category": "boundary",
+  "type": "municipality",
+  "address": null
+ },
+ "Kebab King, Władysławowo": null,
+ "Turkish Kebab, Władysławowo": null,
+ "Tamir Kebab, Władysławowo": {
+  "lat": 54.799189,
+  "lng": 18.401941,
+  "name": "Tamir Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Brzozowa"
+ },
+ "Doner Kebab (ul. Sportowa), Sportowa, Władysławowo": null,
+ "Doner Kebab (ul. Sportowa), Władysławowo": null,
+ "Sportowa, Władysławowo": {
+  "lat": 54.799424,
+  "lng": 18.395676,
+  "name": "Sportowa",
+  "category": "highway",
+  "type": "residential",
+  "address": "Sportowa"
+ },
+ "Kebab przy plaży, Władysławowo": null,
+ "Octopus, Międzyzdroje": {
+  "lat": 53.931222,
+  "lng": 14.446222,
+  "name": "Octopus Restaurant",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Bohaterów Warszawy 16D"
+ },
+ "Smażalnia Cliff, Międzyzdroje": null,
+ "Międzyzdroje": {
+  "lat": 53.928275,
+  "lng": 14.448903,
+  "name": "Międzyzdroje",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Restauracja z burgerem wagyu za 600 zł nad Jeziorem Sławskim, Sława": null,
+ "Sława": {
+  "lat": 51.8807,
+  "lng": 16.07025,
+  "name": "Sława",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Antalia Kebab u Bogusi, Opole": null,
+ "Opole": {
+  "lat": 50.678793,
+  "lng": 17.929884,
+  "name": "Opole",
+  "category": "boundary",
+  "type": "administrative",
+  "address": null
+ },
+ "Mustafa Kebab, Opole": null,
+ "Berlin Kebab, Opole": null,
+ "Gruby Kebab, Opole": null,
+ "Zrolowany Kraftowy Kebab, Opole": null,
+ "Pracownia cukiernicza Hercik, Opole": null,
+ "Green Chili Kebab Grill Bar, przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Green Chili Kebab Grill Bar, Praga-Południe, Warszawa": null,
+ "przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Praga-Południe, Warszawa": {
+  "lat": 52.237396,
+  "lng": 21.071258,
+  "name": "Praga-Południe",
+  "category": "boundary",
+  "type": "suburb",
+  "address": null
+ },
+ "Aladin Kebab, przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Aladin Kebab, Praga-Południe, Warszawa": null,
+ "Saski Kebab, przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Saski Kebab, Praga-Południe, Warszawa": null,
+ "Mama Kebab, przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Mama Kebab, Praga-Południe, Warszawa": null,
+ "Falafel Judi, przejście podziemne przy Stadionie Narodowym, Warszawa": null,
+ "Falafel Judi, Praga-Południe, Warszawa": null,
+ "Trójkąt Gemuze, Gdynia": null,
+ "Craftowe Gemuze, Gdynia": null,
+ "Bar Mleczny Miś, Wrocław": {
+  "lat": 51.112554,
+  "lng": 17.034235,
+  "name": "Bar Mleczny Miś",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Kuźnicza 47a"
+ },
+ "Kebab Filipa Chajzera, Warszawa": null,
+ "Kebab Halal, Warszawa": null,
+ "Cup and Me, Warszawa": null,
+ "Mister Kebab, Wrocław": null,
+ "Baba Doner Craft, Wrocław": null,
+ "Ojciec Doner, Wrocław": null,
+ "Jadłodajnia w Urzędzie Dzielnicy Żoliborz, Żoliborz, Warszawa": null,
+ "Pizzeria Piccolo, Prosta, Toruń": null,
+ "Pizzeria Piccolo, Toruń": null,
+ "Prosta, Toruń": {
+  "lat": 53.01188,
+  "lng": 18.609683,
+  "name": "Prosta",
+  "category": "highway",
+  "type": "living_street",
+  "address": "Prosta"
+ },
+ "Cukiernia Lenkiewicz, Toruń": {
+  "lat": 53.024283,
+  "lng": 18.682799,
+  "name": "LENKIEWICZ",
+  "category": "shop",
+  "type": "shop",
+  "address": "Kardynała Stefana Wyszyńskiego 5b"
+ },
+ "Pizzeria Don Corleone, Dziewulskiego, Toruń": null,
+ "Pizzeria Don Corleone, Toruń": null,
+ "Dziewulskiego, Toruń": {
+  "lat": 53.011411,
+  "lng": 18.602666,
+  "name": "Centrum Popularyzacji Kosmosu „Planetarium – Toruń”",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Franciszkańska 15/17"
+ },
+ "Pizzeria Daisy, Świdnica": null,
+ "Świdnica": {
+  "lat": 50.842484,
+  "lng": 16.487055,
+  "name": "Świdnica",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Bar Tościk, Świdnica": null,
+ "Bar Frytka, Świdnica": null,
+ "Amato, Głogów": null,
+ "Głogów": {
+  "lat": 51.663417,
+  "lng": 16.086081,
+  "name": "Głogów",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Vicenti, Kraków": {
+  "lat": 50.068779,
+  "lng": 19.927148,
+  "name": "Vicenti",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Karmelicka"
+ },
+ "Pizza Boys, Kraków": null,
+ "Freska, Kraków": null,
+ "Byczy Burger, Toruń": {
+  "lat": 53.024279,
+  "lng": 18.635606,
+  "name": "Byczy Burger",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Hetmana Stanisława Żółkiewskiego"
+ },
+ "Widelec, Sienkiewicza, Toruń": {
+  "lat": 53.017551,
+  "lng": 18.579792,
+  "name": "Widelec",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Henryka Sienkiewicza 39"
+ },
+ "Food truck ze smash burgerami w Wąbrzeźnie, Wąbrzeźno": null,
+ "Wąbrzeźno": {
+  "lat": 53.279967,
+  "lng": 18.947293,
+  "name": "Wąbrzeźno",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Tien Lin, Mokotów, Warszawa": null,
+ "Tomcio Paluch, Białystok": {
+  "lat": 53.150659,
+  "lng": 23.187564,
+  "name": "Tomcio Paluch Gastro",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Władysława Raginisa 5"
+ },
+ "Bar Kantyna, Kraków": null,
+ "Restauracja Fantazja (dawniej Fenomen), Gdańsk": null,
+ "Lviv Croissants, Aleja Jana Pawła II, Warszawa": {
+  "lat": 52.241301,
+  "lng": 20.994733,
+  "name": "Lviv Croissants",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II 38"
+ },
+ "Rożenko, Stalowa, Warszawa": {
+  "lat": 52.259448,
+  "lng": 21.039208,
+  "name": "Rożenko - Kurczak z rożna i nie tylko",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Stalowa"
+ },
+ "Lavash Doner (Bielany), Bielany, Warszawa": null,
+ "Berlin Döner Kebab (Wola Park), Wola, Warszawa": null,
+ "Delikatessen Doner Kebab, Złota 11, Warszawa": null,
+ "Delikatessen Doner Kebab, Warszawa": null,
+ "Złota 11, Warszawa": {
+  "lat": 52.232363,
+  "lng": 21.011732,
+  "name": null,
+  "category": "building",
+  "type": "building",
+  "address": "Złota 11"
+ },
+ "Kebab Radość, Radość, Warszawa": {
+  "lat": 52.185193,
+  "lng": 21.186757,
+  "name": "Kebab Radość",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Wspomnień 40"
+ },
+ "Sorani Kebab & Grill, Radość, Warszawa": null,
+ "Radość, Warszawa": {
+  "lat": 52.188997,
+  "lng": 21.185731,
+  "name": "Radość",
+  "category": "boundary",
+  "type": "quarter",
+  "address": null
+ },
+ "Alforno, Rzeszów": null,
+ "Silver Kebab, Warszawa": null,
+ "Spicy Kebab and Grill, Jana Pawła II, Warszawa": null,
+ "Spicy Kebab and Grill, Warszawa": null,
+ "Kebab King, Jana Pawła II, Warszawa": {
+  "lat": 52.242893,
+  "lng": 20.992133,
+  "name": "Kebab King",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja Jana Pawła II 41A"
+ },
+ "Saraj, Francuska, Warszawa": null,
+ "Saraj, Saska Kępa, Warszawa": null,
+ "Burrito z ostrym sosem 6,4 mln SHU na Francuskiej, Francuska, Warszawa": null,
+ "Burrito z ostrym sosem 6,4 mln SHU na Francuskiej, Saska Kępa, Warszawa": null,
+ "Bar Zajezdnia, Nowy Targ": {
+  "lat": 49.47316,
+  "lng": 20.00879,
+  "name": "Bar \"Zajezdnia\"",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ludźmierska 30"
+ },
+ "Bar U Romka, Nowy Targ": {
+  "lat": 49.47674,
+  "lng": 20.028603,
+  "name": "Bar U Romka",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Na Równi 28"
+ },
+ "Bar Rumcajs, Nowy Targ": {
+  "lat": 49.480461,
+  "lng": 20.037028,
+  "name": "Bar Rumcajs",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Ogrodowa 101"
+ },
+ "Rurki z prawdziwą bitą śmietaną (pan Marek), Wolska, Warszawa": null,
+ "Rurki z prawdziwą bitą śmietaną (pan Marek), Wola, Warszawa": null,
+ "Wolska, Warszawa": {
+  "lat": 52.226741,
+  "lng": 20.944646,
+  "name": "Wolska",
+  "category": "highway",
+  "type": "secondary",
+  "address": "Wolska"
+ },
+ "Lezzet, Wrocław": null,
+ "Sultan Express, Wrocław": {
+  "lat": 51.119283,
+  "lng": 17.038507,
+  "name": "Sultan Express Kebab",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Jedności Narodowej"
+ },
+ "Kebab Kasprowicza 24, Kasprowicza 24, Wrocław": null,
+ "Kebab Kasprowicza 24, Wrocław": null,
+ "Kasprowicza 24, Wrocław": {
+  "lat": 51.136561,
+  "lng": 17.04045,
+  "name": "Muzułmańskie Centrum Kulturalno-Oświatowe",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "aleja Jana Kasprowicza 24"
+ },
+ "Czarna Cebula, Wrocław": {
+  "lat": 51.108188,
+  "lng": 17.09411,
+  "name": "Czarna Cebula",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Partyzantów 14b"
+ },
+ "Ojcze Doner, Wrocław": null,
+ "Mandu, Gdańsk": {
+  "lat": 54.409084,
+  "lng": 18.567045,
+  "name": "Mandu",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Kaprów 19D"
+ },
+ "Kyoto Sushi (Mini Mike), Kraków": null,
+ "Miraj Sushi, Kraków": null,
+ "Show Sushi, Kraków": {
+  "lat": 50.051254,
+  "lng": 19.948276,
+  "name": "Sushi Show & Ramen Star",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Józefa 25"
+ },
+ "Sushi 77, Kraków": {
+  "lat": 50.058242,
+  "lng": 19.93863,
+  "name": "77 Sushi",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Poselska 18"
+ },
+ "Sakana Sushi, Kraków": {
+  "lat": 50.060185,
+  "lng": 19.920037,
+  "name": "Sakana Sushi and Sticks",
+  "category": "amenity",
+  "type": "amenity",
+  "address": "Aleja 3 Maja"
+ },
+ "Zygzak, Krupówki, Zakopane": null,
+ "Zygzak, Zakopane": null,
+ "Western Tortilla, Łódź": null,
+ "Hotel Altus (restauracja hotelowa, klucze Michelin), Wrocław": null,
+ "Kebab Point, Bełżyce": null,
+ "Bełżyce": {
+  "lat": 51.175063,
+  "lng": 22.274999,
+  "name": "Bełżyce",
+  "category": "boundary",
+  "type": "town",
+  "address": null
+ },
+ "Fabryka Kebaba, Bełżyce": null,
+ "U Pani Ani, Bełżyce": null,
+ "Bar Mleczny Jagienka, Kielce": null
+}

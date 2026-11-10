@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ksiapulo Tracker — mapa miejsc z odcinków Książula</title>
+  <meta name="description" content="Nieoficjalna mapa lokali, które odwiedził Książulo. Znajdź kebab, pizzę albo schabowego z MUALA najbliżej siebie. Aktualizowana automatycznie po każdym odcinku.">
+  <meta name="theme-color" content="#F39200">
+  <!-- strona ma tylko jasne kolory; bez tego Chrome z wymuszonym trybem ciemnym robi z kremu brąz -->
+  <meta name="color-scheme" content="only light">
+  <!-- rozszerzenie Dark Reader przemalowuje kolory marki na brąz — ta strona ma zostać jasna -->
+  <meta name="darkreader-lock">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ksiapulo">
+  <meta property="og:title" content="Ksiapulo Tracker">
+  <meta property="og:description" content="Gdzie jadł Książulo? Mapa lokali z odcinków, aktualizowana na żywo.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='30' r='26' fill='%23F39200' stroke='%23141414' stroke-width='5'/><path d='M20 44v10a4 4 0 0 0 8 0v-8M38 46v6a4 4 0 0 0 8 0v-9' fill='%23F39200' stroke='%23141414' stroke-width='4'/><text x='32' y='40' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23fff'>K</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
+  <link rel="stylesheet" href="assets/style.css?v=14">
+</head>
+<body>
+  <header class="top">
+    <a class="logo" href="./" aria-label="Ksiapulo Tracker — strona główna">
+      <span class="logo__main">KSIAPULO</span>
+      <span class="logo__hand">tracker</span>
+    </a>
+    <button type="button" class="mechip" id="meChip" hidden></button>
+    <div class="live" id="live" title="Strona sama sprawdza, czy wpadł nowy odcinek">
+      <span class="live__dot"></span>
+      <span class="live__label">NA ŻYWO</span>
+      <span class="live__text" id="liveText">łączenie…</span>
+    </div>
+  </header>
+  <div class="drip" aria-hidden="true"></div>
+
+  <main class="app">
+    <aside class="panel" id="panel">
+      <nav class="tabs" id="tabs" aria-label="Sekcje">
+        <button type="button" data-view="mapa" class="is-on">🗺️<span>Mapa</span></button>
+        <button type="button" data-view="lista">✅<span>Moja lista</span></button>
+        <button type="button" data-view="aktywnosc">🔥<span>Aktywność</span></button>
+        <button type="button" data-view="ranking">🏆<span>Ranking</span></button>
+        <button type="button" data-view="ty">👤<span id="tabMe">Ty</span></button>
+      </nav>
+
+      <div class="view" id="view-mapa">
+      <section class="where">
+        <h1 class="where__title">Gdzie jesteś? <span class="hand">chwila moment…</span></h1>
+        <form class="search" id="searchForm" autocomplete="off">
+          <input id="searchInput" type="search" spellcheck="false" placeholder="Miasto, ulica, dzielnica…" aria-label="Wpisz lokalizację">
+          <button type="submit" class="btn btn--ink">Szukaj</button>
+        </form>
+        <button type="button" class="btn btn--locate" id="locateBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          Użyj mojej lokalizacji
+        </button>
+        <ul class="results" id="searchResults" hidden></ul>
+        <p class="where__status" id="whereStatus"></p>
+      </section>
+
+      <section class="fresh" id="fresh" hidden>
+        <a class="fresh__thumb" id="freshThumb" target="_blank" rel="noopener"><img alt="" id="freshImg"></a>
+        <div>
+          <div class="fresh__label">Dane aktualne na</div>
+          <div class="fresh__date" id="freshDate"></div>
+          <div class="fresh__video">ostatni odcinek: <a id="freshLink" target="_blank" rel="noopener"></a></div>
+        </div>
+      </section>
+
+      <section class="stats" id="stats" aria-label="Liczniki"></section>
+
+      <button type="button" class="btn btn--wall" id="wallBtn">
+        <span class="stk stk--muala">MUALA</span>
+        <span>Ściana lokali z naklejką</span>
+        <b id="wallCount"></b>
+      </button>
+
+      <button type="button" class="btn btn--install" id="installBtn" hidden>📲 Zainstaluj jak aplikację</button>
+
+      <section class="filters">
+        <div class="routebar" id="routeBar" hidden></div>
+        <div class="findrow">
+          <input class="find" id="placeQ" type="search" spellcheck="false" autocomplete="off" placeholder="🔍 Szukaj lokalu, miasta, dania…" aria-label="Szukaj lokalu po nazwie, mieście lub daniu">
+          <button type="button" class="btn btn--random" id="randomBtn" title="Wylosuj lokal z wybranych filtrów, w miarę możliwości w twojej okolicy">🎲 Losuj</button>
+        </div>
+        <div class="chips" id="cats" role="group" aria-label="Kategorie jedzenia"></div>
+        <div class="seg" id="verdicts" role="group" aria-label="Ocena"></div>
+        <div class="bar">
+          <span class="count" id="count"></span>
+          <div class="sort" role="group" aria-label="Sortowanie">
+            <button type="button" data-sort="near">najbliżej</button>
+            <button type="button" data-sort="new" class="is-on">najnowsze</button>
+          </div>
+        </div>
+      </section>
+
+      <ol class="list" id="list"></ol>
+      <button type="button" class="btn btn--more" id="more" hidden>Pokaż więcej</button>
+
+      <section class="pending" id="pending" hidden>
+        <h2>Nowe odcinki <span class="hand">w trakcie mapowania</span></h2>
+        <ul id="pendingList"></ul>
+      </section>
+      </div>
+
+      <div class="view" id="view-lista" hidden></div>
+      <div class="view" id="view-aktywnosc" hidden></div>
+      <div class="view" id="view-ranking" hidden></div>
+      <div class="view" id="view-ty" hidden></div>
+
+      <footer class="foot">
+        <p><strong>Nieoficjalna strona fanowska.</strong> Nie jest powiązana z Książulo ani marką MUALA. Lokalizacje są ustalane automatycznie z odcinków na YouTube i mogą zawierać błędy — pinezki z przerywaną obwódką to lokalizacja przybliżona.</p>
+        <p><a href="zasady.html">Zasady społeczności i prywatność</a></p>
+        <p>Mapa i wyszukiwarka adresów © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>. Odcinki: <a href="https://www.youtube.com/@ksiazulo" target="_blank" rel="noopener">youtube.com/@ksiazulo</a></p>
+      </footer>
+    </aside>
+
+    <div class="mapwrap">
+      <div id="map" aria-label="Mapa lokali"></div>
+      <button type="button" class="maptoggle" id="mapToggle">Lista</button>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <dialog class="wall" id="wall" aria-labelledby="wallTitle">
+    <header class="wall__head">
+      <h2 id="wallTitle">Ściana <span class="stk stk--muala">MUALA</span></h2>
+      <p class="hand">tu nie ma przypadków</p>
+      <button type="button" class="wall__close" aria-label="Zamknij">✕</button>
+    </header>
+    <ol class="wall__grid" id="wallGrid"></ol>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+  <dialog class="sheet" id="sheet" aria-labelledby="sheetTitle">
+    <header class="sheet__head">
+      <h2 id="sheetTitle"></h2>
+      <button type="button" class="wall__close" data-close aria-label="Zamknij">✕</button>
+    </header>
+    <div class="sheet__body" id="sheetBody"></div>
+  </dialog>
+
+  <script src="assets/config.js?v=13"></script>
+  <script src="assets/app.js?v=13"></script>
+  <script src="assets/social.js?v=15"></script>
+</body>
+</html>

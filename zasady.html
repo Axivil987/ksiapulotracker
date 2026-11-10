@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zasady i prywatność — Ksiapulo Tracker</title>
+  <meta name="theme-color" content="#F39200">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #f39200; --ink: #141414; --cream: #fff4e2; --sauce: #fffdf6; --soft: #4a4238; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Poppins, system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+    header { padding: 18px 16px; background: var(--orange); border-bottom: 3px solid var(--ink); }
+    header a { font-weight: 900; font-size: 22px; color: var(--ink); text-decoration: none; }
+    header span { font-family: Caveat, cursive; font-size: 26px; color: var(--sauce); margin-left: 4px; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 16px 60px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
+    h2 { font-size: 19px; margin: 28px 0 8px; }
+    section { margin-top: 14px; padding: 16px; background: var(--sauce); border: 2px solid var(--ink); border-radius: 14px; box-shadow: 3px 3px 0 var(--ink); }
+    li { margin: 4px 0; }
+    .note { color: var(--soft); font-size: 14px; }
+    .todo { background: #fff3c4; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header><a href="./">KSIAPULO</a><span>tracker</span></header>
+  <main>
+    <h1>Zasady społeczności i prywatność</h1>
+    <p class="note">Ksiapulo Tracker to nieoficjalna, fanowska strona. Nie jest powiązana z Książulo ani marką MUALA.</p>
+
+    <section>
+      <h2>Zasady gry</h2>
+      <ul>
+        <li>Lokal odhaczasz tylko na miejscu: telefon sprawdza lokalizację, a zdjęcie jedzenia robisz w lokalu.</li>
+        <li>Jedno konto na osobę. Fałszowanie lokalizacji, cudze lub powtarzane zdjęcia i zakładanie kont pod polecenia kończą się odrzuceniem punktów albo banem.</li>
+        <li>Podejrzane odhaczenia (np. niemożliwa prędkość między lokalami, to samo zdjęcie u kilku osób, bardzo słaby GPS) trafiają do sprawdzenia, a punkty przychodzą po akceptacji.</li>
+        <li>Rankingi i punkty są dla zabawy i nie mają wartości pieniężnej.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Filmiki i zdjęcia</h2>
+      <ul>
+        <li>Krytykuj jedzenie, ile chcesz, ale bez hejtu na konkretne osoby (obsługę, właścicieli, innych użytkowników).</li>
+        <li>Zakazane: wulgaryzmy w opisach, treści dla dorosłych, przemoc, reklama i spam, nagrywanie ludzi, którzy sobie tego nie życzą, cudze dane osobowe.</li>
+        <li>Każdy może zgłosić filmik. Po 3 zgłoszeniach filmik znika do decyzji moderatora.</li>
+        <li>Zdjęcia i filmiki mogą być sprawdzane automatycznie przez AI (Claude od Anthropic) pod kątem tych zasad. Ostateczną decyzję o banie podejmuje człowiek.</li>
+        <li>Wrzucając materiał, zgadzasz się na jego publiczne wyświetlanie w aplikacji. Możesz go usunąć razem z kontem.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Jakie dane zbieramy</h2>
+      <ul>
+        <li><b>Konto:</b> e-mail (do logowania), nazwa użytkownika, wyświetlana nazwa, miasto domowe.</li>
+        <li><b>Odhaczenia:</b> lokal, czas, lokalizacja z chwili odhaczenia i jej dokładność, zdjęcie. Zdjęcie jest zmniejszane w telefonie, co usuwa z niego metadane (np. współrzędne z aparatu).</li>
+        <li><b>Aktywność:</b> filmiki, reakcje, obserwowani, zgłoszenia, historia punktów.</li>
+        <li>Publicznie widać: nazwę, miasto domowe, punkty, rangę, odznaki, odhaczone lokale, zdjęcia i filmiki. Dokładnej lokalizacji z odhaczenia nie pokazujemy innym.</li>
+        <li>Dane są przechowywane w Supabase (serwery w UE). Logowanie przez Google obsługuje Google.</li>
+        <li>Aplikacja jest dla osób, które skończyły 16 lat.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Twoje prawa</h2>
+      <ul>
+        <li>W zakładce <b>Ty → Ustawienia → Usuń konto</b> usuwasz konto razem ze wszystkimi zdjęciami, filmikami i punktami.</li>
+        <li>Masz prawo do wglądu w swoje dane, ich poprawienia, przeniesienia i złożenia skargi do Prezesa UODO.</li>
+        <li>Kontakt w sprawie danych i zgłoszeń: <span class="todo">[uzupełnij adres e-mail administratora]</span></li>
+      </ul>
+      <p class="note">Administrator danych: <span class="todo">[uzupełnij imię i nazwisko lub nazwę]</span>. Ten tekst to punkt wyjścia — przed startem warto go skonsultować z prawnikiem.</p>
+    </section>
+  </main>
+</body>
+</html>

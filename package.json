@@ -1,0 +1,19 @@
+{
+  "name": "ksiapulotracker",
+  "version": "1.0.0",
+  "description": "Nieoficjalna mapa lokali z odcinków Książula, aktualizowana automatycznie",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "backfill": "node scripts/update.mjs --backfill 50",
+    "serve": "npx --yes serve@14.2.4 -l 4173 ."
+  },
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  }
+}
