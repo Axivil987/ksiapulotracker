@@ -79,6 +79,24 @@ Godzinny odcinek to ok. 15–25 tys. tokenów wejścia.
 Jeśli YouTube zacznie blokować pobieranie napisów z serwerów GitHuba („Sign in to confirm you're not a bot”),
 dodaj sekret `YT_COOKIES` z plikiem cookies w formacie Netscape — bez tego bot dalej działa, ale ma tylko tytuł i opis.
 
+## Aplikacja na iPhone'a (sideload)
+
+Aplikacja (Capacitor 8) wyświetla stronę z GitHub Pages, więc każda zmiana na stronie od razu jest w aplikacji.
+Nowy plik `.ipa` trzeba zbudować tylko po zmianie ikony, nazwy, uprawnień albo `capacitor.config.json`.
+
+- **Budowanie:** GitHub Actions → „Aplikacja iOS (plik .ipa)” → Run workflow (działa na Macu w chmurze GitHuba,
+  dla publicznego repo za darmo). Wynik: artefakt `Ksiapulo-ipa` z plikiem `Ksiapulo.ipa` (bez podpisu).
+- **Instalacja z Windowsa:** [Sideloadly](https://sideloadly.io) + iTunes i iCloud w wersji ze strony Apple (nie ze sklepu
+  Microsoft). Podłącz iPhone'a kablem, przeciągnij `.ipa`, wpisz swoje Apple ID → Start.
+  Na iPhonie: Ustawienia → Ogólne → VPN i urządzenia → zaufaj swojemu Apple ID; Ustawienia → Prywatność i ochrona →
+  Tryb dewelopera → włącz.
+- **Darmowe Apple ID:** aplikacja działa 7 dni, potem trzeba ją ponownie wgrać (Sideloadly umie to robić automatycznie).
+  Konto Apple Developer (99 USD/rok) wydłuża to do roku.
+- **Logowanie w aplikacji:** link z maila wraca do aplikacji przez adres `ksiapulo://auth`
+  (dozwolony w Supabase → Authentication → URL Configuration).
+- **Logo i ekran startowy:** `node scripts/brand.mjs` (wymaga `npm i --no-save @resvg/resvg-js`) generuje ikony strony
+  oraz `resources/` dla aplikacji.
+
 ## Część społecznościowa (Supabase)
 
 Konta, odhaczanie lokali (GPS + zdjęcie), rangi, odznaki, rankingi miast, aktywność jak na Stravie,

@@ -6,6 +6,8 @@
   const K = window.Ksiapulo;
   const CFG = window.KSIAPULO_CONFIG ?? {};
   const ON = Boolean(CFG.supabaseUrl && CFG.supabaseAnonKey);
+  const IS_APP = Boolean(window.Capacitor?.isNativePlatform?.());
+  const APP_LINK = "ksiapulo://auth";
   const SB_SRC = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js";
   const { esc, plural } = K;
   const $ = (id) => document.getElementById(id);
@@ -186,10 +188,15 @@
         <input type="email" required placeholder="twoj@email.pl" autocomplete="email" id="mailInput">
         <button type="submit" class="btn btn--ink">Wyślij link</button>
       </form>
-      <p class="soc-note" id="loginMsg">Bez hasła — klikasz link z wiadomości i jesteś zalogowany.</p>
+      <p class="soc-note" id="loginMsg">Bez hasła — dostaniesz maila z kodem i linkiem do logowania.</p>
+      <form id="codeForm" class="soc-form soc-code" hidden>
+        <input id="codeInput" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6,10}" maxlength="10" placeholder="Kod z maila" required>
+        <button type="submit" class="btn btn--locate">Zaloguj</button>
+      </form>
       <p class="soc-fine">Logując się akceptujesz <a href="zasady.html" target="_blank">zasady i politykę prywatności</a>.</p>`,
     );
-    const redirectTo = location.origin + location.pathname;
+    // W aplikacji link z maila wraca przez własny adres ksiapulo:// (Info.plist → CFBundleURLTypes)
+    const redirectTo = IS_APP ? APP_LINK : location.origin + location.pathname;
     body.querySelector("#gBtn")?.addEventListener("click", () => S.sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo } }));
     const send = body.querySelector("#mailForm button");
     // Supabase pozwala poprosić o link raz na 60 s — odliczamy, zamiast pokazywać błąd
@@ -215,17 +222,44 @@
       msg.textContent = "Wysyłam…";
       const { error } = await S.sb.auth.signInWithOtp({ email, options: { emailRedirectTo: redirectTo } });
       if (!error) {
-        msg.innerHTML = `Gotowe! Link poszedł na <b>${esc(email)}</b>. Kliknij go w tej samej przeglądarce. Nie widzisz maila? Zajrzyj do spamu.`;
+        msg.innerHTML = `Mail poszedł na <b>${esc(email)}</b>. ${
+          IS_APP ? "Otwórz go na tym iPhonie i kliknij link — wrócisz do aplikacji już zalogowany." : "Kliknij link w tej samej przeglądarce."
+        } Nie widzisz maila? Zajrzyj do spamu.`;
+        if (CFG.emailCode) showCode(email);
         return cooldown(60);
       }
       const wait = errText(error).match(/after (\d+) seconds?/);
       if (wait) {
-        msg.textContent = "Link został już wysłany przed chwilą — sprawdź skrzynkę (także spam). O kolejny możesz poprosić za chwilę.";
+        msg.textContent = "Mail został już wysłany przed chwilą — sprawdź skrzynkę (także spam). O kolejny możesz poprosić za chwilę.";
+        if (CFG.emailCode) showCode(email);
         return cooldown(+wait[1]);
       }
       send.disabled = false;
       msg.textContent = authError(error);
     };
+
+    // Kod z maila zamiast linku: w aplikacji na iPhonie link otworzyłby Safari, a nie aplikację
+    function showCode(email) {
+      const form = body.querySelector("#codeForm");
+      form.hidden = false;
+      const input = body.querySelector("#codeInput");
+      input.focus();
+      form.onsubmit = async (e) => {
+        e.preventDefault();
+        const msg = body.querySelector("#loginMsg");
+        const btn = form.querySelector("button");
+        btn.disabled = true;
+        msg.textContent = "Sprawdzam kod…";
+        const { error } = await S.sb.auth.verifyOtp({ email, token: input.value.trim(), type: "email" });
+        btn.disabled = false;
+        if (error) {
+          msg.textContent = /expired|invalid/i.test(errText(error)) ? "Kod jest błędny albo wygasł. Sprawdź najnowszego maila." : authError(error);
+          return;
+        }
+        closeSheet();
+        await loadMe();
+      };
+    }
   }
 
   /** Komunikaty Supabase Auth są po angielsku — tłumaczymy te, które zobaczy zwykły użytkownik. */
@@ -1292,7 +1326,34 @@
       if (event === "SIGNED_IN" || event === "SIGNED_OUT") loadMe();
     });
     K.on("data", () => S.view !== "mapa" && renderView());
+    if (IS_APP) listenForLoginLink();
     await loadMe();
+  }
+
+  /** Aplikacja: link z maila otwiera ksiapulo://auth#access_token=… (albo ?code=… przy PKCE). */
+  function listenForLoginLink() {
+    const App = window.Capacitor?.Plugins?.App;
+    if (!App) return;
+    const handle = async (url) => {
+      if (!url?.startsWith("ksiapulo://")) return;
+      const q = new URLSearchParams(url.split("#")[1] || url.split("?")[1] || "");
+      let error = null;
+      if (q.get("access_token") && q.get("refresh_token")) {
+        ({ error } = await S.sb.auth.setSession({ access_token: q.get("access_token"), refresh_token: q.get("refresh_token") }));
+      } else if (q.get("code")) {
+        ({ error } = await S.sb.auth.exchangeCodeForSession(q.get("code")));
+      } else if (q.get("error_description")) {
+        error = { message: q.get("error_description") };
+      } else return;
+      if (error) {
+        openSheet("Logowanie", `<p class="soc-err">Link nie zadziałał: ${esc(/expired|invalid/i.test(errText(error)) ? "wygasł albo był już użyty. Poproś o nowy." : errText(error))}</p>`);
+        return;
+      }
+      closeSheet();
+      await loadMe();
+    };
+    App.addListener("appUrlOpen", (e) => handle(e.url));
+    App.getLaunchUrl?.().then((r) => handle(r?.url)).catch(() => {});
   }
 
   boot().catch(() => {

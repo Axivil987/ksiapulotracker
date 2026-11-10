@@ -14,6 +14,9 @@
   --shadow-sm: 2px 2px 0 var(--ink);
   --radius: 14px;
   --header-h: 68px;
+  /* wycięcie ekranu (Dynamic Island) — w aplikacji na iPhonie strona sięga pod pasek stanu */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --top-h: calc(var(--header-h) + var(--safe-top));
   --panel-w: 420px;
   --font: "Poppins", system-ui, sans-serif;
   --hand: "Caveat", "Comic Sans MS", cursive;
@@ -22,11 +25,24 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { height: 100%; margin: 0; }
+html { -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font);
   color: var(--ink);
   background: var(--cream);
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+/* przyciski jak w aplikacji: bez zaznaczania tekstu i bez opóźnienia na podwójne stuknięcie */
+button, .btn, .chip, .tabs, .seg, .sort, .mechip, .live, .card, .soc-list li, .wall__item, .logo {
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+/* iOS przybliża stronę przy pisaniu w polu z czcionką mniejszą niż 16 px */
+@media (pointer: coarse) {
+  input, textarea, select { font-size: 16px !important; }
 }
 a { color: inherit; }
 button { font: inherit; color: inherit; cursor: pointer; }
@@ -39,8 +55,8 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
 .top {
   position: relative;
   z-index: 1001;
-  height: var(--header-h);
-  padding: 0 20px;
+  height: var(--top-h);
+  padding: var(--safe-top) 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +65,7 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
 }
 .drip {
   position: absolute;
-  top: var(--header-h);
+  top: var(--top-h);
   left: 0;
   right: 0;
   height: 44px;
@@ -65,6 +81,7 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
   text-decoration: none;
   line-height: 1;
 }
+.logo__pin { align-self: center; width: 30px; height: 40px; margin-right: 6px; }
 .logo__main {
   font-weight: 900;
   font-size: 30px;
@@ -116,7 +133,7 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
 .app {
   display: grid;
   grid-template-columns: var(--panel-w) 1fr;
-  height: calc(100% - var(--header-h));
+  height: calc(100% - var(--top-h));
 }
 .panel {
   overflow-y: auto;
@@ -787,6 +804,8 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
 .soc-or::before, .soc-or::after { content: ""; flex: 1; border-top: 1.5px solid var(--line); }
 .soc-form { display: flex; gap: 8px; }
 .soc-form input { flex: 1; min-width: 0; }
+.soc-code { margin-top: 10px; }
+.soc-code input { font-size: 22px !important; font-weight: 800; letter-spacing: 6px; text-align: center; }
 .soc-stack { display: grid; gap: 12px; }
 .soc-stack label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
 .soc-stack label small { font-weight: 400; color: var(--ink-soft); }
@@ -931,7 +950,8 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
 /* ---------- Telefon ---------- */
 @media (max-width: 820px) {
   :root { --header-h: 58px; }
-  .top { position: sticky; top: 0; padding: 0 16px; }
+  .top { position: sticky; top: 0; padding: var(--safe-top) 16px 0; }
+  .logo__pin { width: 22px; height: 30px; margin-right: 4px; }
   .drip { position: fixed; height: 40px; }
   .logo__main { font-size: 23px; }
   .logo__hand { font-size: 27px; }
@@ -939,10 +959,10 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
   .live__text { display: none; }
   .app { display: block; height: auto; }
   .panel { border-right: 0; padding: 36px 16px 24px; overflow: visible; }
-  .filters { top: var(--header-h); margin: 0 -16px; padding: 34px 16px 10px; }
+  .filters { top: var(--top-h); margin: 0 -16px; padding: 34px 16px 10px; }
   .mapwrap {
     position: fixed;
-    inset: var(--header-h) 0 0 0;
+    inset: var(--top-h) 0 0 0;
     z-index: 900;
     visibility: hidden;
   }
@@ -984,12 +1004,16 @@ input::placeholder, textarea::placeholder { color: #9a8f80; }
   }
   .panel { padding-bottom: 96px; }
   .maptoggle { bottom: calc(78px + env(safe-area-inset-bottom)); }
-  .toast { bottom: 140px; }
+  .toast { bottom: calc(140px + env(safe-area-inset-bottom)); }
+  .sheet, .wall { max-height: calc(100% - 40px - var(--safe-top) - env(safe-area-inset-bottom)); }
   .leaflet-bottom.leaflet-right { bottom: 70px; }
   .mapwrap { bottom: calc(62px + env(safe-area-inset-bottom)); }
   .mechip { padding: 5px 10px; }
   .mechip small { display: none; }
 }
+/* w aplikacji (Capacitor) nie ma czego instalować */
+.is-app #installBtn { display: none !important; }
+
 /* wąski telefon z licznikiem punktów w nagłówku: z "na żywo" zostaje sama kropka */
 @media (max-width: 440px) {
   .top { gap: 8px; }

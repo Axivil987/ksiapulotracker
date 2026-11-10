@@ -13,20 +13,23 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Ksiapulo">
   <meta property="og:title" content="Ksiapulo Tracker">
   <meta property="og:description" content="Gdzie jadł Książulo? Mapa lokali z odcinków, aktualizowana na żywo.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='30' r='26' fill='%23F39200' stroke='%23141414' stroke-width='5'/><path d='M20 44v10a4 4 0 0 0 8 0v-8M38 46v6a4 4 0 0 0 8 0v-9' fill='%23F39200' stroke='%23141414' stroke-width='4'/><text x='32' y='40' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23fff'>K</text></svg>">
+  <link rel="icon" href="assets/icons/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css">
-  <link rel="stylesheet" href="assets/style.css?v=14">
+  <link rel="stylesheet" href="assets/style.css?v=16">
 </head>
 <body>
+  <script>if (window.Capacitor?.isNativePlatform?.()) document.documentElement.classList.add("is-app");</script>
   <header class="top">
     <a class="logo" href="./" aria-label="Ksiapulo Tracker — strona główna">
+      <img class="logo__pin" src="assets/icons/pin.svg" alt="">
       <span class="logo__main">KSIAPULO</span>
       <span class="logo__hand">tracker</span>
     </a>
@@ -148,8 +151,8 @@
     <div class="sheet__body" id="sheetBody"></div>
   </dialog>
 
-  <script src="assets/config.js?v=13"></script>
-  <script src="assets/app.js?v=13"></script>
-  <script src="assets/social.js?v=15"></script>
+  <script src="assets/config.js?v=16"></script>
+  <script src="assets/app.js?v=16"></script>
+  <script src="assets/social.js?v=16"></script>
 </body>
 </html>

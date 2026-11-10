@@ -10,10 +10,16 @@
   "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^1.4.0",
+    "@capacitor/app": "8.1.2",
+    "@capacitor/core": "8.5.3",
+    "@capacitor/ios": "8.5.3",
     "zod": "^4.6.7"
   },
   "private": true,
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3"
   }
 }

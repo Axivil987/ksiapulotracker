@@ -1,0 +1,81 @@
+name: Aplikacja iOS (plik .ipa)
+
+# Buduje aplikację na iPhone'a bez podpisu. Podpisuje ją dopiero Sideloadly/AltStore Twoim Apple ID.
+# Aplikacja wyświetla stronę z GitHub Pages, więc zwykłe zmiany na stronie NIE wymagają nowego .ipa —
+# przebudowa jest potrzebna tylko po zmianie ikony, nazwy, uprawnień albo capacitor.config.json.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - capacitor.config.json
+      - package.json
+      - app-shell/**
+      - resources/**
+      - .github/workflows/ios.yml
+
+permissions:
+  contents: read
+
+jobs:
+  ipa:
+    runs-on: macos-15
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash -eo pipefail {0}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Projekt Xcode
+        run: npx cap add ios
+
+      - name: Ikona i ekran startowy
+        run: npx --yes @capacitor/assets@3.0.5 generate --ios --assetPath resources --iconBackgroundColor "#fff4e2" --splashBackgroundColor "#fff4e2" --splashBackgroundColorDark "#fff4e2"
+
+      - name: Nazwa, uprawnienia, orientacja
+        run: |
+          P=ios/App/App/Info.plist
+          set_str() { plutil -replace "$1" -string "$2" "$P"; }
+          set_str CFBundleDisplayName "Ksiapulo"
+          set_str NSCameraUsageDescription "Zdjęcie jedzenia potwierdza, że jesteś w lokalu. Kamera nagrywa też filmik z opinią."
+          set_str NSMicrophoneUsageDescription "Mikrofon nagrywa dźwięk do filmiku z opinią o lokalu."
+          set_str NSPhotoLibraryUsageDescription "Możesz wybrać filmik z opinią z galerii."
+          set_str NSPhotoLibraryAddUsageDescription "Zapisujemy grafikę do story w Twojej galerii."
+          set_str NSLocationWhenInUseUsageDescription "Lokalizacja pokazuje najbliższe lokale i potwierdza odhaczenie na miejscu."
+          set_str UIStatusBarStyle "UIStatusBarStyleDarkContent"
+          plutil -replace UIViewControllerBasedStatusBarAppearance -bool NO "$P"
+          plutil -replace ITSAppUsesNonExemptEncryption -bool NO "$P"
+          plutil -replace UISupportedInterfaceOrientations -json '["UIInterfaceOrientationPortrait"]' "$P"
+          plutil -replace UIRequiresFullScreen -bool YES "$P"
+          # link logowania z maila (ksiapulo://auth) otwiera aplikację
+          plutil -replace CFBundleURLTypes -json '[{"CFBundleURLName":"pl.ksiapulo.tracker","CFBundleURLSchemes":["ksiapulo"]}]' "$P"
+          plutil -lint "$P"
+
+      - run: npx cap sync ios
+
+      - name: Budowanie (bez podpisu)
+        working-directory: ios/App
+        run: |
+          if [ -d App.xcworkspace ]; then TARGET="-workspace App.xcworkspace"; else TARGET="-project App.xcodeproj"; fi
+          xcodebuild $TARGET -scheme App -configuration Release -sdk iphoneos \
+            -destination "generic/platform=iOS" -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            TARGETED_DEVICE_FAMILY=1 build | tail -40
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/App.app Payload/
+          zip -qry "$GITHUB_WORKSPACE/Ksiapulo.ipa" Payload
+          ls -lh "$GITHUB_WORKSPACE/Ksiapulo.ipa"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ksiapulo-ipa
+          path: Ksiapulo.ipa
+          retention-days: 30

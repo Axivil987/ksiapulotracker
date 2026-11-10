@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="only light">
+  <title>Ksiapulo — brak internetu</title>
+  <style>
+    :root { --orange: #f39200; --ink: #141414; --cream: #fff4e2; --sauce: #fffdf6; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; }
+    body {
+      display: grid;
+      place-items: center;
+      padding: calc(24px + env(safe-area-inset-top)) 24px calc(24px + env(safe-area-inset-bottom));
+      background: var(--cream);
+      color: var(--ink);
+      font-family: -apple-system, system-ui, sans-serif;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .top { position: fixed; inset: 0 0 auto 0; height: calc(70px + env(safe-area-inset-top)); background: var(--orange); }
+    main { max-width: 320px; }
+    img { width: 96px; height: 128px; }
+    h1 { margin: 12px 0 6px; font-size: 26px; font-weight: 900; }
+    p { margin: 0 0 22px; font-size: 16px; line-height: 1.45; color: #4a4238; }
+    button {
+      padding: 14px 28px;
+      font: inherit;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--ink);
+      background: var(--orange);
+      border: 3px solid var(--ink);
+      border-radius: 14px;
+      box-shadow: 3px 3px 0 var(--ink);
+    }
+    button:active { transform: translate(3px, 3px); box-shadow: none; }
+  </style>
+</head>
+<body>
+  <div class="top"></div>
+  <main>
+    <img src="pin.svg" alt="">
+    <h1>Brak internetu</h1>
+    <p>Mapa lokali i rankingi potrzebują połączenia. Złap zasięg i spróbuj jeszcze raz.</p>
+    <button type="button" onclick="location.href='https://axivil987.github.io/ksiapulotracker/'">Spróbuj ponownie</button>
+  </main>
+</body>
+</html>
