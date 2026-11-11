@@ -1,15 +1,15 @@
 {
- "lastCheckAt": "2026-11-11T16:12:21.618Z",
- "dataAsOf": "2026-11-04T17:03:00.000Z",
+ "lastCheckAt": "2026-11-11T22:44:16.868Z",
+ "dataAsOf": "2026-11-11T17:39:46+00:00",
  "latestVideo": {
-  "id": "CHYQDlWtdJM",
-  "title": "NAJLEPSZY i najtańszy kebab",
-  "date": "2026-11-04T21:35:43.000Z"
+  "id": "IDV0FU9USZw",
+  "title": "JEDYNA TAKA BURGEROWNIA w POLSCE",
+  "date": "2026-11-11T17:39:46+00:00"
  },
  "counts": {
   "places": 818,
   "cities": 119,
-  "videos": 358,
-  "pending": 0
+  "videos": 359,
+  "pending": 1
  }
 }

@@ -4100,6 +4100,14 @@
    "status": "skipped",
    "reason": "not-review",
    "source": "manual"
+  },
+  "IDV0FU9USZw": {
+   "id": "IDV0FU9USZw",
+   "title": "JEDYNA TAKA BURGEROWNIA w POLSCE",
+   "date": "2026-11-11T17:39:46+00:00",
+   "status": "pending",
+   "source": "heuristic",
+   "places": 0
   }
  }
 }
