@@ -1,1 +1,368 @@
-{}
+{
+ "qiuy06L-vno-marsimo-kebab": {
+  "lat": 51.403627,
+  "lng": 21.158566,
+  "approx": false,
+  "address": "Kazimierza Kelles-Krauza"
+ },
+ "ee6qdCcxSAA-ewa-zaprasza": {
+  "lat": 54.760397,
+  "lng": 17.756247,
+  "approx": false,
+  "address": "Morska 49"
+ },
+ "dmrU6iSq4uI-flaming": {
+  "lat": 52.22288,
+  "lng": 21.021022,
+  "approx": false,
+  "address": "Piękna 7/9"
+ },
+ "YDOOc3ozt-k-pizzeria-daisy": {
+  "lat": 50.842364,
+  "lng": 16.491143,
+  "approx": false,
+  "address": "Kazimierza Pułaskiego"
+ },
+ "YDOOc3ozt-k-bar-toscik": {
+  "lat": 50.842418,
+  "lng": 16.485594,
+  "approx": false,
+  "address": "Kotlarska 1"
+ },
+ "YDOOc3ozt-k-bar-frytka": {
+  "lat": 50.845684,
+  "lng": 16.481618,
+  "approx": false,
+  "address": "Komunardów 18"
+ },
+ "pRxg9yCql2s-bar-to-i-to-i-jeszcze-to-po-kuchennych-r": {
+  "lat": 51.137703,
+  "lng": 16.970613,
+  "approx": false,
+  "address": "Dzielna"
+ },
+ "Y70I9rhc410-baba-doner-craft": {
+  "lat": 51.11851,
+  "lng": 17.004142,
+  "approx": false,
+  "address": "Zielonogórska 12/1U"
+ },
+ "ACzW5Txhfgw-pizzeria-jolanta": {
+  "lat": 53.129577,
+  "lng": 18.053486,
+  "approx": false,
+  "address": "Kołobrzeska"
+ },
+ "wJxbLQL_nqA-europejski-grill-raffles-europejski": {
+  "lat": 52.241625,
+  "lng": 21.01415,
+  "approx": false,
+  "address": "Krakowskie Przedmieście 13"
+ },
+ "SsjePFlvwG8-bar-sajgonek-pani-bogumila": {
+  "lat": 52.076239,
+  "lng": 21.020434,
+  "approx": false,
+  "address": "Szkolna paw. 2"
+ },
+ "AfuxHDpq7qM-zapiecek-polskie-pierogi": {
+  "lat": 52.249041,
+  "lng": 21.011827,
+  "approx": false,
+  "address": "Piwna 32"
+ },
+ "Aa_mIt4PJhM-harry-doner": {
+  "lat": 52.173629,
+  "lng": 21.024148,
+  "approx": false,
+  "address": "Wałbrzyska 42"
+ },
+ "Aa_mIt4PJhM-gemuse-house-kebab": {
+  "lat": 52.235681,
+  "lng": 21.008777,
+  "approx": false,
+  "address": "Marszałkowska 136"
+ },
+ "nDwfb6s_Bqw-express-pizza-chlebek-pita": {
+  "lat": 54.248559,
+  "lng": 20.809085,
+  "approx": false,
+  "address": "Bohaterów Warszawy 37"
+ },
+ "4I9wRmt1hXw-pizza-banda": {
+  "lat": 54.352023,
+  "lng": 18.651288,
+  "approx": false,
+  "address": "Szeroka 121/122"
+ },
+ "eTmxAedF7jU-habanero-kebab": {
+  "lat": 52.395593,
+  "lng": 16.902338,
+  "approx": false,
+  "address": "Antoniego Małeckiego 23"
+ },
+ "chXv93_qJr0-arabia-kebab": {
+  "lat": 50.06654,
+  "lng": 19.939626,
+  "approx": false,
+  "address": "Rynek Kleparski 5"
+ },
+ "r_xgFLMMiIo-bar-pielgrzyma": {
+  "lat": 50.812692,
+  "lng": 19.093545,
+  "approx": false,
+  "address": "Kardynała Stefana Wyszyńskiego 1/31"
+ },
+ "Qa3ib5v2dLE-tomas-burger-kebab-gigant": {
+  "lat": 50.400815,
+  "lng": 18.9041,
+  "approx": false,
+  "address": "Świętego Wojciecha 11"
+ },
+ "s5fyeIZQHLQ-niku-craft-kebab": {
+  "lat": 52.199821,
+  "lng": 20.892685,
+  "approx": false,
+  "address": "Plac Czerwca 1976 roku 1C"
+ },
+ "s5fyeIZQHLQ-tadim-doner": {
+  "lat": 52.233429,
+  "lng": 20.991231,
+  "approx": false,
+  "address": "Łucka 2/4/6"
+ },
+ "cmxHR3n2avM-siemka-kebab": {
+  "lat": 53.028185,
+  "lng": 18.659521,
+  "approx": false,
+  "address": "Ignacego Łyskowskiego"
+ },
+ "9deeP8upjO0-primo-zapiekanki": {
+  "lat": 49.704815,
+  "lng": 20.419367,
+  "approx": false,
+  "address": "Józefa Marka 17"
+ },
+ "X9sLhUMLL00-anadolu-kebab": {
+  "lat": 51.407965,
+  "lng": 21.142467,
+  "approx": false,
+  "address": "Józefa Mireckiego"
+ },
+ "JTm_PpvlJmg-sultan-doner-kebab": {
+  "lat": 53.12309,
+  "lng": 18.009177,
+  "approx": false,
+  "address": "Jagiellońska 22"
+ },
+ "KVmp0jDQX_Y-rebernia-ribs-craft-beer": {
+  "lat": 51.780298,
+  "lng": 19.446948,
+  "approx": false,
+  "address": "Drewnowska 58"
+ },
+ "LzhTRYeQgts-komediowa-restauracja-rafala-paczes": {
+  "lat": 51.774854,
+  "lng": 19.455291,
+  "approx": false,
+  "address": "Piotrkowska 12"
+ },
+ "YxY0ETqtAcI-sorani-kebab-grill": {
+  "lat": 52.184352,
+  "lng": 21.18785,
+  "approx": false,
+  "address": "Patriotów 215"
+ },
+ "1vrJFR61opw-restauracja-formula-1-energylandia": {
+  "lat": 49.999587,
+  "lng": 19.405604,
+  "approx": false,
+  "address": "Aleja 3 Maja 2"
+ },
+ "E3odGfugOKc-restauracja-tembo-zoo-warszawa": {
+  "lat": 52.257836,
+  "lng": 21.023387,
+  "approx": false,
+  "address": "Ratuszowa 1/3"
+ },
+ "0SHBagu86zA-harem-kebab": {
+  "lat": 54.264259,
+  "lng": 16.07752,
+  "approx": false,
+  "address": "6 Marca 12"
+ },
+ "PuFVGywku5g-pizza-jolanta": {
+  "lat": 53.129577,
+  "lng": 18.053486,
+  "approx": false,
+  "address": "Kołobrzeska"
+ },
+ "kvHpLUhRKuA-bar-smakus": {
+  "lat": 50.809955,
+  "lng": 19.122097,
+  "approx": false,
+  "address": "Marszałka Józefa Piłsudskiego"
+ },
+ "XVQl3bI0PL8-aladin-kebab": {
+  "lat": 52.179519,
+  "lng": 21.02328,
+  "approx": false,
+  "address": "Aleja Wilanowska"
+ },
+ "4v4FGVj3FiQ-kebab-express-grill-dworzec-wilenski": {
+  "lat": 52.250585,
+  "lng": 20.918148,
+  "approx": false,
+  "address": "Podpułkownika Wacława Szadkowskiego 2A"
+ },
+ "nahOd3qL4v4-karczma-obrochtowka": {
+  "lat": 49.289957,
+  "lng": 19.965785,
+  "approx": false,
+  "address": "Józefa Ignacego Kraszewskiego 10A"
+ },
+ "QTIGyU-dh4w-szalowy-kebab-and-fast-food": {
+  "lat": 50.774613,
+  "lng": 15.747176,
+  "approx": false,
+  "address": "Konstytucji 3 Maja 74"
+ },
+ "vtIv9rTYQnM-jamra-kebab": {
+  "lat": 50.050194,
+  "lng": 19.961514,
+  "approx": false,
+  "address": "Zabłocie"
+ },
+ "waOCuvz7vQw-hello-kebab": {
+  "lat": 52.229583,
+  "lng": 21.00769,
+  "approx": false,
+  "address": "Pasaż Wisławy Szymborskiej"
+ },
+ "waOCuvz7vQw-ali-kebab": {
+  "lat": 52.23687,
+  "lng": 20.966264,
+  "approx": false,
+  "address": "Górczewska 17C"
+ },
+ "bWGj-jruCF8-kebab-u-pajdy": {
+  "lat": 50.306579,
+  "lng": 19.025962,
+  "approx": false,
+  "address": "Parkowa"
+ },
+ "A_Q2mV6aIuQ-kebab-granders": {
+  "lat": 50.401228,
+  "lng": 18.902916,
+  "approx": false,
+  "address": "Śródmiejska 14"
+ },
+ "D-1zlC5aXT0-bistro-pod-siodemka": {
+  "lat": 50.26034,
+  "lng": 19.018115,
+  "approx": false,
+  "address": "Stawowa 7"
+ },
+ "iyP0Hsvr0kc-amin-s-kebab": {
+  "lat": 53.011132,
+  "lng": 18.60437,
+  "approx": false,
+  "address": "Rynek Staromiejski 27"
+ },
+ "Tik_nuD6MQ4-bar-pod-arkadami": {
+  "lat": 53.009851,
+  "lng": 18.603055,
+  "approx": false,
+  "address": "Ducha Świętego 23"
+ },
+ "TitvBQlco0g-bar-mleczny-turysta": {
+  "lat": 53.429102,
+  "lng": 14.549511,
+  "approx": false,
+  "address": "Edmunda Bałuki 6a"
+ },
+ "5VXFxgXu57Q-kebaby-food-truck-craftowy": {
+  "lat": 53.409946,
+  "lng": 14.518266,
+  "approx": false,
+  "address": "Mieszka I"
+ },
+ "7qdO0k9Kseg-pizza-grotex": {
+  "lat": 50.718596,
+  "lng": 23.25342,
+  "approx": false,
+  "address": "Plac Melchiora Stefanidesa"
+ },
+ "7qdO0k9Kseg-big-buffalo-rozek-kebab": {
+  "lat": 50.721866,
+  "lng": 23.258592,
+  "approx": false,
+  "address": "Peowiaków 9a"
+ },
+ "9jqQcQ89Nho-davis-kebab": {
+  "lat": 50.039155,
+  "lng": 22.002843,
+  "approx": false,
+  "address": "Grunwaldzka 20"
+ },
+ "qNBTpk66Ang-zapiekanki-piecyk-okraglak": {
+  "lat": 50.051808,
+  "lng": 19.944936,
+  "approx": false,
+  "address": "Estery 46"
+ },
+ "qNBTpk66Ang-zapiekanki-endzior-okraglak": {
+  "lat": 50.051775,
+  "lng": 19.944817,
+  "approx": false,
+  "address": "Plac Nowy 4B"
+ },
+ "qNBTpk66Ang-zapiekanki-krolewskie-okraglak": {
+  "lat": 50.051683,
+  "lng": 19.944779,
+  "approx": false,
+  "address": "Estery 46"
+ },
+ "0xM9vyys8_I-efes-kebab": {
+  "lat": 50.090404,
+  "lng": 19.943952,
+  "approx": false,
+  "address": "Józefa Mackiewicza 1"
+ },
+ "0xM9vyys8_I-kebab-i-burger-u-buly": {
+  "lat": 50.092907,
+  "lng": 19.963622,
+  "approx": false,
+  "address": "Jakuba Majora 11A"
+ },
+ "_TKvsZoqUEs-bar-mleczny-jagienka": {
+  "lat": 50.875292,
+  "lng": 20.602174,
+  "approx": false,
+  "address": "Grunwaldzka 28"
+ },
+ "Q1dG5Q5KzlE-bar-mleczny-zodiak": {
+  "lat": 53.122349,
+  "lng": 23.089212,
+  "approx": false,
+  "address": "Wrocławska 5"
+ },
+ "5ahPp-nCFQU-big-daddy-kebab": {
+  "lat": 52.406242,
+  "lng": 16.926612,
+  "approx": false,
+  "address": "Święty Marcin 30"
+ },
+ "AVhIjgpp9IE-kebab-relax-alibaba-krol-kebaba": {
+  "lat": 52.407782,
+  "lng": 21.174888,
+  "approx": false,
+  "address": "Aleja Jana Pawła II 40A"
+ },
+ "ckr841nsIeY-lussi-lucy": {
+  "lat": 52.229249,
+  "lng": 21.007737,
+  "approx": false,
+  "address": "Aleje Jerozolimskie"
+ }
+}
