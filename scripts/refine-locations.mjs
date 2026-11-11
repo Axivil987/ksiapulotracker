@@ -53,6 +53,7 @@ async function photon(q, near) {
   return (await res.json()).features ?? [];
 }
 
+const TYPES = { kebab: "kebab", kebap: "kebab", doner: "kebab", pizza: "pizza", pizzeria: "pizza", burger: "burger", burgers: "burger", sushi: "sushi", zapiekanki: "zapiekanka", zapiekanka: "zapiekanka", hotel: "hotel", apartament: "hotel", apartamenty: "hotel", pierogi: "pierogi", pierogarnia: "pierogi", cukiernia: "slodkie", lody: "slodkie" };
 const POI = new Set(["amenity", "shop", "tourism", "leisure", "craft"]);
 const FOOD = new Set(
   "restaurant fast_food cafe bar pub food_court ice_cream biergarten canteen bakery pastry confectionery butcher deli convenience supermarket hotel guest_house hostel motel alpine_hut chalet attraction theme_park zoo water_park marketplace".split(" "),
@@ -69,6 +70,17 @@ function pick(features, place, want) {
     // napisy z YouTube przekręcają nazwy ("Kebilla" → w OSM "Kebila"), więc dopuszczamy 1–2 literówki
     const close = (w) => gotWords.includes(w) || (w.length >= 5 && got.includes(w)) || gotWords.some((g) => edits(w, g) <= (w.length >= 10 ? 2 : w.length >= 7 ? 1 : 0));
     if (!want.every(close)) continue;
+    // …i w drugą stronę: nazwa z mapy nie może mieć dodatkowych wyróżniających słów
+    // ("Owca" ≠ "Czarna Owca", "Obiady Domowe" ≠ "Bistromania Obiady Domowe").
+    const all = norm(place.name.replace(/(.*?)/g, " ")).split(" ");
+    const extra = gotWords.filter((g) => g.length >= 5 && !GENERIC.has(g) && !all.some((w) => w === g || edits(w, g) <= (g.length >= 7 ? 1 : 0)));
+    const exact = want.every((w) => gotWords.includes(w)) && want.some((w) => w.length >= 5);
+    if (extra.length > (exact ? 1 : 0)) continue;
+    // "Pizza Night" to nie "Night Burger"
+    const typeOf = (words) => new Set(words.map((w) => TYPES[w]).filter(Boolean));
+    const tw = typeOf(all);
+    const th = typeOf(gotWords);
+    if (tw.size && th.size && ![...tw].some((t) => th.has(t))) continue;
     const [lng, lat] = f.geometry.coordinates;
     const d = km(place, { lat, lng });
     if (d > MAX_KM) continue;
