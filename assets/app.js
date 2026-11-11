@@ -94,6 +94,7 @@
     q: "",
     route: null, // miasto, którego trasę pokazujemy
     done: new Set(), // lokale odhaczone przez zalogowanego (ustawia social.js)
+    stories: new Map(), // lokal → liczba świeżych story od widzów (ustawia social.js)
     mine: null, // Set lokali z "Mojej listy", gdy mapa ma pokazywać tylko ją
     videos: {},
     meta: null,
@@ -119,8 +120,9 @@
     spiderfyOnMaxZoom: true,
     iconCreateFunction(c) {
       const muala = c.getAllChildMarkers().some((m) => m.options.place.verdict === "muala");
+      const story = c.getAllChildMarkers().some((m) => state.stories.has(m.options.place.id));
       return L.divIcon({
-        html: `<div class="cluster${muala ? " cluster--muala" : ""}">${c.getChildCount()}</div>`,
+        html: `<div class="cluster${muala ? " cluster--muala" : ""}${story ? " has-story" : ""}">${c.getChildCount()}</div>`,
         className: "",
         iconSize: [44, 44],
       });
@@ -132,7 +134,7 @@
 
   function pinIcon(p) {
     const [emoji] = CATS[p.category] ?? CATS.inne;
-    const cls = ["pin", `pin--${p.verdict}`, p.approx && "pin--approx", p.closed && "pin--closed", state.done.has(p.id) && "is-done", p.id === state.activeId && "is-active"].filter(Boolean).join(" ");
+    const cls = ["pin", `pin--${p.verdict}`, p.approx && "pin--approx", p.closed && "pin--closed", state.done.has(p.id) && "is-done", state.stories.has(p.id) && "has-story", p.id === state.activeId && "is-active"].filter(Boolean).join(" ");
     return L.divIcon({
       html: `<div class="${cls}"><span>${emoji}</span>${isNew(p) ? '<b class="pin__new">NOWE</b>' : ""}${state.done.has(p.id) ? '<b class="pin__done">✓</b>' : ""}</div>`,
       className: "",
@@ -582,6 +584,7 @@
   $("randomBtn").addEventListener("click", () => {
     const pool = filtered().filter((p) => !p.closed);
     if (!pool.length) return;
+    window.KsiapuloFx?.play($("randomBtn"), "is-rolling");
     const near = state.me ? pool.filter((p) => km(state.me, p) < 30) : pool;
     const from = near.length ? near : pool;
     const choices = from.length > 1 ? from.filter((p) => p.id !== state.activeId) : from;
@@ -737,6 +740,12 @@
       for (const [id, m] of markers) m.setIcon(pinIcon(m.options.place));
       renderList();
     },
+    /** Lokale ze świeżymi story dostają animowany pierścień na pinezce. */
+    setStories(map) {
+      state.stories = map;
+      for (const [, m] of markers) m.setIcon(pinIcon(m.options.place));
+      cluster.refreshClusters();
+    },
     /** null = cała mapa, Set = tylko te lokale (np. "Moja lista"). */
     setScope(ids) {
       state.mine = ids;
@@ -762,6 +771,11 @@
       tile(cities, plural(cities, "miasto", "miasta", "miast")) +
       tile(muala, "× MUALA") +
       tile(eps, plural(eps, "odcinek", "odcinki", "odcinków"));
+    // liczniki "nabijają się" tylko przy pierwszym wczytaniu
+    if (!renderStats.done) {
+      renderStats.done = true;
+      document.querySelectorAll("#stats b").forEach((b) => window.KsiapuloFx?.countUp(b));
+    }
   }
 
   function toast(html, onShow) {

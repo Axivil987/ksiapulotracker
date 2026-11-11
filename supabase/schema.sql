@@ -695,3 +695,89 @@ create policy "ksiapulo: usuwanie własnych lub przez admina" on storage.objects
 drop policy if exists "ksiapulo: lista własnych plików" on storage.objects;
 create policy "ksiapulo: lista własnych plików" on storage.objects for select to authenticated
   using (bucket_id in ('checkins', 'videos') and (storage.foldername(name))[1] = auth.uid()::text);
+
+-- ---------------------------------------------------------------- story z lokali i oceny widzów
+
+-- Ocena widza: tylko po zweryfikowanym odhaczeniu (GPS + zdjęcie), jedna na lokal, można ją zmienić.
+create table if not exists public.opinions (
+  user_id uuid not null references public.profiles on delete cascade,
+  place_id text not null references public.places on delete cascade,
+  verdict text not null check (verdict in ('muala', 'plus', 'srednio', 'minus')),
+  body text not null default '' check (char_length(body) <= 400),
+  status text not null default 'visible' check (status in ('visible', 'hidden')),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key (user_id, place_id)
+);
+create index if not exists opinions_place on public.opinions (place_id);
+alter table public.opinions enable row level security;
+drop policy if exists "oceny: widoczne, własne zawsze" on public.opinions;
+create policy "oceny: widoczne, własne zawsze" on public.opinions for select
+  using (status = 'visible' or user_id = auth.uid() or public.is_admin());
+
+create or replace function public.post_opinion(p_place text, p_verdict text, p_body text)
+returns json language plpgsql security definer set search_path = public as $$
+declare
+  pr profiles := current_profile();
+  pts int := 0;
+begin
+  if not exists (select 1 from checkins where user_id = pr.id and place_id = p_place and status = 'ok') then
+    raise exception 'Ocenić możesz tylko lokal, który masz odhaczony na miejscu';
+  end if;
+  insert into opinions (user_id, place_id, verdict, body)
+  values (pr.id, p_place, p_verdict, left(coalesce(p_body, ''), 400))
+  on conflict (user_id, place_id) do update
+    set verdict = excluded.verdict, body = excluded.body, updated_at = now(), status = 'visible';
+  if award(pr.id, 'ocena', p_place, 10) then pts := 10; end if;
+  return json_build_object('points', pts);
+end $$;
+
+-- Wszystko, co społeczność zostawiła w lokalu: licznik ocen, opinie, moja ocena.
+create or replace function public.place_community(p_place text)
+returns json language sql stable security definer set search_path = public as $$
+  select json_build_object(
+    'counts', coalesce((select json_object_agg(v, n) from (
+        select o.verdict v, count(*) n from opinions o join profiles pr on pr.id = o.user_id and not pr.banned
+        where o.place_id = p_place and o.status = 'visible' group by o.verdict) c), '{}'),
+    'visits', (select count(*) from checkins c where c.place_id = p_place and c.status = 'ok'),
+    'opinions', coalesce((select json_agg(row_to_json(q)) from (
+        select o.user_id, o.verdict, o.body, o.updated_at, pr.username, pr.display_name
+        from opinions o join profiles pr on pr.id = o.user_id and not pr.banned
+        where o.place_id = p_place and o.status = 'visible'
+        order by o.updated_at desc limit 40) q), '[]'),
+    'mine', (select json_build_object('verdict', o.verdict, 'body', o.body) from opinions o
+             where o.place_id = p_place and o.user_id = auth.uid()),
+    'can_rate', exists (select 1 from checkins c where c.place_id = p_place and c.user_id = auth.uid() and c.status = 'ok')
+  )
+$$;
+
+-- Story = zdjęcie z odhaczenia albo filmik z opinią z ostatnich p_hours godzin.
+create or replace function public.stories(p_place text default null, p_hours int default 72)
+returns table (kind text, id uuid, created_at timestamptz, username text, display_name text,
+               place_id text, place_name text, place_city text, media_path text, poster_path text, caption text)
+language sql stable security definer set search_path = public as $$
+  with items as (
+    select 'checkin'::text kind, c.id, c.created_at, c.user_id, c.place_id, c.photo_path media, null::text poster, ''::text caption
+    from checkins c where c.status = 'ok' and c.created_at > now() - make_interval(hours => least(p_hours, 168))
+    union all
+    select 'video', v.id, v.created_at, v.user_id, v.place_id, v.path, v.poster_path, v.caption
+    from videos v where v.status = 'visible' and v.created_at > now() - make_interval(hours => least(p_hours, 168))
+  )
+  select i.kind, i.id, i.created_at, pr.username, pr.display_name, i.place_id, p.name, p.city, i.media, i.poster, i.caption
+  from items i
+  join profiles pr on pr.id = i.user_id and not pr.banned
+  join places p on p.id = i.place_id
+  where p_place is null or i.place_id = p_place
+  order by i.created_at desc
+  limit 200
+$$;
+
+create or replace function public.admin_opinion(p_user uuid, p_place text, p_hide boolean)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  perform require_admin();
+  update opinions set status = case when p_hide then 'hidden' else 'visible' end where user_id = p_user and place_id = p_place;
+end $$;
+
+revoke all on function public.post_opinion(text, text, text) from anon;
+revoke all on function public.admin_opinion(uuid, text, boolean) from anon;

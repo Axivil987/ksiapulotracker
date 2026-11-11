@@ -108,6 +108,12 @@ filmiki z opiniami i reakcje „MUALA”. Bez konfiguracji strona działa jako s
 - `supabase/functions/moderate` — opcjonalna moderacja zdjęć i filmików przez Claude.
 - `assets/social.js` — interfejs, `assets/config.js` — adres i publiczny klucz projektu.
 
+**Story i oceny widzów:** zdjęcie z odhaczenia i filmik z opinią są przez 72 h story lokalu (pierścień na pinezce,
+kółka w zakładce Aktywność). Ocenę lokalu może dodać tylko ktoś, kto go odhaczył na miejscu (+10 pkt).
+
+**Dokładne pinezki:** `node scripts/refine-locations.mjs` szuka przybliżonych lokali w Photon (OSM) i zapisuje
+trafienia do `data/overrides.json`. Uruchamiaj po dopisaniu nowych odcinków.
+
 **Lista do odhaczenia** zależy tylko od miasta domowego: promień rośnie (15, 25, 40… km), aż w okolicy będzie
 co najmniej 12 lokali. Dwie osoby z Tarnowskich Gór mają więc dokładnie tę samą listę (25 km).
 

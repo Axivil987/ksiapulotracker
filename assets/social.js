@@ -10,6 +10,7 @@
   const APP_LINK = "ksiapulo://auth";
   const SB_SRC = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js";
   const { esc, plural } = K;
+  const FX = window.KsiapuloFx ?? {};
   const $ = (id) => document.getElementById(id);
 
   // ---------------------------------------------------------------- rangi i odznaki
@@ -398,6 +399,8 @@
     K.setDone([...doneMap().keys()]);
     renderChip();
     renderView();
+    // dymek otwarty z linku mógł się narysować, zanim wczytał się profil
+    K.refreshPopup();
   }
 
   function renderChip() {
@@ -439,6 +442,7 @@
       el.innerHTML = `<button type="button" class="btn btn--checkin js-checkin">✅ Jestem tu — odhacz</button>`;
       el.querySelector(".js-checkin").onclick = () => openCheckin(p);
     }
+    renderCommunity(p, el);
     // opinie widzów o tym lokalu
     S.sb
       .from("videos")
@@ -545,6 +549,7 @@
           throw error;
         }
         await loadMe();
+        loadStories();
         K.refreshPopup();
         showResult(p, data, before, URL.createObjectURL(photo));
       } catch (e) {
@@ -571,10 +576,17 @@
       <div class="soc-actions">
         <button type="button" class="btn btn--locate js-story">📸 Wrzuć story (+20 pkt za każdego, kto dołączy)</button>
         <button type="button" class="btn js-video">🎥 Nagraj opinię (+25 pkt)</button>
-      </div>`,
+        ${r.status === "ok" ? '<button type="button" class="btn js-rate">⭐ Oceń lokal (+10 pkt)</button>' : ""}
+      </div>
+      ${r.status === "ok" ? '<p class="soc-note">Twoje zdjęcie jest teraz story tego lokalu na mapie przez 72 godziny.</p>' : ""}`,
     );
+    body.querySelector(".js-rate")?.addEventListener("click", () => openOpinions(p));
     body.querySelector(".js-story").onclick = () => shareStory("checkin", p, photoUrl);
     body.querySelector(".js-video").onclick = () => openVideo(p);
+    if (r.status === "ok") {
+      FX.confetti?.(up ? { count: 220, duration: 2800 } : undefined);
+      FX.buzz?.(up ? [30, 40, 30, 40, 90] : [20, 40, 60]);
+    }
   }
 
   // ---------------------------------------------------------------- filmiki z opiniami
@@ -662,6 +674,8 @@
           <p class="soc-lead">Każda reakcja MUALA na twój filmik to kolejne +2 pkt.</p>
           ${badges.map((b) => `<div class="soc-badge-new"><span>${b[0]}</span><div><b>${esc(b[1])}</b><small>+${b[3]} pkt</small></div></div>`).join("")}`,
         );
+        FX.confetti?.({ count: 90 });
+        FX.buzz?.([20, 40, 60]);
       } catch (e2) {
         err.textContent = errText(e2);
         go.disabled = false;
@@ -700,6 +714,190 @@
       .join("")}</ol>`;
   }
 
+  // ---------------------------------------------------------------- story z lokali
+  // Story = zdjęcie z odhaczenia albo filmik z opinią z ostatnich 72 h. Zawsze od kogoś, kto był na miejscu.
+  const VERDICT_UI = { muala: ["🧡", "MUALA"], plus: ["👍", "Na plus"], srednio: ["😐", "Średnio"], minus: ["👎", "Na minus"] };
+
+  async function loadStories() {
+    const { data, error } = await S.sb.rpc("stories", { p_place: null, p_hours: 72 });
+    if (error) return;
+    S.stories = data ?? [];
+    const byPlace = new Map();
+    for (const s of S.stories) byPlace.set(s.place_id, (byPlace.get(s.place_id) ?? 0) + 1);
+    K.setStories(byPlace);
+    if (S.view === "aktywnosc") {
+      const rail = document.querySelector(".storyrail");
+      if (rail) rail.outerHTML = storyRail();
+      else $("view-aktywnosc").querySelector(".soc-seg")?.insertAdjacentHTML("afterend", storyRail());
+      $("view-aktywnosc").querySelector(".storyrail")?.addEventListener("click", (e) => {
+        const b = e.target.closest("[data-place]");
+        if (b) openStories(b.dataset.place);
+      });
+    }
+  }
+
+  /** Kółka ze story (jak na Instagramie), jedno na lokal, najświeższe pierwsze. */
+  function storyRail() {
+    const seen = new Set();
+    const places = (S.stories ?? []).filter((s) => !seen.has(s.place_id) && seen.add(s.place_id));
+    if (!places.length) return "";
+    return `<div class="storyrail" aria-label="Story z lokali">${places
+      .map(
+        (s) => `<button type="button" data-place="${esc(s.place_id)}">
+          <span class="storyrail__ring"><img src="${esc(s.kind === "video" ? mediaUrl("videos", s.poster_path) : mediaUrl("checkins", s.media_path))}" alt="" loading="lazy"></span>
+          <small>${esc(s.place_name)}</small></button>`,
+      )
+      .join("")}</div>`;
+  }
+
+  /** Pełnoekranowa przeglądarka story: stuknij z prawej/lewej, zdjęcie 5 s, filmik do końca. */
+  function openStories(placeId) {
+    const items = (S.stories ?? []).filter((s) => s.place_id === placeId).reverse();
+    if (!items.length) return;
+    let dlg = $("story");
+    if (!dlg) {
+      dlg = document.createElement("dialog");
+      dlg.id = "story";
+      dlg.className = "story";
+      document.body.append(dlg);
+    }
+    let i = 0;
+    let timer;
+    const stop = () => clearTimeout(timer);
+    const close = () => {
+      stop();
+      dlg.querySelector("video")?.pause();
+      if (dlg.open) dlg.close();
+    };
+    const show = () => {
+      stop();
+      const s = items[i];
+      const isVideo = s.kind === "video";
+      dlg.innerHTML = `<div class="story__bars">${items.map((_, n) => `<i class="${n < i ? "is-done" : n === i ? "is-on" : ""}"><b ${n === i && !isVideo ? 'style="animation-duration:5s"' : ""}></b></i>`).join("")}</div>
+        <header><span class="feed__avatar">${esc(s.display_name.slice(0, 1).toUpperCase())}</span>
+          <div><b>${esc(s.display_name)}</b><small>${isVideo ? "opinia" : "był(a) tu"} · ${ago(s.created_at)}</small></div>
+          <button type="button" class="story__close" aria-label="Zamknij">✕</button></header>
+        <div class="story__media">${
+          isVideo
+            ? `<video src="${esc(mediaUrl("videos", s.media_path))}" poster="${esc(mediaUrl("videos", s.poster_path))}" playsinline autoplay></video>`
+            : `<img src="${esc(mediaUrl("checkins", s.media_path))}" alt="Zdjęcie z lokalu">`
+        }</div>
+        <footer>${s.caption ? `<p>${esc(s.caption)}</p>` : ""}
+          <button type="button" class="btn btn--locate story__place">📍 ${esc(s.place_name)}${s.place_city ? `, ${esc(s.place_city)}` : ""}</button></footer>`;
+      const v = dlg.querySelector("video");
+      if (v) {
+        v.onended = next;
+        v.play().catch(() => (timer = setTimeout(next, 6000)));
+      } else timer = setTimeout(next, 5000);
+    };
+    const next = () => (i < items.length - 1 ? (i++, show()) : close());
+    const prev = () => (i > 0 ? (i--, show()) : show());
+    dlg.onclick = (e) => {
+      if (e.target.closest(".story__close")) return close();
+      if (e.target.closest(".story__place")) {
+        close();
+        closeSheet();
+        return K.focusPlace(placeId);
+      }
+      const x = e.clientX / innerWidth;
+      if (x < 0.3) prev();
+      else next();
+    };
+    dlg.onclose = stop;
+    if (!dlg.open) dlg.showModal();
+    show();
+  }
+
+  // ---------------------------------------------------------------- oceny widzów
+  /** W dymku: przycisk story i podsumowanie ocen od ludzi, którzy byli na miejscu. */
+  async function renderCommunity(p, el) {
+    const n = (S.stories ?? []).filter((s) => s.place_id === p.id).length;
+    const box = document.createElement("div");
+    box.className = "pop__community";
+    if (n) {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "pop__story";
+      b.innerHTML = `<span class="pop__story-dot"></span> Story z lokalu <b>${n}</b>`;
+      b.onclick = () => openStories(p.id);
+      box.append(b);
+    }
+    el.append(box);
+    const { data } = await S.sb.rpc("place_community", { p_place: p.id });
+    if (!data || !box.isConnected) return;
+    const total = Object.values(data.counts).reduce((a, b) => a + b, 0);
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "pop__rating";
+    b.innerHTML = total
+      ? `<span>Widzowie:</span> ${Object.entries(VERDICT_UI)
+          .filter(([k]) => data.counts[k])
+          .map(([k, [e]]) => `${e} <b>${data.counts[k]}</b>`)
+          .join(" ")} <i>›</i>`
+      : data.can_rate
+        ? "⭐ Oceń ten lokal jako pierwszy (+10 pkt) <i>›</i>"
+        : `<span>${data.visits ? `${data.visits} ${plural(data.visits, "widz był", "widzów było", "widzów było")} tutaj` : "Nikt z widzów jeszcze tu nie był"}</span> <i>›</i>`;
+    b.onclick = () => openOpinions(p);
+    box.append(b);
+  }
+
+  async function openOpinions(p) {
+    const body = openSheet(`Oceny widzów: ${esc(p.name)}`, `<ul class="soc-list">${FX.skeleton?.(3) ?? ""}</ul>`);
+    const { data, error } = await S.sb.rpc("place_community", { p_place: p.id });
+    if (error) return (body.innerHTML = `<p class="soc-err">${esc(errText(error))}</p>`);
+    let verdict = data.mine?.verdict ?? null;
+    const form = data.can_rate
+      ? `<form id="opForm" class="soc-stack soc-card">
+          <span class="soc-label">${data.mine ? "Twoja ocena (możesz ją zmienić)" : "Twoja ocena — byłeś tu, więc możesz"}</span>
+          <div class="verdicts">${Object.entries(VERDICT_UI)
+            .map(([k, [e, l]]) => `<button type="button" data-v="${k}" class="${verdict === k ? "is-on" : ""}"><span>${e}</span>${l}</button>`)
+            .join("")}</div>
+          <textarea name="body" maxlength="400" rows="2" placeholder="Co zamówiłeś i jak było? (opcjonalnie)">${esc(data.mine?.body ?? "")}</textarea>
+          <button type="submit" class="btn btn--locate" ${verdict ? "" : "disabled"}>${data.mine ? "Zapisz zmianę" : "Dodaj ocenę (+10 pkt)"}</button>
+          <p class="soc-err" id="opErr"></p></form>`
+      : `<p class="soc-note soc-card">🔒 Oceniać mogą tylko osoby, które odhaczyły ten lokal na miejscu (lokalizacja + zdjęcie). ${S.profile ? "Odhacz go, gdy tam będziesz." : "Zaloguj się i odhacz go, gdy tam będziesz."}</p>`;
+    body.innerHTML = `${form}
+      <h3>Opinie (${data.opinions.length}) <small>· ${data.visits} ${plural(data.visits, "zweryfikowana wizyta", "zweryfikowane wizyty", "zweryfikowanych wizyt")}</small></h3>
+      <ul class="opinions">${
+        data.opinions
+          .map(
+            (o) => `<li><span class="opinions__v">${VERDICT_UI[o.verdict][0]}</span>
+            <div><button type="button" class="feed__name js-user" data-user="${esc(o.username)}">${esc(o.display_name)}</button>
+              <small>${VERDICT_UI[o.verdict][1]} · ${ago(o.updated_at)} · ✓ był(a) na miejscu</small>
+              ${o.body ? `<p>${esc(o.body)}</p>` : ""}</div>
+            ${S.profile?.is_admin ? `<button type="button" class="feed__report js-hide" data-user-id="${o.user_id}" title="Ukryj opinię">ukryj</button>` : ""}</li>`,
+          )
+          .join("") || '<li class="soc-note">Jeszcze nikt nie ocenił tego lokalu.</li>'
+      }</ul>`;
+    const f = body.querySelector("#opForm");
+    if (f) {
+      f.querySelector(".verdicts").onclick = (e) => {
+        const b = e.target.closest("[data-v]");
+        if (!b) return;
+        verdict = b.dataset.v;
+        f.querySelectorAll("[data-v]").forEach((x) => x.classList.toggle("is-on", x === b));
+        f.querySelector("[type=submit]").disabled = false;
+      };
+      f.onsubmit = async (e) => {
+        e.preventDefault();
+        const { data: res, error: err } = await S.sb.rpc("post_opinion", { p_place: p.id, p_verdict: verdict, p_body: new FormData(f).get("body") });
+        if (err) return (f.querySelector("#opErr").textContent = errText(err));
+        if (res.points) {
+          FX.confetti?.({ count: 70 });
+          await loadMe();
+        }
+        K.refreshPopup();
+        openOpinions(p);
+      };
+    }
+    body.querySelectorAll(".js-hide").forEach((b) => {
+      b.onclick = async () => {
+        const { error: err } = await S.sb.rpc("admin_opinion", { p_user: b.dataset.userId, p_place: p.id, p_hide: true });
+        if (!err) b.closest("li").remove();
+      };
+    });
+  }
+
   // ---------------------------------------------------------------- moja lista
   function renderList() {
     const root = $("view-lista");
@@ -721,6 +919,7 @@
         <div class="soc-bar"><i style="width:${pct}%"></i></div>
         <p class="soc-note">Tę samą listę mają wszyscy z miastem domowym ${esc(S.profile.home_city)}. Sprawdź <a href="#" class="js-cityboard">ranking miasta</a>.</p>
       </section>
+      ${goalCard(sorted.filter((p) => !done.has(p.id)), home)}
       <ol class="soc-list">${sorted
         .map((p) => {
           const c = done.get(p.id);
@@ -742,6 +941,27 @@
       S.boardScope = "city";
       showView("ranking");
     };
+    const goal = root.querySelector(".js-goal");
+    if (goal) goal.onclick = () => K.focusPlace(goal.dataset.id);
+  }
+
+  /** "Cel na dziś": jeden z 6 najbliższych nieodhaczonych lokali, ten sam przez cały dzień. */
+  function goalCard(todo, home) {
+    const today = new Date().toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" });
+    const doneToday = S.checkins.some((c) => c.status !== "rejected" && new Date(c.created_at).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" }) === today);
+    if (doneToday) {
+      return `<section class="soc-card soc-goal is-done"><span class="soc-goal__icon">🎉</span>
+        <div><span class="soc-label">Cel na dziś</span><b>Zaliczony!</b><small>Odhaczyłeś dziś lokal. Jutro czeka nowy cel.</small></div></section>`;
+    }
+    if (!todo.length) return "";
+    const pool = todo.slice(0, 6);
+    const day = Math.floor(Date.now() / 864e5);
+    const p = pool[day % pool.length];
+    const d = K.km(home, p);
+    return `<section class="soc-card soc-goal"><span class="soc-goal__icon">🎯</span>
+      <div><span class="soc-label">Cel na dziś</span><b>${esc(p.name)}</b>
+        <small>${esc(p.city ?? "")} · ${d < 10 ? d.toFixed(1).replace(".", ",") : Math.round(d)} km${p.mualaDate ? " · MUALA (+15 pkt)" : ""}</small></div>
+      <button type="button" class="btn btn--locate js-goal" data-id="${esc(p.id)}">Pokaż</button></section>`;
   }
 
   // ---------------------------------------------------------------- aktywność
@@ -778,9 +998,14 @@
       root.innerHTML = `<div class="seg soc-seg">${scopes
         .map(([k, l]) => `<button type="button" data-scope="${k}" class="${S.feedScope === k ? "is-on" : ""}" ${!S.profile && k !== "all" ? "disabled" : ""}>${l}</button>`)
         .join("")}</div>
+        ${storyRail()}
         ${S.profile ? "" : loginCta("Zaloguj się, żeby odhaczać lokale, reagować i obserwować znajomych.")}
-        <ol class="feed" id="feedList"><li class="soc-note">Wczytuję…</li></ol>
+        <ol class="feed" id="feedList">${FX.skeleton?.(2, "post") ?? ""}</ol>
         <button type="button" class="btn btn--more" id="feedMore" hidden>Starsze</button>`;
+      root.querySelector(".storyrail")?.addEventListener("click", (e) => {
+        const b = e.target.closest("[data-place]");
+        if (b) openStories(b.dataset.place);
+      });
       root.querySelector(".soc-seg").onclick = (e) => {
         const b = e.target.closest("[data-scope]");
         if (!b || b.disabled) return;
@@ -867,7 +1092,7 @@
       .map(([k, l]) => `<button type="button" data-k="${k}" class="${S.boardScope === k ? "is-on" : ""}" ${!S.profile && k !== "all" ? "disabled" : ""}>${esc(l)}</button>`)
       .join("")}</div>
       <div class="sort soc-period js-period">${periods.map(([k, l]) => `<button type="button" data-k="${k}" class="${S.boardPeriod === k ? "is-on" : ""}">${l}</button>`).join("")}</div>
-      <ol class="board" id="boardList"><li class="soc-note">Wczytuję…</li></ol>
+      <ol class="board" id="boardList">${FX.skeleton?.(6, "row") ?? ""}</ol>
       ${S.profile ? "" : loginCta("Zaloguj się, żeby wejść do rankingu swojego miasta.")}`;
     root.querySelector(".js-scope").onclick = (e) => {
       const b = e.target.closest("[data-k]");
@@ -1328,6 +1553,8 @@
     K.on("data", () => S.view !== "mapa" && renderView());
     if (IS_APP) listenForLoginLink();
     await loadMe();
+    loadStories();
+    setInterval(() => document.visibilityState === "visible" && loadStories(), 3 * 60_000);
   }
 
   /** Aplikacja: link z maila otwiera ksiapulo://auth#access_token=… (albo ?code=… przy PKCE). */
